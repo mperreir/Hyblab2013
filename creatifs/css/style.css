@@ -1,0 +1,167 @@
+#page {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1024px;
+}
+
+#loupe {
+	position: absolute;
+	top: 525px;
+	left: 210px;
+}
+
+#cliquez {
+	position: absolute;
+	top: 545px;
+	left: 508px;
+}
+
+#go_conclusion{
+	position:absolute;
+	top:175px;
+	left:900px;
+}
+
+#pourcentage {
+	position: absolute;
+}
+
+#basePourcentage {
+	position: absolute;
+	top: 220px;
+	left: 700px;
+	width: 277px;
+	height: 523px;
+}
+
+#afficheCodePostal {
+	position: absolute;
+	width: 67;
+	height: 116;
+}
+
+#Map {
+	border: 0;
+	background-color: black;
+}
+
+#retour_carte {
+	position: absolute;
+	top: 175px;
+	left: 20px;
+}
+
+#retour_Ile {
+	position: absolute;
+	top: 748px;
+	left: 957px;
+}
+
+.menuItem,.cercle {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#quelques_creatifs {
+	position: absolute;
+	top: 720px;
+	left: 0px;
+}
+
+img {
+	border: solid 0px #FFF;
+}
+
+.slidingSpaces {
+	height: 100%;
+	overflow: auto;
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+.bouton_play {
+	position: absolute;
+}
+
+.survol {
+	position: absolute;
+}
+
+.lecteurVideo {
+	visibility:hidden;
+	width:300px;
+	height:150px;
+}
+
+.lecteur {
+	width:300px;
+	height:150px;
+}
+
+#retour_video {
+	position:absolute;
+	top: 175px;
+	left: 20px;
+}
+
+#retourConclusion {
+	position:absolute;
+	top: 175px;
+	left: 20px;
+}
+
+#Jose_Cerclet {
+	position:absolute;
+	top:195px;
+	left:405px;
+}
+
+#Pierrick_Sorin {
+	position:absolute;
+	top:330px;
+	left:415px;
+}
+
+#Charlie_Mars {
+	position:absolute;
+	top:475px;
+	left:410px;
+}
+
+#Laurent {
+	position:absolute;
+	top:635px;
+	left:420px;
+}
+
+#div_video {
+	position:absolute;
+	left:350px;
+	top:167px;
+	width:610px;
+}
+
+div {
+	border:0;
+	cellpadding:0;
+	cellspacing:0;
+}
+
+#vues_interviews {
+	position:absolute;
+	top:167px;
+	left:253px;
+}
+
+.croixFermer {
+	position:absolute;
+	opacity:0;
+}

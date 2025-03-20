@@ -1,0 +1,243 @@
+body {
+	background-color : #e7e7e7;
+}
+
+#main {
+	width : 1000px;
+	margin : auto;
+	background : url(image/background.png);
+}
+
+#pieContainer {
+	font-family : century gothic;
+	clear : both;
+	height : 700px;
+}
+
+
+#leftMenu, #leftFieldMenu {
+	float : left;
+	width : 20%;
+}
+
+#pieInformation {
+	float : left;
+	width : 60%;
+	margin-top : 25px;
+}
+
+#activityTitle {
+	
+	float : right;
+	background-color : #F4A900;
+	width : 500px;
+	height : 40px;
+	margin : 50px 0;
+}
+
+.title2 {
+	text-align : center;
+	font-size : 25px;
+	color : #4E3908;
+	clear : both;
+	height : 30px;
+}
+
+#leftPie {
+	width : 50%;
+	height : 330px;
+	float : left;
+	position : relative;
+}
+
+#leftPie div , #rightPie div{
+	position : absolute;
+	left : 0px;
+	top : 0px
+	
+}
+
+.turn {
+	z-index : 10;
+	width : 250px;
+	height : 250px;
+	margin : 40px 25px;
+}
+
+.whiteCircle {
+	position : relative;
+	margin : 65px 50px;
+	left : 75px;
+	top : 75px;
+	width : 50px;
+	z-index : 20;
+}
+
+#rightPie{
+	width : 50%;
+	float : right;
+	position : relative;
+}
+
+#rightMenu, #rightFieldMenu {
+	float : right;
+	width : 20%;
+}
+
+.hiddenPercent {
+	position : relative;
+	margin-top : 145px;
+	z-index : 30;
+	width : 150px;
+}
+
+.hiddenPercent img {
+	float : left;
+	height : 40px;
+	z-index : 30;
+}
+
+
+ul {
+	padding : 0px;
+	list-style-type : none;
+}
+
+.sector {
+	clear : both;
+	padding : 0;
+	margin : 0;
+}
+
+.field {
+	width : 600px;
+}
+
+.field div{
+	float : left;
+	text-align: center;
+	width : 150px;
+}
+
+.aSector {
+	display : block;
+	width : 150px;
+	padding : 5px 0;
+	font-weight : bold;
+	background-color : white;
+	cursor : default;
+	font-size : 11px;
+}
+
+.firstLetter {
+	font-size : 16px;
+}
+
+ul.menu li a {
+	margin : 5px 0px;
+	display : block;
+	text-align: center;
+	font-size : 10px;
+	cursor : default;
+
+}
+
+#industrie {
+	color : #4E3908;
+}
+
+#service {
+	color : #F4A900;
+}
+
+#construction {
+	color : #9EB5B2;
+}
+
+#commerce {
+	color : #9D2E26;
+}
+
+#note {
+	color : #999;
+	float : right;
+	font-size : 10px;
+}
+
+.centerArrow {
+	width : 26px;
+	margin : 20px auto;
+	cursor : pointer;
+	}
+	
+ul.menu li a.selectedArea {
+	margin : 10px 0;
+	padding : 4px 0 8px 0;
+	background-image : url(image/menuBar.png);
+	color : #9E3029;
+	height : 17px;
+	font-size : 17px;
+}
+
+.source {
+	clear : both;
+	font-family : century gothic;
+	font-size : 12px;
+}
+
+
+.source2 {
+	font-family : century gothic;
+	font-size : 12px;
+	text-align : right;
+}
+
+#creditContainer {
+	margin-bottom : 400px;
+	height : 500px;
+	font-family : century gothic;
+	font-size : 13px;
+}
+
+#creditContainer a{
+	color : #F4A900;
+}
+
+#banCredit img{
+	margin-left : 30px;
+}
+
+.realisator {
+	float : left;
+}
+
+#licence {
+	clear : left;
+}
+
+.realisator p{
+	text-align : center;
+	margin : 5px 0;
+}
+
+#scienceComRealisator {
+	margin-left : 30px;
+	width : 210px;
+}
+
+#agrRealisator {
+	width : 240px;
+}
+
+#polytechRealisator {
+	width : 270px;
+}
+
+#banHyblab {
+	float : left;
+}
+
+#hyblabLink {
+	float : left;
+	margin : 50px 20px;
+}

@@ -1,0 +1,634 @@
+<html>
+	<head>
+		<title>S.P.O.T.T.E.R.S</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script src="js/jquery-1.8.3.js"></script>	
+		<script src="js/jquery-ui.js" ></script>	
+
+		
+		<!-- Effet toolpit -->
+		<!-- Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="js/jquery.qtip.min.css" />
+
+		<!-- JavaScript - Might want to move these to the footer of the page to prevent blocking-->
+		<script type="text/javascript" src="js/jquery-migrate-1.0.0.js" ></script>
+		<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+				
+		<style>	
+			/* Smartphones (portrait and landscape) ----------- */
+			@media only screen
+			and (min-width : 320px)
+			and (max-width : 480px) {
+				body{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			/* Smartphones (landscape) ----------- */
+			@media only screen
+			and (min-width : 321px) {
+				body{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			/* Smartphones (portrait) ----------- */
+			@media only screen
+			and (max-width : 320px) {
+				body{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			/* iPads (portrait and landscape) ----------- */
+			@media only screen
+			and (min-width : 768px)
+			and (max-width : 1024px) {
+				body{
+					width: 100%;
+					height: 100%;
+				}
+			/* Styles */
+			}
+			/* iPads (landscape) ----------- */
+			@media screen and (device-aspect-ratio: 3/4) 
+			and (orientation : landscape) {
+				body{
+					width: 1024px;
+					height: 768px;
+				}
+			/* Styles */
+			}
+			/* iPads (portrait) ----------- */
+			@media screen and (device-aspect-ratio: 3/4) 
+			and (orientation : portrait) {
+				body{
+					width: 768px;
+					height: 1024px;
+				}
+			/* Styles */
+			}
+			
+			/* iPhone 5 (landscape) ----------- */
+			@media screen and (device-aspect-ratio: 40/71) 			
+			and (orientation : landscape) {
+				body{
+					width: 568px;
+					height: 320px;
+				}
+			}
+			/* iPhone 5 (portrait) ----------- */
+			@media screen and (device-aspect-ratio: 40/71) 			
+			and (orientation : portrait) {
+				body{
+					width: 320px;
+					height: 568px;
+				}
+			}
+			/* Desktops and laptops ----------- */
+			@media only screen
+			and (min-width : 1224px) {
+				body{
+					width: 100%;
+					height: 100%;
+				}
+			/* Styles */
+			}
+			/* Large screens ----------- */
+			@media only screen
+			and (min-width : 1824px) {
+				body{
+					width: 100%;
+					height: 100%;
+				}
+			/* Styles */
+			}
+			/* iPhone 4 ----------- */
+			@media
+			only screen and (-webkit-min-device-pixel-ratio : 1.5),
+			only screen and (min-device-pixel-ratio : 1.5) {
+			/* Styles */
+			}
+		</style>
+		
+	</head>
+	
+	<body style="position:absolute; top:0px; left:0px;" bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="setConfif();">
+		
+		<img id="background" src="images/background.png" width="100%" height="100%" alt="" style="position:absolute; top:0px; left:0px;">
+
+		<div id="div_buildings"> <!-- Bâtiments toutes années confondues -->
+			<!-- batiments 2000 
+				- justice ; - fonderies ; - halles ; - quai ; - chantiers ; - gare
+			-->
+			<div id="div_buildings_2000" style="cursor: pointer;" >
+				<img id="justice" class="building_2000" src="images/batiments/justice_OFF.png" 
+					 width="13.39%" height="16.92%" style="position:absolute; top:-54%; left:7.75%; z-index:1" 
+					 onmouseover="swapOnBat(this);" onmouseout="swapOffBat(this);" onmousedown="loadFiche(this);" alt="not landed"/>
+				<img id="fonderies" class="building_2000" src="images/batiments/fonderies_OFF.png" 
+					 width="10.76%" height="14.71%" style="position:absolute; top:-79%; left:1%; z-index:1" 
+					 onmouseover="swapOnBat(this);" onmouseout="swapOffBat(this);" onmousedown="loadFiche( this );" alt="not landed"/>
+				<img id="halles" class="building_2000" src="images/batiments/halles_OFF.png" 
+					 width="13.25%" height="17.05%" style="position:absolute; top:-53%; left:25%; z-index:5" 
+					 onmouseover="swapOnBat(this);" onmouseout="swapOffBat(this);" onmousedown="loadFiche( this );" alt="not landed"/>
+				<img id="quai" class="building_2000" src="images/batiments/quai_OFF.png" 
+					 width="14.64%" height="25.39%" style="position:absolute; top:-58.5%; left:-3.5%; z-index:1" 
+					 onmouseover="swapOnBat(this);" onmouseout="swapOffBat(this);" onmousedown="loadFiche( this );" alt="not landed"/>
+				<img id="chantiers" class="building_2000" src="images/batiments/chantiers_OFF.png"
+					 width="14.34%" height="17.67%" style="position:absolute; top:-41.75%; left:12.5%; z-index:1" 
+					 onmouseover="swapOnBat(this);" onmouseout="swapOffBat(this);" onmousedown="loadFiche( this );" alt="not landed"/>
+				<img id="gare" class="building_2000" src="images/batiments/gare_OFF.png" 
+					 width="38.50%" height="29.68%" style="position:absolute; top:-59%; left:34%; z-index:1" 
+					 onmouseover="swapOnBat(this);" onmouseout="swapOffBat(this);" onmousedown="loadFiche( this );" alt="not landed"/>
+			</div>
+			
+			<!-- batiments 2009
+				- jardins (à la place des fonderies) ; - machines ; - hangar ; - architecture ; - absence ; 
+			-->
+			<div id="div_buildings_2009" style="cursor: pointer;" >
+				<img id="jardins" class="building_2009" src="images/batiments/jardins_OFF.png" 		
+					 width="11.71%" height="15.36%" style="position:absolute; top:-80.25%; left:1%; z-index:1" 
+					 onmouseover="swapOnBat(this);" onmouseout="swapOffBat(this);" onclick="loadFiche( this );" alt="not landed"/>			
+				<img id="machines" class="building_2009" src="images/batiments/machines_OFF.png" 		
+					 width="10.54%" height="11.59%" style="position:absolute; top:-47.25%; left:28.5%; z-index:5" 
+					 onmouseover="swapOnBat(this);" onmouseout="swapOffBat(this);" onclick="loadFiche( this );" alt="not landed"/>				
+				<img id="hangar" class="building_2009" src="images/batiments/hangar_OFF.png" 		
+					 width="15.52%" height="12.5%" style="position:absolute; top:-37.75%; left:66.75%; z-index:4" 
+					 onmouseover="swapOnBat(this);" onmouseout="swapOffBat(this);" onclick="loadFiche( this );" alt="not landed"/>
+				<img id="architecture" class="building_2009" src="images/batiments/architecture_OFF.png" 	
+					 width="13.39%" height="12.36%" style="position:absolute; top:-62.75%; left:7.50%; z-index:1" 
+					 onmouseover="swapOnBat(this);" onmouseout="swapOffBat(this);" onclick="loadFiche( this );" alt="not landed"/>
+				<img id="absence" class="building_2009" src="images/batiments/absence_OFF.png" 		
+					 width="6%" height="7.68%" style="position:absolute; top:-62%; left:3%; z-index:1" 
+					 onmouseover="swapOnBat(this);" onmouseout="swapOffBat(this);" onclick="loadFiche( this );" alt="not landed"/>
+			</div>
+			
+			<!-- batiments 2012 
+				- trempolino ; - stereolux ; - carrousel
+			-->
+			<div id="div_buildings_2012" style="cursor: pointer;" >
+				<img id="trempolino" class="building_2012" src="images/batiments/trempolino_OFF.png" 
+					 width="8.78%" height="12.10%" style="position:absolute; top:-56%; left:24.5%; z-index:2" 
+					 onmouseover="swapOnBat(this);" onmouseout="swapOffBat(this);" onclick="loadFiche( this );" alt="not landed"/>
+				<img id="stereolux"	 class="building_2012" src="images/batiments/stereolux_OFF.png"  
+					 width="8.20%" height="12.50%" style="position:absolute; top:-53%; left:22.5%; z-index:3" 
+					 onmouseover="swapOnBat(this);" onmouseout="swapOffBat(this);" onclick="loadFiche( this );" alt="not landed"/>
+				<img id="carrousel"	 class="building_2012" src="images/batiments/carrousel_OFF.png"  
+					 width="12.2%" height="13.67%" style="position:absolute; top:-39%; left:30%;   z-index:1" 
+					 onmouseover="swapOnBat(this);" onmouseout="swapOffBat(this);" onclick="loadFiche( this );" alt="not landed"/>
+			</div>
+		</div>
+		
+		<div id="div_pictos" >	<!-- Pictogrammes -->
+			<img id="picto_longboard" 	class="picto" src="images/pictos/picto-OFF_12.png" width="3.5%" height="3.5%" 
+				 style="position:absolute; top:21.5%; left:80%" alt="not selected" name="LongBoard"
+				 onmouseover="swapOnSpots(this);" onmouseout="swapOffSpots(this);" />
+			<img id="picto_skate" 		class="picto" src="images/pictos/picto-OFF_03.png" width="3.5%" height="3.5%" 
+				 style="position:absolute; top:21.5%; left:84%" alt="not selected"  onmouseover="swapOnSpots(this);" name="Skate"
+				 onmouseout="swapOffSpots(this);"/>
+			<img id="picto_graph" 		class="picto" src="images/pictos/picto-OFF_06.png" width="3.5%" height="3.5%" 
+				 style="position:absolute; top:21.5%; left:88%" alt="not selected"  onmouseover="swapOnSpots(this);" name="Graffiti"
+				 onmouseout="swapOffSpots(this);"/>
+			<img id="picto_velo" 		class="picto" src="images/pictos/picto-OFF_08.png" width="3.5%" height="3.5%" 
+				 style="position:absolute; top:21.5%; left:92%" alt="not selected"  onmouseover="swapOnSpots(this);" name="Vélo"
+				 onmouseout="swapOffSpots(this);"/>
+			<img id="picto_roller" 		class="picto" src="images/pictos/picto-OFF_10.png" width="3.5%" height="3.5%" 
+				 style="position:absolute; top:21.5%; left:96%" alt="not selected"  onmouseover="swapOnSpots(this);" name="Roller"
+				 onmouseout="swapOffSpots(this);"/>
+		</div>
+		
+		<div id="div_timeline" style="cursor: pointer;" >	<!-- Boutons de la timeline -->
+			<img id="timeline_2000" src="images/timeline/timeline_2000_OFF.png" width="6%" height="9%" 
+				 style="position:absolute; top:89.75%; left:12.5%" alt="not selected" 
+				 onmouseover="swapOnTimeline(this);" onmouseout="swapOffTimeline(this);" onclick="clickTimeline(this);buldings2000();"/>
+			<img id="timeline_2009" src="images/timeline/timeline_2009_OFF.png" width="6%" height="9%" 
+				 style="position:absolute; top:89.75%; left:23.5%" alt="not selected" 
+				 onmouseover="swapOnTimeline(this);" onmouseout="swapOffTimeline(this);" onclick="clickTimeline(this);buldings2009();"/>
+			<img id="timeline_2012" src="images/timeline/timeline_2012_OFF.png" width="6%" height="9%" 
+				 style="position:absolute; top:89.75%; left:35.5%" alt="not selected" 
+				 onmouseover="swapOnTimeline(this);" onmouseout="swapOffTimeline(this);" onclick="clickTimeline(this);buldings2012();"/>	
+		</div>
+		
+		<!-- Logos des écoles et Partenaires -->
+		<div>
+			<a href="http://www.polytech-nantes.fr/" >
+				<img id="logoPolytechNantes" width="9%" height="3%" src="images/logos/PolytechNantesLogo.png" class="logos"
+					 style="position:absolute;bottom:5%;right:30%;z-index:2000"
+					 name="François GRUAU<br/> Badr HILLAL<br/> Oussama SAMER"/></a>
+			<a href="http://www.sciencescom.org/" >
+				<img id="logoSciencesCom" width="10%" height="5%" src="images/logos/SciencesComLogo.png" class="logos"
+					 style="position:absolute;bottom:0%;right:25%;z-index:2000"
+					 name="Adrien CRETTE<br/>Nikolaus DEPARZKI<br/>Baptiste GABORIT"/></a>
+			<a href="http://www.agrnantes.fr/" >
+				<img id="logoAGR" width="6%" height="4%" src="images/logos/AGRLogo.png" class="logos"
+					 style="position:absolute;bottom:6%;right:22%;z-index:2000"
+					  name="Matzee la FLECHE<br/>Angeline SAVELLI<br/>Charline VERMEULEN"/></a> 
+			<a href="http://www.facebook.com/pages/Green-RAID/185869474868586" >
+				<img id="logoGR" width="10%" height="12%" src="images/logos/GreenRaidLogo.png" class="logos"
+					 style="position:absolute;bottom:0%;right:13%;z-index:2000"
+					 name="Karine NIEGO"/></a>
+			<a href="http://www.paysdelaloire.fr/" >
+				<img id="logoPdlL" width="8%" height="8%" src="images/logos/Pays-de-la-Loire-Logo.png" style="position:absolute;bottom:1.5%;right:6%;z-index:2000"/></a>
+			<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/" >
+				<img id="logoCC" width="4%" height="8%" src="images/logos/ccLogo.png" style="position:absolute;bottom:1%;right:1%;z-index:2000"/></a>
+			</div>	
+	</body>
+</html>
+
+<script>
+
+
+	// recharge la configuration précédente : année et bâtiments
+	function setConfif(){
+		$('html, body').hide();
+		$('html, body').fadeIn(1000, function() {
+			$('a[href], button[href]').click(function(event) {
+				var url = $(this).attr('href');
+				event.preventDefault();
+				$('html, body').fadeOut(speed, function() {
+					window.location = url;
+				});
+			});
+		});
+		
+		var annee = getUrlVars()['annee'];
+		switch( annee )
+		{
+			case 'timeline_2000': buldings2000(); break;
+			case 'timeline_2009': buldings2009(); break;
+			case 'timeline_2012': buldings2012(); break;
+			default: break;
+		}
+		var img = document.getElementById( annee );
+		img.src = img.src.replace("OFF","ON");
+		img.alt = "selected";
+		
+		document.getElementById( "annee" ).name = annee;
+		
+		return false;
+	};
+
+	// Effet de survol pour les boutons timeline
+	// Le champ alt est utilisé pour définir quel est le bouton selectionné
+	function swapOnTimeline(img) {
+		img.src = img.src.replace("OFF","ON");
+		return false;
+	}
+	function swapOffTimeline(img) {
+		if ( img.alt == 'not selected' )
+			img.src = img.src.replace("ON","OFF");
+			
+		return false;
+	}
+	
+	// Effet de survol pour les bâtiments
+	function swapOnBat(img) {
+		img.src = img.src.replace("OFF","ON");
+		return false;
+	}
+	function swapOffBat(img) {
+		img.src = img.src.replace("ON","OFF");
+		return false;
+	}
+		
+	// Effets "survol" sur les pictos + effets survol sur les lieux concernés par l'activité
+	// Tableaux à mettre à jour en fonction des données
+	function swapOnSpots(img) {
+		var spotsLongBoard 	= ["absence", "architecture", "carrousel", "quai", "hangar", "jardins", "justice", "machines", "quai", "stereolux", "trempolino"];			
+		var spotsVelo	 	= ["absence", "carrousel", "jardins", "justice", "machines", "quai", "stereolux", "trempolino"];		
+		var spotsSkate	 	= ["absence", "quai", "carrousel", "halles", "justice", "machines", "quai", "stereolux", "trempolino"];		
+		var spotsGraph		= ["fonderies", "chantiers", "gare", "halles", "quai"];		
+		var spotsRoller	 	= ["absence", "carrousel", "hangar", "justice", "machines", "quai", "stereolux", "trempolino"];		
+		
+		img.src = img.src.replace("OFF","ON");
+		
+		switch( img.id )
+		{
+			case "picto_longboard":
+				for(var spots = 0; spots < spotsLongBoard.length ; spots++){
+					swapOnBat(document.getElementById( spotsLongBoard[spots] ));
+				}
+				break;
+				
+			case "picto_skate":
+				for(var spots = 0; spots < spotsSkate.length ; spots++){
+					swapOnBat(document.getElementById( spotsSkate[spots] ));
+				}
+				break;
+
+			case "picto_graph":
+				for(var spots = 0; spots < spotsGraph.length ; spots++){
+					swapOnBat(document.getElementById( spotsGraph[spots] ));
+				}
+				break;
+
+			case "picto_velo":
+				for(var spots = 0; spots < spotsVelo.length ; spots++){
+					swapOnBat(document.getElementById( spotsVelo[spots] ));
+				}
+				break;
+
+			case "picto_roller":
+				for(var spots = 0; spots < spotsRoller.length ; spots++){
+					swapOnBat(document.getElementById( spotsRoller[spots] ));
+				}
+				break;	
+			
+			default:break;
+		}
+		
+		return false;
+	}
+	function swapOffSpots(img) {
+		var spotsLongBoard 	= ["absence", "architecture", "carrousel", "quai", "hangar", "jardins", "justice", "machines", "quai", "stereolux", "trempolino"];			
+		var spotsVelo	 	= ["absence", "carrousel", "jardins", "justice", "machines", "quai", "stereolux", "trempolino"];		
+		var spotsSkate	 	= ["absence", "quai", "carrousel", "halles", "justice", "machines", "quai", "stereolux", "trempolino"];		
+		var spotsGraph		= ["fonderies", "chantiers", "gare", "halles", "quai"];		
+		var spotsRoller	 	= ["absence", "carrousel", "hangar", "justice", "machines", "quai", "stereolux", "trempolino"];	
+		
+		img.src = img.src.replace("ON","OFF");
+		
+		switch( img.id )	// En fonction du picto survolé
+		{
+			// On enlève l'effet de survol sur les éléments	
+			case "picto_longboard":	
+				for(var spots = 0; spots < spotsLongBoard.length ; spots++){
+					swapOffBat(document.getElementById( spotsLongBoard[spots] ));
+				}
+				break;
+				
+			case "picto_skate":
+				for(var spots = 0; spots < spotsSkate.length ; spots++){
+					swapOffBat(document.getElementById( spotsSkate[spots] ));
+				}
+				break;
+
+			case "picto_graph":
+				for(var spots = 0; spots < spotsGraph.length ; spots++){
+					swapOffBat(document.getElementById( spotsGraph[spots] ));
+				}
+				break;
+
+			case "picto_velo":
+				for(var spots = 0; spots < spotsVelo.length ; spots++){
+					swapOffBat(document.getElementById( spotsVelo[spots] ));
+				}
+				break;
+
+			case "picto_roller":
+				for(var spots = 0; spots < spotsRoller.length ; spots++){
+					swapOffBat(document.getElementById( spotsRoller[spots] ));
+				}
+				break;	
+			
+			default:break;
+		}
+		
+		return false;
+	}
+	
+	// Effets de sélection sur les boutons de la timeline 
+	// - un bouton à la fois
+	// - blocage sur la date + point en orange
+	function clickTimeline(img) {
+		var t1; var t2;
+
+		img.src = img.src.replace("OFF","ON");
+		img.alt = "selected";
+		document.getElementById( "annee" ).name = img.id;;		
+		
+		switch ( img.id ){
+			case "timeline_2000" : 
+				t1 = document.getElementById("timeline_2009");
+				t2 = document.getElementById("timeline_2012");
+				break;
+						
+			case "timeline_2009" : 
+				var t1 = document.getElementById("timeline_2000");
+				var t2 = document.getElementById("timeline_2012");
+				break;
+				
+			case "timeline_2012" : 
+				var t1 = document.getElementById("timeline_2000");
+				var t2 = document.getElementById("timeline_2009");
+				break;
+				
+			default: break;
+		}
+		t1.alt = "not selected";
+		t2.alt = "not selected";		
+		swapOffTimeline(t1);
+		swapOffTimeline(t2);
+			
+		return false;
+    }
+
+	// Fait apparaître/disparaître les bâtiments selon la configuration de l'année
+	function buldings2000(){
+		var batiments2000 = ["justice"    , "fonderies", "halles", "quai"        , "chantiers", "gare",];
+		var batiments2009 = ["jardins"     , "machines" , "hangar", "architecture", "absence"           ];	
+		var batiments2012 = ["trempolino" , "stereolux", "carrousel"                                   ];	
+
+		var batImg = null;
+		
+		// Si les batiments 2012 sont présents : les enlever
+		for( bat = 0; bat < batiments2012.length; bat++){
+			batImg = document.getElementById( batiments2012[bat] );
+			if( batImg.alt == "landed" ){
+				//runEffectBounce( batiments2012[bat] );
+				$("#"+batiments2012[bat]	).delay( 800*bat ).animate({left: "-=10%",top: "-=100%"}, 500, "easeInExpo");
+				batImg.alt = "not landed";
+			}
+		}
+		
+		// Si les batiments 2009 sont présents : les enlever
+		for( bat = 0; bat < batiments2009.length; bat++){
+			batImg = document.getElementById( batiments2009[bat] );
+			if( batImg.alt == "landed" ){
+				//runEffectBounce( batiments2009[bat] );
+				$("#"+batiments2009[bat]	).delay( 800*bat ).animate({left: "-=10%",top: "-=100%"}, 500, "easeInExpo");
+				batImg.alt = "not landed";
+			}
+		}
+		
+		// Ajouter les batiments 2000 non présents : tous ou juste la fonderie
+		for( bat = 0; bat < batiments2000.length; bat++){
+			batImg = document.getElementById( batiments2000[bat] );
+			if( batImg.alt == "not landed" ){
+				$("#"+batiments2000[bat]	).delay( 800*bat ).animate({left: "+=10%",top: "+=100%"}, 500, "easeInExpo");
+				runEffectBounce( batiments2000[bat] );
+				batImg.alt = "landed";
+			}
+
+		}
+		return false;
+	}
+	
+	// Fait apparaître/disparaître les bâtiments selon la configuration de l'année
+	function buldings2009(){
+		var batiments2000 = ["justice"    , "fonderies", "halles", "quai"        , "chantiers", "gare",];
+		var batiments2009 = ["jardins"     , "machines" , "hangar", "architecture", "absence"           ];	
+		var batiments2012 = ["trempolino" , "stereolux", "carrousel"                                   ];
+		
+		var batImg = null;
+		
+		// Si les batiments 2012 sont présents : les enlever		
+		for( bat = 0; bat < batiments2012.length; bat++){
+			batImg = document.getElementById( batiments2012[bat] );
+			if( batImg.alt == "landed" ){
+				//runEffectBounce( batiments2012[bat] );
+				$("#"+batiments2012[bat]	).delay( 800*bat ).animate({left: "-=10%",top: "-=100%"}, 500, "easeInExpo");
+				batImg.alt = "not landed";
+			}
+		}		
+
+		// Si la fonderie est présente : l'enlever
+		batImg = document.getElementById( "fonderies" );
+		if( batImg.alt == "landed" ){
+			//runEffectBounce( "fonderies" );
+			$( "#fonderies" ).animate({left: "-=10%",top: "-=100%"}, 500, "easeInExpo");
+			batImg.alt = "not landed";
+		}
+	
+		// Ajouter les batiments 2000 non présents : tous SAUF la fonderie		
+		for( bat = 0; bat < batiments2000.length; bat++){
+			batImg = document.getElementById( batiments2000[bat] );
+			if( batImg.alt == "not landed" && batImg.id != "fonderies"){
+				$( "#"+batiments2000[bat] ).delay( 800*bat ).animate({left: "+=10%",top: "+=100%"}, 500, "easeInExpo");
+				runEffectBounce( batiments2000[bat] );
+				batImg.alt = "landed";
+			}
+		}
+		
+		// Ajouter les batiments 2009 non présents : tous 	
+		for( bat = 0; bat < batiments2009.length; bat++){
+			batImg = document.getElementById( batiments2009[bat] );
+			if( batImg.alt == "not landed" ){
+				$("#"+batiments2009[bat]	).delay( 800*bat ).animate({left: "+=10%",top: "+=100%"}, 500, "easeInExpo");
+				runEffectBounce( batiments2009[bat] );
+				batImg.alt = "landed";
+			}
+
+		}
+		
+		return false;
+	}
+
+	// Fait apparaître/disparaître les bâtiments selon la configuration de l'année
+	function buldings2012(){
+		var batiments2000 = ["justice"    , "fonderies", "halles", "quai"        , "chantiers", "gare",];
+		var batiments2009 = ["jardins"     , "machines" , "hangar", "architecture", "absence"           ];	
+		var batiments2012 = ["trempolino" , "stereolux", "carrousel"                                   ];
+
+		var batImg = null;
+
+		// Si la fonderie est présente : l'enlever
+		batImg = document.getElementById( "fonderies" );
+		if( batImg.alt == "landed" ){
+			//runEffectBounce( "fonderies" );
+			$( "#fonderies" ).animate({left: "-=10%",top: "-=100%"}, 500, "easeInExpo");
+			batImg.alt = "not landed";
+		}
+		
+		// Ajouter les batiments 2000 non présents : tous SAUF la fonderie		
+		for( bat = 0; bat < batiments2000.length; bat++){
+			batImg = document.getElementById( batiments2000[bat] );
+			if( batImg.alt == "not landed" && batImg.id != "fonderies"){
+				$( "#"+batiments2000[bat] ).delay( 800*bat ).animate({left: "+=10%",top: "+=100%"}, 500, "easeInExpo");
+				runEffectBounce( batiments2000[bat] );
+				batImg.alt = "landed";
+			}
+		}
+		
+		// Ajouter les batiments 2009 non présents : tous 	
+		for( bat = 0; bat < batiments2009.length; bat++){
+			batImg = document.getElementById( batiments2009[bat] );
+			if( batImg.alt == "not landed" ){
+				$("#"+batiments2009[bat]	).delay( 800*bat ).animate({left: "+=10%",top: "+=100%"}, 500, "easeInExpo");
+				runEffectBounce( batiments2009[bat] );
+				batImg.alt = "landed";
+			}
+
+		}
+		
+		// Ajouter les batiments 2012 non présents : tous 	
+		for( bat = 0; bat < batiments2012.length; bat++){
+			batImg = document.getElementById( batiments2012[bat] );
+			if( batImg.alt == "not landed" ){
+				$("#"+batiments2012[bat]	).delay( 800*bat ).animate({left: "+=10%",top: "+=100%"}, 500, "easeInExpo");
+				runEffectBounce( batiments2012[bat] );
+				batImg.alt = "landed";
+			}
+
+		}
+		
+		return false;
+	}
+		
+	// Applique un effet sur un élément en fonction de son id
+	function runEffectBounce( id ) {
+		$( "#"+id ).effect( "bounce", {}, 500 );
+    };
+	function runEffectPuff( id ) {
+		$( "#"+id ).effect( "puff", {}, 500 );
+    };
+
+	// redirige vers la bonne fiche bâtiment avec l'année en URL
+	function loadFiche( img ){
+		var url_final = "fichesBatiments/" + img.id + ".html?annee=" + document.getElementById( "annee" ).name;
+		
+				$('html, body').fadeOut(1000, function() {
+					window.location = url_final;
+				});
+		return false;
+	};
+
+	// Récupère les variables GET
+	function getUrlVars() {
+		var vars = {};
+		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+			vars[key] = value;
+		});
+		return vars;
+	}
+
+</script>
+	<script  type="text/javascript">
+	// Create the tooltips only when document ready 
+	$(document).ready(function()
+	{
+		// We'll target all AREA elements with alt tags (Don't target the map element!!!) 
+		$('.logos').qtip(
+		{
+			content: {
+				attr: 'name', // Use the NAME attribute of the area map for the content 
+				title: {
+					text: 'Equipe'
+				}
+			},
+			position: {
+				my: 'bottom center', // Use the corner...  
+				at: 'top center' // ...and opposite corner  
+			},
+			style: {
+				classes: 'qtip-tipped' 
+			}
+		});
+		
+		$('.picto').qtip(
+				{
+					content: {
+						attr: 'name', // Use the NAME attribute of the area map for the content 
+					},
+					position: {
+						my: 'bottom center', // Use the corner...  
+						at: 'top center' // ...and opposite corner  
+					},
+					style: {
+						classes: 'qtip-dark' 
+					}
+				});
+	});
+	</script>
+<a id="annee" name="2000"></a>

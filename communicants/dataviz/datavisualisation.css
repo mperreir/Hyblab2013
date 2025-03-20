@@ -1,0 +1,99 @@
+#holder { /*position: absolute;
+	top: -70px;
+	left: 400px;*/
+    margin-top: 4em;
+}
+
+#holderUnique { /*position: absolute;
+	top: 30px;
+	left: 470px;*/
+
+    margin-top: 4em;
+}
+
+#holder2 { /*position: absolute;
+	top: -70px;
+	left: 675px;*/
+    margin-top: 4em;
+
+}
+
+.texteDataviz {
+	line-height: 290px;
+	height: 290px;
+	margin-top: 70px;
+	width: 200px;
+	font-family: Verdana;
+	font-size: 10pt;
+	text-align: jutify;
+}
+
+.texteDataviz>p {
+	vertical-align: middle;
+	line-height: 1.2;
+	display: inline-block;
+}
+.texteDataviz>span {
+	vertical-align: middle;
+	line-height: 1.2;
+	display: inline-block;
+}
+
+.textSousHorloge1 { /*position: absolute;
+	top: 200px;
+	left: 530px;*/
+	font-family: Verdana;
+	font-size: 8pt;
+	text-align: left;
+}
+
+.textSousHorloge1unique { /*position: absolute;
+	top: 320px;
+	left: 525px;*/
+	font-family: Verdana;
+	font-size: 8pt;
+	text-align: left;
+}
+
+.textSousHorloge2 { /*position: absolute;
+	top: 200px;
+	left: 820px;*/
+	font-family: Verdana;
+	font-size: 8pt;
+	text-align: left;
+}
+
+.textExplicatif1 { /*position: absolute;
+	top: 260px;
+	left: 520px;*/
+	font-family: Verdana;
+	text-align: left;
+	color: #FBAE31;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+.textExplicatif2 { /*position: absolute;
+	top: 260px;
+	left: 800px;*/
+	font-family: Verdana;
+	text-align: left;
+	color: #FBAE31;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+.menuIntegre { /*position: absolute;
+	top: 300px;
+	left: 700px;*/
+
+}
+
+.elementmenu img {
+	padding-left: 20px;
+	cursor: pointer;
+}
+
+.lead2 {
+	font-weight: bold;
+}

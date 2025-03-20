@@ -1,0 +1,201 @@
+#companyContainer {
+	clear : both;
+	font-family : century gothic;
+}
+
+#companyTitle {
+	float : left;
+	width : 500px;
+	height : 40px;
+	background-color : #9D2E26;
+	margin-top : 50px;
+}
+
+#leftFieldMenu {
+	clear : both;
+}
+
+#companyInformation {
+	float : left;
+	width : 60%;
+
+}
+
+#leftCompany, #rightCompany {
+	float : left;
+	width : 50%;
+	position : relative;
+}
+
+#leftCompanyNumber, #rightCompanyNumber {
+	background :url(image/institutionbox.png);
+	height : 54px;
+	width : 164px;
+	position : absolute;
+	
+}
+
+#rightCompanyNumber {
+	left : 136px;
+}
+
+#leftCompanyNumber p, #rightCompanyNumber p {
+	color :#9D2E26;
+	text-align : center;
+	margin : 0;
+}
+
+.etablissement {
+	font-size : 13px;
+}
+
+.numberOfInstitution {
+	font-weight : bold;
+	font-size : 30px;
+}
+
+#leftCompanyCircle {
+	float : right;
+	margin-right : 5px;
+	
+}
+
+#rightCompanyCircle{
+	float : left;
+	margin-left : 5px;
+}
+
+#leftCompanyCircle img, #rightCompanyCircle img{
+	height : 350px;
+}
+
+#leftCompanyPercent, #rightCompanyPercent {
+	height : 50px;
+	clear : both;
+}
+
+#leftCompanyPercent div {
+	float : right;
+	margin-right : 50px;
+}
+
+#rightCompanyPercent div {
+	margin-left : 50px;
+}
+
+.hiddenCompanyPercent {
+	display : none;
+	clear : both;
+}
+
+.hiddenCompanyPercent img{
+	height : 30px;
+}
+
+
+#rightTargetCompany img, #leftTargetCompany img {
+	height : 131px;
+	margin-left : 33px;
+	z-index : 10;
+}
+
+#rightTargetCompany, #leftTargetCompany {
+	width : 100%;
+	position : relative;
+	clear : both;
+}
+
+#leftLightTargetCompany, #leftDarkTargetCompany, #rightLightTargetCompany, #rightDarkTargetCompany{
+	padding : 8px 0;
+	width : 185px;
+}
+
+#leftLightTargetCompany, #rightLightTargetCompany {
+	position : absolute;
+	top : 50px;
+	left : 70px;
+}
+
+#leftDarkTargetCompany, #rightDarkTargetCompany {
+	position : absolute;
+	top : 85px;
+	left : 70px;
+}
+
+#leftLightTargetCompany p, #leftDarkTargetCompany p, #rightLightTargetCompany p, #rightDarkTargetCompany p{
+	float : left;
+	margin : 0 5px;
+	font-size : 13px;
+	cursor : default;
+}
+
+.lightBleuSquare {
+	background-color : #469bd9;
+	width : 17px;
+	height : 17px;
+	z-index : 20;
+	float : left;
+}
+
+.darkBleuSquare {
+	background-color : #3d7d9b;
+	width : 17px;
+	height : 17px;
+	float : left;
+}
+
+.lightYellowSquare {
+	background-color : #fbd524;
+	width : 17px;
+	height : 17px;
+	float : left;
+}
+
+.darkYellowSquare {
+	background-color : #f4a900;
+	width : 17px;
+	height : 17px;
+	float : left;
+}
+
+#companyLeftArticle {
+	margin-top : 150px;
+	position : relative;
+	height : 200px;
+}
+
+#bubbleCompanyTransfer, #bubbleCompanyInstitution {
+	height : 250px;
+	position : absolute;
+	z-index : 10;
+}
+
+#bubbleCompanyTransferPlus {
+	height : 30px;
+	position : absolute;
+	top : 5px;
+	left : 80px;
+	z-index : 20;
+	cursor : pointer;
+}
+
+#companyRightArticle {
+	margin-top : 50px;
+	position : relative;
+	height : 200px;
+	
+	width : 100%
+}
+
+#bubbleCompanyInstitution {
+	left : 48px;
+}
+
+#bubbleCompanyInstitutionPlus {
+	height : 30px;
+	position : absolute;
+	z-index : 20;
+	cursor : pointer;
+	top : 220px;
+	left : 90px;
+}

@@ -1,0 +1,382 @@
+#page {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+*{
+	font-family: arial;
+}
+
+.ecart{
+	height:50px;
+}
+
+/*Titres*/
+#titrePrincipal{
+	font-size:1.4em;
+	color:rgb(134,133,133);
+	font-weight:bold;
+	position:relative;
+	top:8em;
+	margin-left:17em;
+}
+
+div.petitTitre{
+	height:60px;
+	background-repeat:no-repeat;
+}
+
+p.petitTitre{
+	font-size:1.1em;
+	font-weight:bold;
+	color:white;
+	position:relative;
+	left:160px;
+	top:17px;
+}
+
+#articleTitre{
+	font-size:28px;
+	font-weight:bold;
+	color:white;
+	position:relative;
+	left:100px;
+	top:15px;
+}
+
+.mtTitre{
+	font-size:24px;
+	font-weight:bold;
+	color:white;
+	position:relative;
+	left:160px;
+	top:15px;
+}
+
+span.commentaire{
+	font-size:15px;
+	font-weight:bold;
+	color:rgb(16,140,149);
+}
+
+div.commentaire{
+	position:relative;
+	left:150px;
+}
+
+/*Compteur*/
+.compteur{
+	height:350px;
+	margin-left:130px;
+	margin-top:150px;
+	text-align:center;
+	
+}
+
+#compteurPlein{
+	margin-top:-159px;
+	visibility:hidden;
+}
+
+img[id*=compt1]{
+	position:relative;
+}
+
+img[id*=compt2]{
+	position:relative;
+	left:130px; 
+	top:78px;
+	
+}
+
+img[id*=compt3]{
+	position:relative;
+	right:146px;
+	top:66px;
+}
+
+img[id*=compt4]{
+	position:relative;
+	right:294px;
+	top:79px;
+}
+
+
+/*dataviz carte flux*/
+.bout{
+	float:right;
+}
+
+.barre{
+	float:right;
+	width:75px;
+	height:42px;
+}
+
+.pourcent{
+	position:relative;
+	float:right;
+	right:5px;
+	margin-left:-80px;
+	margin-top:10px;
+	width:80px;
+	color:white;
+	font-weight:bold;
+	font-size:20px;
+}
+
+
+.fleche{
+	position:absolute;
+	visibility:hidden;
+}
+
+.interr{
+	position:absolute;
+	margin-left:100px;
+	margin-top:-7px;
+	cursor:help;
+}
+
+.onglets{
+	display:block;
+	margin-top:5px;
+	cursor:pointer;
+	
+}
+
+.aide{
+	position:absolute;
+	margin-top:-80px;
+	font-size:12px;
+	width:118px;
+	height:60px;
+	color:white;
+	visibility:hidden;
+	text-align:center;
+	padding:5px;
+}
+
+tr.flux{
+	height:70px;
+}
+
+td.flux{
+	text-align:right;
+}
+
+/*dataviz frequentation*/
+#transpTxt{
+	position:absolute;
+	margin-top:239px;
+}
+#busTxt{
+	margin-left:69px;
+	margin-top:-2px;
+}
+#buswayTxt{
+	margin-left:21px;
+	margin-top:-1px;
+}
+#tramTxt{
+	margin-left:63px;
+	margin-top:1px;
+}
+.boutFreq{
+    float:left;
+}
+
+.barreFreq{
+    float:left;
+    width:70px;
+    height:63px;
+}
+
+.valFreq{
+    position:absolute;
+    margin-left:55px;
+    margin-top:20px;
+    width:80px;
+    color:white;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.annee{
+    position:absolute;
+    margin-left:172px;
+    margin-top:150px;
+    color:rgb(242,205,48);
+    font-weight:bold;
+    font-size:50px;
+}
+
+.bouton{
+    cursor:pointer;
+}
+
+#comFreq{
+	font-size:9px;
+	color:rgb(134,133,133);
+	font-weight:bold;
+	position:relative;
+	margin-left:26px;
+	top:10px;
+}
+
+/*Sondages*/
+.texteCouleur{
+	margin-left:5px;
+	margin-bottom:20px;
+	visibility:hidden;
+}
+
+.poR, .poO{
+	position:relative;
+}
+
+#po4R,#po5R,#po6R,#po7R,#po8R,#po9R,#po5O,#po6O,#po7O,#po8O,#po9O{
+	bottom:35px;
+}
+
+/*Article*/
+#articleTiret{
+	margin-left:134px;
+	margin-top:-17px;	
+}
+
+.fondArrondie {
+	border-radius:10px;
+	width:801px;
+}
+
+.ecartArticle{
+	height:20px;
+}
+
+.texteArticle{
+	text-align:justify;
+	color:rgb(73,72,72);
+	margin-left:70px;
+	margin-right:70px;
+	line-height:1.2;
+}
+
+#dictonA{
+	font-size:16px;
+	font-weight:bold;
+}
+#introA{
+	font-size:15px;
+	font-weight:normal;
+}
+.questionA{
+	font-size:15px;
+	font-weight:bold;
+}
+
+.reponseA{
+	font-size:14px;
+	font-style:italic;
+}
+
+/*Micro Trottoir*/
+.mtFond{
+	text-align:center;
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+#mtTexte{
+	height:298px;
+	margin-left:20px;
+}
+
+tr.mtQues{
+	height:117px;
+	text-align:left;
+}
+p.mtQues{
+	position: relative;
+	margin-right:80px;
+}
+
+#mtQues1{
+	font-size:18px;
+	font-weight:bold;
+	color:rgb(134,133,133);
+}
+
+#mtQues2{
+	font-size:18px;
+	font-weight:bold;
+	color:rgb(64,190,206);
+}
+
+#mtRep{
+	height:177px;
+	vertical-align:bottom;
+}
+
+#texteReponses{
+	text-align:justify;
+	position: relative; 
+	margin-right:20px;
+	margin-bottom:20px;
+	margin-top:0px;
+	font-size:14px;
+	font-weight:normal;
+	color:rgb(134,133,133);
+}
+
+#flecheG{
+	position: relative;
+	right:350px;
+	bottom:170px;
+}
+
+#flecheD{
+	position: relative;
+	left:350px;
+	bottom:170px;
+}
+/*Sources*/
+div.source{
+	text-align:center;
+	width:960px;
+	height:67px;
+	margin-left:auto;
+	margin-right:auto;
+	background-repeat: no-repeat;
+	background-position:center;
+}
+span.source{
+	font-weight:bold;
+	font-size:16px;
+	color:rgb(64,190,206);
+}
+
+a.source{
+	font-size:14px;
+	color:rgb(134,133,133);
+}
+	
+/*Logos*/
+.logo{
+	text-align:center;
+	color:rgb(64,190,206);
+	font-size:11px;
+}
+
+.logoB{
+	font-weight:bold;
+}
+
+.logoR{
+	font-weight:normal;
+}
+
+.lien{
+	text-decoration:none;
+}

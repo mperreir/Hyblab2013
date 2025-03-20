@@ -1,0 +1,145 @@
+@CHARSET "ISO-8859-1";
+
+#fenetre{
+	width:1100px;
+	background-color:#f9f3eb;
+}
+
+.text {
+	color: #e0b435; 
+	font-size: 12pt;
+	font-family:"Verdana";
+	height:5px;
+	
+}
+#titre{
+	left:0px;
+	position:relative;
+	height:130px;
+	width:100%;
+	
+}
+
+
+#timeline{
+	width:100%;
+}
+
+
+
+#polytech{
+	position:absolute;
+	top:30px;
+	left:0
+}
+
+#sciencecom{
+	position:absolute;
+	top:30px;
+	left:70px;
+}
+#agr{
+	position:absolute;
+	top:30px;
+	left:140px;
+}
+#resume{
+	position:absolute;
+	left:210PX;
+	top:15px;
+	width:50%;
+	height:100px;
+}
+#entete {
+	position:relative;
+	height:150px;
+	width:100%
+}
+
+#centre {
+	position:relative
+}
+
+.Nombouton{
+	color: #e0b435; 
+	font-size: 12pt;
+	font-family:"Verdana";
+	height:5px;
+	position:absolute;
+	top:-10px;
+	left:0;
+}
+#bouton{
+	position:relative;
+	width:545px;
+	height:500px;
+	z-index:40;
+}
+.bouton{
+	position:relative;
+	margin-top:10px;
+	margin-left:344px
+	
+}
+#dataviz{
+	position: absolute;
+	margin-left:406px;
+	top:0;
+	width:500px;
+	height:400px;
+}
+
+b{
+	height:18px;
+}
+
+#financement,#viesurleNet ,  #paran{
+	position:relative;
+    width:500px;
+    height:375px;
+    margin-top:-12600px;
+    margin-left:-11500px;
+    overflow:visible;
+	text-align:center
+}
+
+
+#basdepage{
+	position: relative;
+	width:100%;
+	text-align:right;
+	height:150px;
+	bottom:-40px;
+}
+ #telenantes {
+ 	position: absolute;
+ 	top:20px;
+ 	right:700px
+ 	
+ }
+ 
+ #microtrotoir{
+	position:relative;
+	top:30px;
+ 	width:100%
+ }
+ #titrefreq{
+ 	position:relative;
+ 	top:20px
+ }
+ #legende{
+ 	position:absolute;
+ 	bottom:-40px;
+ 	right:0px;
+ 	font-family:Verdana;
+ 	font-size: 8pt;
+ 	color: #e0b435
+ 	
+ }
+ 
+.question{
+ 	position: relative;
+ 	left: 50px;
+ 	height:5px;
+ 	
+ }

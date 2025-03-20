@@ -1,0 +1,58 @@
+body {
+  font: 15px 'Helvetica Neue' Arial
+}
+
+#canvas {
+  margin-left: -39px;
+  width: 390px;
+  height: 210px;
+ /* background: #eee;*/
+  position: relative;
+  /*border-right: 60px solid #EEE;*/
+ 
+}
+#legend{
+	margin-top: 20px;
+ 	width: 390px;
+  	height: 0px;
+  	position: relative;
+  	border-right: 60px solid #EEE;
+  	margin-top: -162px;
+	}
+.bar {
+  -moz-transition-duration: 0.8s;
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  position: absolute;
+  bottom: 0px;
+  background: steelblue;
+  opacity: 0.7;
+}
+
+.bar:hover { opacity: 1.0; }
+
+.bar .label {
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.bar .value {
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.steanne1987, .republique1987 , .mangin1987, .beaulieu1987 {
+	background: #9C9DA0;
+	color:#9C9DA0;
+	}
+.colorsteanne1987, .colorrepublique1987 , .colormangin1987, .colorbeaulieu1987 {
+	color:#9C9DA0;
+	}

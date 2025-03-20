@@ -1,0 +1,55 @@
+#headerContainer {
+	height : 170px;
+}
+
+#headerMenu {
+	
+	width : 1000px;
+	font-family : century gothic;
+	z-index : 50;
+}
+
+#headerMenu.floatable {
+	top : 0px;
+	position : fixed;
+}
+
+#headerMenu div{
+	float : left;
+	text-align: center;
+	width : 250px;
+
+}
+
+#headerMenu div a{
+	text-align : center;
+	display : block;
+	width : 250px;
+	padding : 5px 0;
+	font-size : 15px;
+	font-weight : bold;
+	cursor : pointer;
+	color : white;
+}
+
+#headerMenu1 a{
+	background-color : #9EB5B2;
+}
+#headerMenu2 a{
+	background-color : #9D2E26;
+}
+#headerMenu3 a{
+	background-color : #F4A900;
+}
+#headerMenu4 a{
+	background-color : #4E3908;
+}
+
+#shadow {
+	clear : both;
+}
+
+#shadow img {
+	width : 1000px;
+	height : 15px;
+}

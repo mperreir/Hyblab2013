@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+
+
+		<link type ="text/css" rel="stylesheet" href="mapCss.css" />
+		<link type ="text/css" rel="stylesheet" href="myCss.css" />
+		<link type ="text/css" rel="stylesheet" href="headerCss.css" />
+		<link type ="text/css" rel="stylesheet" href="companyCss.css" />
+		<link type ="text/css" rel="stylesheet" href="lightbox.css" />
+
+		<title>Coeur Economique</title>
+		<script>
+function companyPercent() { return {"field5":{"creation":"28.87","transfer":"17.52","employe":"25.69","company50":"0.82","institution":"1386"},"field4":{"creation":"23.98","transfer":"17.47","employe":"24.48","company50":"1.14","institution":"511"},"field3":{"creation":"25.89","transfer":"18.05","employe":"28.03","company50":"0.68","institution":"2458"},"field2":{"creation":"19.45","transfer":"50.85","employe":"40.45","company50":"0.90","institution":"5718"},"field10":{"creation":"26.82","transfer":"14.65","employe":"34.94","company50":"1.36","institution":"1637"},"field9":{"creation":"28.38","transfer":"18.72","employe":"34.71","company50":"3.48","institution":"1134"},"field8":{"creation":"30.61","transfer":"18.48","employe":"28.21","company50":"0.56","institution":"1597"},"field12":{"creation":"26.81","transfer":"18.77","employe":"32.99","company50":"1.52","institution":"19054"},"field7":{"creation":"28.79","transfer":"19.52","employe":"37.80","company50":"1.90","institution":"1258"},"field11":{"creation":"33.72","transfer":"14.64","employe":"34.57","company50":"2.33","institution":"738"},"field6":{"creation":"21.26","transfer":"31.08","employe":"45.98","company50":"3.14","institution":"1393"},"field1":{"creation":"27.18","transfer":"15.50","employe":"24.99","company50":"0.42","institution":"1024"}};}
+
+
+function fieldPercent() { return {"field5":{"services":"73.01","industrie":"4.81","construction":"6.06","commerce":"16.12"},"field4":{"services":"68.94","industrie":"6.39","construction":"9.44","commerce":"15.23"},"field3":{"services":"79.17","industrie":"4.02","construction":"4.32","commerce":"12.50"},"field2":{"services":"71.53","industrie":"3.94","construction":"3.43","commerce":"21.09"},"field10":{"services":"58.76","industrie":"6.32","construction":"12.58","commerce":"22.34"},"field9":{"services":"71.93","industrie":"5.19","construction":"7.82","commerce":"15.05"},"field8":{"services":"72.74","industrie":"5.92","construction":"6.87","commerce":"14.47"},"field12":{"services":"68.81","industrie":"5.40","construction":"8.20","commerce":"17.59"},"field7":{"services":"58.76","industrie":"7.89","construction":"14.54","commerce":"18.81"},"field11":{"services":"65.81","industrie":"4.07","construction":"13.25","commerce":"16.87"},"field6":{"services":"63.91","industrie":"5.00","construction":"4.24","commerce":"26.85"},"field1":{"services":"72.33","industrie":"5.89","construction":"7.65","commerce":"14.13"}};}
+
+</script>
+
+	</head>
+	<body>
+		<div id="main">
+			<div id="headerContainer">
+				<div>
+					<img src="image/header.png" alt="Titre" />
+				</div>
+				<div id="headerMenu">
+					<div id="headerMenu1">
+						<a>Nantes et les emplois</a>
+					</div>
+					<div id="headerMenu2">
+						<a>Les entreprises et établissements</a>
+					</div>
+					<div id="headerMenu3">
+						<a>Les secteurs d'activités</a>
+					</div>
+					<div id="headerMenu4">
+						<a>Crédits</a>
+					</div>
+					<div id="shadow">
+						<img src="image/shadow.png" />
+					</div>
+				</div>
+
+			</div>
+			<div id="mapContainer">
+				<div id="map">
+					<img id="district1" class="hiddenMap" src="image/mapContainer/district1.png" alt="quartier1" usemap="#Map"/>
+					<img id="district2" class="hiddenMap" src="image/mapContainer/district2.png" alt="quartier2" usemap="#Map"/>
+					<img id="district3" class="hiddenMap" src="image/mapContainer/district3.png" alt="quartier3" usemap="#Map"/>
+					<img id="district4" class="hiddenMap" src="image/mapContainer/district4.png" alt="quartier4" usemap="#Map"/>
+					<img id="district5" class="hiddenMap" src="image/mapContainer/district5.png" alt="quartier5" usemap="#Map"/>
+					<img id="district6" src="image/mapContainer/district6.png" alt="quartier6" usemap="#Map"/>
+					<img id="district7" class="hiddenMap" src="image/mapContainer/district7.png" alt="quartier7" usemap="#Map"/>
+					<img id="district8" class="hiddenMap" src="image/mapContainer/district8.png" alt="quartier8" usemap="#Map"/>
+					<img id="district9" class="hiddenMap" src="image/mapContainer/district9.png" alt="quartier9" usemap="#Map"/>
+					<img id="district10" class="hiddenMap" src="image/mapContainer/district10.png" alt="quartier10" usemap="#Map"/>
+					<img id="district11" class="hiddenMap" src="image/mapContainer/district11.png" alt="quartier11" usemap="#Map"/>
+					<map name="Map" id="Map">
+						<area class="nantesArea" name="district7" shape="poly" coords="42,429,24,434,63,444,118,463,172,411,197,398,214,372,200,375,164,359,139,359,113,352,93,384,85,414,66,431" href="#" />
+						<area class="nantesArea" name="district8" shape="poly" coords="113,348,141,356,165,355,201,371,216,369,225,365,216,341,209,333,212,326,205,318,198,311,182,307,178,294,168,288,156,289,149,277,133,292,130,323" href="#" />
+						<area class="nantesArea" name="district1" shape="poly" coords="152,275,158,287,168,285,181,293,184,300,192,283,219,276,246,258,246,247,255,235,267,231,250,222,234,221,228,216,216,214,212,205,191,220,176,236,191,253,177,266" href="#" />
+						<area class="nantesArea" name="district11" shape="poly" coords="212,201,217,210,230,213,235,218,250,219,270,229,289,224,315,181,305,173,278,158,276,135,266,110,241,105,203,99,180,89,170,94,216,177" href="#" />
+						<area class="nantesArea" name="district3" shape="poly" coords="184,304,194,286,220,279,251,259,249,247,261,236,288,227,282,244,282,272,266,291,273,314,260,318,248,326,242,325,218,339,213,332,215,326,200,308" href="#" />
+						<area class="nantesArea" name="district2" shape="poly" coords="220,341,227,363,251,362,277,368,303,357,287,339,274,317,261,321,249,330,241,328" href="#" />
+						<area class="nantesArea" name="district5" shape="poly" coords="279,304,292,332,298,333,314,353,337,350,377,332,372,317,332,269,293,259,294,277,281,291" href="#" />
+						<area class="nantesArea" name="district9" shape="poly" coords="292,254,324,264,341,238,385,187,415,167,413,154,407,151,424,131,435,111,407,99,411,76,406,58,413,50,413,15,394,19,380,10,369,16,361,17,355,23,366,44,371,69,366,91,345,118,335,128,337,159,328,179,324,199,305,221" href="#" />
+						<area class="nantesArea" name="district10" shape="poly" coords="328,264,334,265,374,314,380,329,431,311,477,287,462,259,466,229,448,211,447,202,438,179,448,165,447,150,387,190,344,240" href="#" />
+						<area class="nantesArea" name="district4" shape="poly" coords="283,424,288,430,303,428,318,450,327,473,367,488,366,471,384,458,346,445,348,427,332,420,344,406,341,402" href="#" />
+					</map>
+					<div id="nantesIsland">
+						<img src="image/plus.png" />
+					</div>
+					<div id="nantesIslandMap">
+						<img id="island1" src="image/mapContainer/island1.png" usemap="#mapIsland" />
+						<img id="island2" class="hiddenIslandMap" src="image/mapContainer/island2.png" usemap="#mapIsland" />
+						<img id="island3" class="hiddenIslandMap" src="image/mapContainer/island3.png" usemap="#mapIsland" />
+						<img id="island4" class="hiddenIslandMap" src="image/mapContainer/island4.png" usemap="#mapIsland" />
+						<img id="island5" class="hiddenIslandMap" src="image/mapContainer/island5.png" usemap="#mapIsland" />
+						<map name="mapIsland" id="mapIsland">
+						  <area class="islandArea" name="island2" shape="poly" coords="90,165,111,135,140,117,160,151,204,147,215,151,226,161,205,181,244,183,236,204,160,204,83,201" href="#" />
+						  <area class="islandArea" name="island3" shape="poly" coords="142,117,162,150,208,146,215,149,230,161,210,180,247,182,264,172,246,129,219,125,172,112" href="#" />
+						  <area class="islandArea" name="island4" shape="poly" coords="249,129,268,174,250,182,244,188,238,203,285,200,328,182,295,112" href="#" />
+						  <area class="islandArea" name="island5" shape="poly" coords="295,109,331,183,385,155,455,88,484,43,443,66,371,91,331,98" href="#" />
+						</map>
+					</div>
+				</div>
+				<div id="employmentTitle">
+					<img src="image/employmentTitle.png" alt="Nantes et les emplois" />
+				</div>
+				<div class="source2">
+					<p>Source INSEE Clap 2009</p>
+				</div>
+				<div id="employmentArticle">
+					<img src="image/bubble/employment.png" />
+					<div id="employmentHiddenInfo">
+                        <a href="image/article/Article1.png" rel="lightbox">
+                            <img src="image/plus.png" />
+                        </a>
+                        <p class="source">
+                        <br/>Plus d’infos dans La Lettre API :
+                        <a href="http://www.agence-api.fr/actualite/lettre-2612/information-137359.html?partage=bfb8de49ea3526dcda8acc66450e62c7" target="_blank">
+                        Immobilier : la phase 2 d'Euronantes s'engage avec deux nouveaux immeubles
+                        </a>
+                        </p>
+					</div>
+					<div id="hiddenEmploymentArt">
+						<p></p>
+					</div>
+				</div>
+			</div>
+
+			<div id="companyContainer">
+				<div id="companyTitle">
+					<img src="image/companyTitle.png" alt="les entreprises et établissements" />
+				</div>
+				<div class="source">
+					<p>Source Insee Sirene Établissements marchands non agricoles 2010 </p>
+				</div>
+				<div class="title2">
+				</div>
+				<div id="leftFieldMenu">
+					<div class="centerArrow" name="up">
+						<a><img src="image/upArrow.png" alt="flecheMontante" /></a>
+					</div>
+					<ul id="leftCompanyMenu" class="menu">
+						<li><a>Breil Barberie</a></li>
+						<li><a>Centre Ville</a></li>
+						<li><a>Hauts Pavés St Félix</a></li>
+						<li><a>Quartiers Sud</a></li>
+						<li><a>St Donatien Malakoff</a></li>
+						<li><a class="selectedArea">Ile de Nantes</a></li>
+						<li><a>Chantenay*</a></li>
+						<li><a>Dervillières Zola</a></li>
+						<li><a>Nantes Erdre</a></li>
+						<li><a>Doulon Bottière</a></li>
+						<li><a>Quartiers Nord</a></li>
+						<li><a>Nantes</a></li>
+					</ul>
+
+					<div class="centerArrow" name="down">
+						<a><img src="image/downArrow.png" alt="flechedescendante" /></a>
+					</div>
+					<div id="companyLeftArticle">
+						<img id="bubbleCompanyTransfer" src="image/bubble/transfer.png" />
+						<a href="image/article/Article2.png" rel="lightbox"><img id="bubbleCompanyTransferPlus" src="image/plus.png" /></a>
+					</div>
+                        <p class="source" style="margin-top: 4em;">
+                        <br/>Plus d’infos dans La Lettre API :
+                        <a href="http://www.agence-api.fr/actualite/lettre-2601/information-137174.html?partage=8cdb4949d2e24f51b16c54cf59c0456b" target="_blank">
+                            Métallurgie : le centenaire Guillouard se lance dans le e-commerce
+                        </a>
+                        <br/>
+                        <br/>
+                        <a href="http://www.agence-api.fr/actualite/lettre-2556/information-26653.html?partage=c360954570bf9bf42ac1d6eac2079296" target="_blank">
+                            Meuble : Coupechoux se relance après deux années difficiles
+                        </a>
+                        </p>
+				</div>
+				<div id="companyInformation">
+					<div id="leftCompany">
+						<div id="leftCompanyNumber">
+							<p class="numberOfInstitution">1393</p>
+							<p class="etablissement">Établissements</p>
+						</div>
+						<div id="leftCompanyCircle">
+							<img src="image/company/area6/left/base.png" alt="cercle entreprise gauche" />
+						</div>
+						<div id="leftCompanyPercent" >
+							<div class="hiddenCompanyPercent">
+								<img src="" />
+								<img src="" />
+								<img src="" />
+								<img src="" />
+								<img src="" />
+								<img src="" />
+							</div>
+						</div>
+						<div id="leftTargetCompany">
+							<img src="image/enterpriseInsert.png" />
+							<div id="leftLightTargetCompany">
+								<div class="lightBleuSquare">
+								</div>
+								<p>Taux de création</p>
+							</div>
+							<div id="leftDarkTargetCompany">
+								<div class="darkBleuSquare">
+
+								</div>
+								<p>Part des transferts</p>
+							</div>
+
+						</div>
+					</div>
+					<div id="rightCompany">
+						<div id="rightCompanyNumber">
+							<p class="numberOfInstitution">1393</p>
+							<p class="etablissement">Établissements</p>
+						</div>
+						<div id="rightCompanyCircle">
+							<img src="image/company/area6/right/base.png" alt="cercle entreprise droit" />
+						</div>
+						<div id="rightCompanyPercent">
+							<div class="hiddenCompanyPercent">
+								<img src="" />
+								<img src="" />
+								<img src="" />
+								<img src="" />
+								<img src="" />
+								<img src="" />
+							</div>
+						</div>
+						<div id="rightTargetCompany">
+							<img src="image/institutionInsert.png" />
+							<div id="rightLightTargetCompany">
+								<div class="darkYellowSquare">
+
+								</div>
+								<p>Avec salariés</p>
+							</div>
+							<div id="rightDarkTargetCompany">
+								<div class="lightYellowSquare">
+
+								</div>
+								<p>Avec plus de 50 salariés</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="rightFieldMenu">
+					<div class="centerArrow" name="up">
+						<a><img src="image/upArrow.png" alt="flecheMontante" /></a>
+					</div>
+					<ul id="rightCompanyMenu" class="menu">
+						<li><a>Breil Barberie</a></li>
+						<li><a>Centre Ville</a></li>
+						<li><a>Hauts Pavés St Félix</a></li>
+						<li><a>Quartiers Sud</a></li>
+						<li><a>St Donatien Malakoff</a></li>
+						<li><a class="selectedArea">Ile de Nantes</a></li>
+						<li><a>Chantenay*</a></li>
+						<li><a>Dervillières Zola</a></li>
+						<li><a>Nantes Erdre</a></li>
+						<li><a>Doulon Bottière</a></li>
+						<li><a>Quartiers Nord</a></li>
+						<li><a>Nantes</a></li>
+					</ul>
+
+					<div class="centerArrow" name="down">
+						<a><img src="image/downArrow.png" alt="flechedescendante" /></a>
+					</div>
+					<div id="companyRightArticle">
+						<img id="bubbleCompanyInstitution" src="image/bubble/institution.png" />
+						<a href="image/article/Article3.png" rel="lightbox"><img id="bubbleCompanyInstitutionPlus" src="image/plus.png" /></a>
+					</div>
+                        <p class="source" style="margin-top: 3em;">
+                        <br/>Plus d’infos dans La Lettre API :
+                        <a href="http://www.agence-api.fr/actualite/lettre-2803/information-140414.html?partage=5071f46e94a7eed0855429d76992f5fa" target="_blank">
+                        Immobilier : Nantes cinquième en région sur le marché tertiaire
+                        </a>
+                        </p>
+				</div>
+			</div>
+
+
+
+			<div id="pieContainer">
+				<div id="activityTitle">
+					<img src="image/activityTitle.png" alt="Les secteurs d'activités" />
+				</div>
+				<div class="title2">
+				</div>
+				<div id="leftMenu">
+					<div class="centerArrow" name="up">
+						<a><img src="image/upArrow.png" alt="flecheMontante" /></a>
+					</div>
+					<ul id="leftPieMenu" class="menu">
+						<li><a>Breil Barberie</a></li>
+						<li><a>Centre Ville</a></li>
+						<li><a>Hauts Pavés St Félix</a></li>
+						<li><a>Quartiers Sud</a></li>
+						<li><a>St Donatien Malakoff</a></li>
+						<li><a class="selectedArea">Ile de Nantes</a></li>
+						<li><a>Chantenay*</a></li>
+						<li><a>Dervillières Zola</a></li>
+						<li><a>Nantes Erdre</a></li>
+						<li><a>Doulon Bottière</a></li>
+						<li><a>Quartiers Nord</a></li>
+						<li><a>Nantes</a></li>
+					</ul>
+
+					<div class="centerArrow" name="down">
+						<a><img src="image/downArrow.png" alt="flechedescendante" /></a>
+					</div>
+				</div>
+				<div id="pieInformation">
+
+					<div id="leftPie">
+						<div>
+							<div id="leftPieChart" class="turn"></div>
+						</div>
+						<div>
+							<img class="whiteCircle" src="image/whiteCircle.png" alt="camembertBlanc" />
+						</div>
+						<div id="leftPercent" class="hiddenPercent">
+							<img src="" />
+							<img src="" />
+							<img src="" />
+							<img src="" />
+							<img src="" />
+							<img src="" />
+						</div>
+					</div>
+					<div id="rightPie">
+						<div >
+							<div id="rightPieChart" class="turn"></div>
+						</div>
+						<div>
+							<img class="whiteCircle" src="image/whiteCircle.png" alt="camembertBlanc" />
+						</div>
+						<div id="rightPercent" class="hiddenPercent">
+							<img src="" />
+							<img src="" />
+							<img src="" />
+							<img src="" />
+							<img src="" />
+							<img src="" />
+						</div>
+					</div>
+					<div class="sector">
+						<div class="field">
+							<div><a id="service" class="aSector" name="services"><span class="firstLetter">S</span>ERVICES</a></div>
+							<div><a id="industrie" class="aSector" name="industrie"><span class="firstLetter">I</span>NDUSTRIE</a></div>
+							<div><a id="commerce" class="aSector" name="commerce"><span class="firstLetter">C</span>OMMERCE</a></div>
+							<div><a id="construction" class="aSector" name="construction"><span class="firstLetter">C</span>ONSTRUCTION</a></div>
+						</div>
+					</div>
+					<div id="note">
+						* Chantenay Bellevue Ste Anne
+					</div>
+				</div>
+
+				<div id="rightMenu">
+					<div class="centerArrow" name="up">
+						<a><img src="image/upArrow.png" alt="flecheMontante" /></a>
+					</div>
+					<ul id="rightPieMenu" class="menu">
+						<li><a>Breil Barberie</a></li>
+						<li><a>Centre Ville</a></li>
+						<li><a>Hauts Pavés St Félix</a></li>
+						<li><a>Quartiers Sud</a></li>
+						<li><a>St Donatien Malakoff</a></li>
+						<li><a class="selectedArea">Ile de Nantes</a></li>
+						<li><a>Chantenay*</a></li>
+						<li><a>Dervillières Zola</a></li>
+						<li><a>Nantes Erdre</a></li>
+						<li><a>Doulon Bottière</a></li>
+						<li><a>Quartiers Nord</a></li>
+						<li><a>Nantes</a></li>
+					</ul>
+
+					<div class="centerArrow" name="down">
+						<a><img src="image/downArrow.png" alt="flechedescendante" /></a>
+					</div>
+				</div>
+			</div>
+			<div id="creditContainer">
+				<div>
+					<img src="image/credit.png" />
+				</div>
+				<div id="banCredit">
+					<p>Nous tenons à remercier la lettre <a href="http://www.agence-api.fr/">API</a> qui nous a donné l'opportunité de travailler sur ce sujet, et qui nous a épaulé dans sa réalisation.</p>
+					<!--img src="image/banPub.png" /-->
+					<img src="image/banSchools.png" />
+				</div>
+				<div>
+					<div id="scienceComRealisator" class="realisator">
+						<p><a href="http://www.doyoubuzz.com/caroline-pavec">Caroline Pavec</a></p>
+						<p><a href="http://www.doyoubuzz.com/paul-le-padellec">Paul Le Padellec</a></p>
+					</div>
+					<div id="agrRealisator" class="realisator">
+						<p><a href=" http://juliette-leroux.blogspot.fr/">Juliette Leroux</a></p>
+						<p><a href=" http://juilelemoal.blogspot.fr/">Julie Le Moal</a></p>
+					</div>
+					<div id="polytechRealisator" class="realisator">
+						<p><a href="http://www.linkedin.com/pub/brice-guillermic/66/4a5/4bb">Brice Guillermic</a></p>
+						<p><a href="http://fr.linkedin.com/pub/camille-papin/5a/8ba/b8">Camille Papin</a></p>
+						<p><a href="http://fr.linkedin.com/pub/robin-naceur/59/465/ba">Robin Naceur</a></p>
+					</div>
+					<!--div id="licence">
+						<p><a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.fr">
+							<img alt="Licence Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" />
+						</a>
+						Ce(tte) œuvre est mise à disposition selon les termes de la <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.fr">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 non transposé</a>.
+						</p>
+					</div-->
+					<div id="banHyblab">
+						<img src="image/banHyblab.png" />
+					</div>
+					<!--div id="hyblabLink">
+						En savoir plus sur <a href="http://www.hyblab.fr/">Hyblab</a>
+					</div-->
+				</div>
+                    <div id="partenaires"></div>
+			</div>
+		</div>
+		<div>
+			<script src="jquery-1.7.2.min.js"></script>
+			<script src="jquery.transit.js"></script>
+			<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+			<script src="jquery.preloader.js"></script>
+			<script src="jquery.flot.js"></script>
+			<script src="jquery.flot.pie.js"></script>
+			<script src="functions.js"></script>
+			<script src="pieDisplay.js"></script>
+			<script src="mapDisplay.js"></script>
+			<script src="headerDisplay.js"></script>
+			<script src="companyDisplay.js"></script>
+			<script src="lightbox.js"></script>
+			<script src="myPreload.js"></script>
+
+<script type="text/javascript" src="../partenaires/partenaire.js" charset="utf-8"></script>
+		</div>
+	</body>
+</html>

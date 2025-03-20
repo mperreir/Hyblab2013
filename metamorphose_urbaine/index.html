@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Métamorphose urbaine de l'île</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel='stylesheet' href='datavisualisation/histogramme/barchart.css'>
+<!--link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/docs.css"-->
+<link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet"-->
+<link href="./bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css.css" />
+<link rel="stylesheet" href="datavisualisation/datavisualisation.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21598755-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+	<div id="top"></div>
+	<!-- J'ai mis ca pour pouvoir remonter tout e haut depuis la
+	navbar en bas -->
+	<div id="header" class="container" style="">
+		<div class="navbar " style="">
+			<div class="navbar-inner">
+				<div class="container">
+
+
+
+					<!-- Be sure to leave the brand out there if you want it shown -->
+					<a class="brand" href="#">
+<!-- 						<img src="images/header-fond_01.png" alt=""> -->
+						<img src="images/image_header1.png" alt="">
+					</a>
+
+					<!-- Everything you want hidden at 940px or less, place within here -->
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav">
+							<li class="navActive"><a href="#section1">LOCALISATION.</a></li>
+							<li class="divider-vertical"></li>
+							<li><a href="#section2">EVOLUTION.</a></li>
+							<li class="divider-vertical"></li>
+							<li><a href="#section3">TYPOLOGIE.</a></li>
+						</ul>
+						<!--<ul class="nav pull-right">
+							<li><a class="btn btn-large " target="_blank" href="documents/La_metamorphose_urbaine_de_l_ile_de_Nantes.pdf"><i
+									class="icon-star"></i><span class="doc_annexes">Documents
+										annexes</span> </a></li>
+						</ul>-->
+						<ul class="nav pull-right">
+							<li><a class="btn btn-large " target="_blank" href="index3.html"><i
+									class="icon-star"></i><span class="doc_annexes">Article et vidéos</span> </a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- ////////////////////////////// PARTIE CARTE///////////////////////////////////// -->
+		<div class="section" id="section1">
+			<div class="row-fluid" style="padding-top: 40px;">
+				<div id="innerSection">
+					<div class="span1"></div>
+					<div class="span8" style="width: 53.81196581196582%;">
+						<p id="title1">L'ÎLE DE NANTES, DE 1987 A AUJOURD'HUI</p>
+						<p id="title">
+							<font style="border-bottom: solid; border-color: #21aef0;">
+								UNE METAMORPHOSE URBAINE</font>
+						</p>
+						<p class="subtitle" style="margin-top: 20px;">
+						I.
+						LOCALISATION DES CONSTRUCTIONS
+						</p>
+					</div>
+<!-- 					<div class="span3 subtitle" -->
+<!-- 						style="margin-top: 33px; margin-left: 0px; width: 34.076923076923077%;">I. -->
+<!-- 						LOCALISATION DES CONSTRUCTIONS</div> -->
+
+
+				</div>
+
+			</div>
+			<!-- Partie carte -->
+			<div class="row-fluid">
+				<div id="innerSection">
+					<div class="span1"></div>
+					<div class="span10">
+						<div class="row-fluid">
+							<div id="innerSection">
+								<div class="span2 texte_presentation"
+									style="line-height: 15px;">
+									<small>Parcourez la frise chronologique pour visualiser l’évolution du renouvellement urbain. Les points orange sont cliquables et représentent les bâtiments emblématiques.</small>
+								</div>
+								<div class="span10" id="image_content">
+<!-- 									<img id= "Carte" class="mapper" usemap ="#map" alt="" src="images/section1/map-contour_03.png"> -->
+									<img src="images/section1/map-contour_03.png" usemap="#map" name="img">
+								</div>
+								<map name="map">
+	<area shape="polygon" coords="397,50 , 443,167 , 513,145 , 647,55 , 709,5 , 640,15 , 466,38" target=_blank onmouseover="document.img.src='images/section1/survol-beaulieu_03.png'" onmouseout="document.img.src='images/section1/map-contour_03.png'">
+
+
+	<area shape="polygon" coords="397,50 , 443,167 , 346,202 , 255,201 , 298,167 , 332,152 , 315,71 " target=_blank onmouseover="document.img.src='images/section1/survol-mangin_03.png'" onmouseout="document.img.src='images/section1/map-contour_03.png'">
+
+	<area shape="polygon" coords="234,153 , 269,123 , 235,94 , 149,92 , 122,36 , 155,25 , 295,71, 315,71 , 332,152 , 298,167"  target=_blank
+	 onmouseover="document.img.src='images/section1/survol-republique_03.png'" onmouseout="document.img.src='images/section1/map-contour_03.png'">
+
+	 <area shape="polygon" coords="233,156 , 269,123 , 235,94 , 179,96 , 167,97 , 149,92 , 123,33 , 113,38 , 72,52 , 2,154 , 4,161 , 2,165 , 260,202 , 281,190 , 296,169"  target=_blank
+	 onmouseover="document.img.src='images/section1/survol-sainteanne_03.png'" onmouseout="document.img.src='images/section1/map-contour_03.png'">
+	</map>
+
+
+							</div>
+						</div>
+					</div>
+					<div class="span1"></div>
+
+				</div>
+			</div>
+			<div class="row-fluid visible-desktop"
+				style="width: 1004px;padding-bottom: 0px; padding-left: 22px; background-image: url('images/timeline/fond_timeline.png');">
+				<div class="span1" style="width: 100px;"></div>
+				<div class="span2" style="width: 12.52991452991453%; margin-left: -20px; margin-top: 15px;">
+					<img src="images/section1/grue.gif">
+				</div>
+				<div class="span2" style="display: box; box-align: end; margin-top: 70px;">
+					<img src="images/section1/TRIBUNAL.gif">
+				</div>
+				<div class="span2" style="width: 12.52991452991453%; margin-top: 15px;">
+					<img src="images/section1/FABRIQUE.gif">
+				</div>
+				<div class="span2" style="width: 12.52991452991453%; margin-top: 15px; ">
+					<img src="images/section1/NEF.gif">
+				</div>
+
+				<div class="span2" style="width: 12.52991452991453%; margin-top: 15px;">
+					<img src="images/section1/MANNY.gif">
+				</div>
+				<div class="span2"
+					style="display: box; box-align: end; margin-top: 48px;">
+					<img src="images/section1/CARROUSSEL.gif">
+				</div>
+
+			</div>
+		</div>
+		<!-- Modal frame -->
+		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog"
+			aria-labelledby="myModalLabel" aria-hidden="true"
+			style="display: none;">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-hidden="true">
+					<img src="images/HYBLAB_04.png" style="height: 20px" alt="">×
+				</button>
+				<h3 id="myModalLabel">Modal Heading</h3>
+
+
+			</div>
+			<div class="modal-body"></div>
+			<div class="modal-footer"></div>
+
+		</div>
+
+		<!-- End Modal frame -->
+		<!--///////////////////////////////////// Fin partie carte //////////////////////////// -->
+		<!-- Time line -->
+		<div id="timeline">
+			<ul class="pager">
+				<li class=""><img alt=""
+					src="images/timeline/boutons-selectionnes_20.png">
+				</li>
+				<li><a id="1987"
+					onclick="lancerMultipleImmeubles2(Im1987); desactiver_timline(1987);">1987</a>
+				</li>
+				<li><a id="2005"
+					onclick="lancerMultipleImmeubles2(Im2005); desactiver_timline(2005);">2005</a>
+				</li>
+				<li><a id="2006"
+					onclick="lancerMultipleImmeubles2(Im2006); desactiver_timline(2006);">2006</a>
+				</li>
+				<li><a id="2007"
+					onclick="lancerMultipleImmeubles2(Im2007); desactiver_timline(2007);">2007</a>
+				</li>
+				<li><a id="2009"
+					onclick="lancerMultipleImmeubles2(Im2009); desactiver_timline(2009);">2009</a>
+				</li>
+				<li><a id="2011"
+					onclick="lancerMultipleImmeubles2(Im2011); desactiver_timline(2011);">2011</a>
+				</li>
+				<li><a id="2012"
+					onclick="lancerMultipleImmeubles2(Im2012); desactiver_timline(2012);">2012</a>
+				</li>
+				<li><a id="2015"
+					onclick="lancerMultipleImmeubles2(Im2015); desactiver_timline(2015);">2015</a>
+				</li>
+				<li class=""><img alt=""
+					src="images/timeline/boutons-selectionnes_23.png">
+				</li>
+			</ul>
+		</div>
+		<!-- Fin time line -->
+		<!-- séparation sections -->
+		<div class="section separation"></div>
+		<div class="separationWhite"></div>
+		<!-- fin séparation sections -->
+		<!-- Section 2 -->
+		<div class="section" id="section2" style="min-height: 400px">
+			<div class="row-fluid">
+				<div id="innerSection">
+					<div class="span1"></div>
+					<div class="span10 subtitle">II. NOMBRE DE CONSTRUCTIONS ET PRIX IMMOBILIER</div>
+					<div class="span1"></div>
+
+				</div>
+			</div>
+			<div class="row-fluid" id="content_section2">
+<!-- 			<img id="on" style="cursor:pointer;" alt="" onmouseout="document.getElementById('on').src='images/section2/bouton-part-2.png';" onmouseover="document.getElementById('on').src='images/section2/bouton-part-2-survol.png';" onclick="init_section2();" src="images/section2/bouton-part-2.png"> -->
+			<img id="on" style="cursor:pointer;" alt="" onmouseout="document.getElementById('on').src='images/section2/bouton.png';" onmouseover="document.getElementById('on').src='images/section2/bouton-survol.png';" onclick="init_section2();" src="images/section2/bouton.png">
+
+<!-- 				<button onclick="init_section2();">Init</button> -->
+
+			</div>
+		</div>
+		<!-- Fin section 2 -->
+		<!-- séparation sections -->
+		<div class="separationWhite"></div>
+		<div class="section separation"></div>
+		<div class="separationWhite"></div>
+		<!-- fin séparation sections -->
+		<!-- Section 3 -->
+		<div class="section" id="section3" style="">
+			<div class="row-fluid">
+				<div id="innerSection">
+					<div class="span1"></div>
+					<div class="span10 subtitle">III. EVOLUTION DE LA TYPOLOGIE
+						DES BATIMENTS DE L'ÎLE</div>
+					<div class="span1"></div>
+
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div id="innerSection">
+					<div class="span1"></div>
+					<div class="span4 texte_presentation" >La part de mètres carrés construits en %, par type de bâtiments et par tranches de quatre ans.</div>
+					<div class="span7">
+						<div class="row-fluid">
+							<div class="span2"></div>
+							<div class="span9" style="text-align: center;">
+								<table style="width: 65%;">
+									<tr>
+										<td>
+												<img class="" id="btn1"
+													onmouseover="click_public();"
+													onmouseout="retablir_bureau_logement_autre();"
+													src="images/section3/boutonpublic.png">
+													<!-- 									<img alt="" src="images/section3/survol-autre_03.png"> -->
+
+											</td>
+										<td>
+												<img class="" id="btn2"
+													onmouseover="click_mixte();"
+													onmouseout="retablir_bureau_logement_autre();"
+													src='images/section3/boutonmixte.png'>
+													<!-- 									<img alt="" src="images/section3/survol-logement_05.png"> -->
+
+											</td>
+											</tr><tr>
+										<td>
+												<img class="" id="btn3"
+													onmouseover="click_log();"
+													onmouseout="retablir_bureau_logement_autre();"
+													src='images/section3/boutonlog.png'>
+													<!-- 									<img alt="" src="images/section3/survol-autre_07.png"> -->
+
+											</td>
+										<td>
+												<img class="" id="btn4"
+													onmouseover="click_eco();"
+													onmouseout="retablir_bureau_logement_autre();"
+													src='images/section3/boutoneco.png'>
+													<!-- 									<img alt="" src="images/section3/survol-autre_07.png"> -->
+
+											</td>
+									</tr>
+								</table>
+
+							</div>
+
+							<div class="span1"></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="row-fluid">
+				<ul class="thumbnails">
+					<li class="span3">
+						<div class="thumbnail">
+							<a class="thumbnail">
+								<div id="graph1" class="graph_section3">
+								</div> </a>
+							<div id="graph1_caption" class="caption" style="text-align: center">
+                                <h4><a style="cursor:pointer;" onclick="load_graph_section3_by_date('20032006')">2003-2006</a></h4>
+							</div>
+						</div>
+					</li>
+					<li class="span3">
+						<div class="thumbnail">
+							<a class="thumbnail">
+							<div id="graph2" class="graph_section3"> <img src="images/section3/gifs/graph20072010.gif" alt=""></div> </a>
+							<div id="graph2_caption" class="caption" style="text-align: center">
+								<h4><a style="cursor:pointer;" onclick="load_graph_section3_by_date('20072010')">2007-2010</a></h4>
+							</div>
+						</div></li>
+					<li class="span3"><div class="thumbnail">
+							<a class="thumbnail"><div id="graph3" class="graph_section3"> <img
+								src="images/section3/gifs/graph20112014.gif" alt=""></div> </a>
+							<div id="graph3_caption" class="caption" style="text-align: center">
+								<h4><a style="cursor:pointer;" onclick="load_graph_section3_by_date('20112014')">2011-2014</a></h4>
+							</div>
+						</div></li>
+					<li class="span3"><div class="thumbnail">
+							<a class="thumbnail"> <div id="graph4" class="graph_section3"><img
+								src="images/section3/gifs/graph2015.gif" alt=""></div> </a>
+							<div  id="graph4_caption"class="caption" style="text-align: center">
+								<h4><a style="cursor:pointer;" onclick="load_graph_section3_by_date('2015')">2015</a></h4>
+							</div>
+						</div></li>
+				</ul>
+			</div>
+		</div>
+		<!-- Fin section 3 -->
+		<!-- séparation sections -->
+		<div class="separationWhite" style='font-size:11pt;height:190px; font-family:"Trebuchet MS";text-align:justify; '>
+			<div class="row-fluid">
+				<div class="span6">Le projet Hyblab 2013 est un projet de data journalisme, mettant en action les étudiants de 3 écoles nantaines, Science Com, Polytech et AGR école de l’image, en partenariat avec 12 média pour la réalisation de datavisualisations sur le thème de l’ile de Nantes.<br>Presse Océan s’est entouré de Nadja Altpeter, Benjamin Turpin et Quentin Avérous (Sciences Com), Sofiann Agounine et <a href="http://www.doyoubuzz.com/edem-adjamagbo/">Edem Adjamagbo</a> (Polytech) et Nicolas Le Floc’h et Elodie Boidé (AGR écolé de l’image) pour rentre compte de la métamorphose urbaine de l’île depuis la fermeture des chantiers.
+</div>
+				<div class="span6">Remerciements:
+
+SAMOA, ORAN, PRESSE OCEAN
+Cédric Blondel, Emmanuel Vautier (Presse Océan), Lionel Pouget et Virginie Barré (samoa), Marie-Louise Georgen (maison des hommes et techniques), Pierre-François Lebrun.
+<div class="row-fluid">
+				<div class="span1"></div>
+<!-- 				<div class="span8"><img src="images/image_footer.jpg" ></div> -->
+                        <div class="span8">
+                            <!--img src="images/imagefooter.jpg" -->
+                        </div>
+			</div>
+</div>
+
+			<p></p>
+			</div>
+		</div>
+		<div class="section separation"></div>
+		<div class="separationWhite"></div>
+		<!-- fin séparation sections -->
+	</div>
+                        <div id="partenaires" style="margin-bottom:5em;"></div>
+                        <script type="text/javascript" src="../partenaires/partenaire.js" charset="utf-8"></script>
+	<div class="navbar navbar-fixed-bottom">
+		<div class="navbar-inner">
+			<div class="container">
+
+				<ul class="nav">
+					<li><a class="brand" href="http://www.hyblab.fr/"><img
+							src="images/HYBLAB_04.png" style="height: 20px" alt=""> </a>
+					</li>
+					<li class="navActive"><a href="#section1">LOCALISATION.</a></li>
+					<li class="divider-vertical"></li>
+					<li><a href="#section2">EVOLUTION.</a></li>
+					<li class="divider-vertical"></li>
+					<li><a href="#section3">TYPOLOGIE.</a></li>
+				</ul>
+				<ul class="nav pull-right">
+					<li><a class="" href="#top"><i class="icon-chevron-up"></i>TOP</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="gestion_immeuble.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+<script type="text/javascript" src="json.js"></script>
+<script language="javascript" type="text/javascript"
+	src="datavisualisation/exempleJSON.js"></Script>
+<script language="javascript" type="text/javascript"
+	src="datavisualisation/raphael.js"></script>
+<script language="javascript" type="text/javascript"
+	src="datavisualisation/fonctionsApi.js"></Script>
+<script type="text/javascript">
+	var current = null;//cete variable sert à se rappeler de la variable json courante
+
+	document.getElementById('image_content').addEventListener("click",
+			function() {
+
+			}, false);
+	function gereImmeuble(x, y, couleur, i) {
+		//var immeuble = new Immeuble("1",Math.floor((Math.random()*718)+1),Math.floor((Math.random()*204)+1));
+		var immeuble = new Immeuble(couleur, x, y);
+		//
+		if (couleur == 1) {
+			immeuble.maDiv.addEventListener("click", function() {
+				immeuble.set_title(current[i].nom);
+				immeuble.set_superficie(current[i].superficie);
+				immeuble.set_annee(current[i].date);
+				if (current[i].urlImage != "") {
+					immeuble.set_urlImage(current[i].urlImage)
+				}
+
+				immeuble.set_description(current[i].description);
+				if (current[i].urlInfo != "") {
+					immeuble.set_urlInfo(current[i].urlInfo);
+				}
+
+				immeuble.afficher_description();
+			}, false);
+		}
+
+	}
+	function gereImmeuble2(x, y, couleur) {
+		//var immeuble = new Immeuble("1",Math.floor((Math.random()*718)+1),Math.floor((Math.random()*204)+1));
+		//var immeuble = new Immeuble(couleur, x, y,jsonArray[i].nom,jsonArray[i].date,jsonArray[i].superficie,jsonArray[i].description,jsonArray[i].url);
+		var immeuble = new Immeuble(couleur, x, y);
+
+	}
+
+	function lancerMultipleImmeubles() {
+		var timer;
+		var cpt = 1;
+		timer = setInterval(function() {
+			if (cpt < 10) {
+				for (i = 0; i < cpt; i++) {
+					gereImmeuble();
+				}
+				cpt++;
+			}
+
+		}, 150);
+	}
+
+	function lancerMultipleImmeubles2(jsonArray) {
+		Immeuble.prototype.effacer_All_Immeubles();
+
+		var cpt = 0;
+		current = jsonArray;
+		for ( var i = 0; i < jsonArray.length; i++) {
+			var monImeuble = jsonArray[i];
+			setTimeout("gereImmeuble(" + jsonArray[i].x + "," + jsonArray[i].y
+					+ "," + jsonArray[i].couleur + "," + i + ")", 75 * i);
+			// 			setTimeout("gereImmeuble2("+jsonArray[i].x+","+jsonArray[i].y+","+jsonArray[i].couleur+","+jsonArray[i].description+");",250*i);
+
+		}
+	}
+	//gereImmeuble();
+	function desactiver_item(cible) {
+		document.getElementById(cible).style.backgroundColor = "";
+		document.getElementById(cible).style.color = "";
+	}
+	function activer_item(cible) {
+		document.getElementById(cible).style.backgroundColor = "#0088cc";
+		document.getElementById(cible).style.color = "white";
+	}
+	function desactiver_timline(target) {
+		desactiver_item("1987");
+		desactiver_item("2005");
+		desactiver_item("2006")
+		desactiver_item("2007");
+		desactiver_item("2009");
+		desactiver_item("2011");
+		desactiver_item("2012");
+		desactiver_item("2015");
+		activer_item(target);
+	}
+	//appel de la fonction de py
+	draw(donnees, "graph3", 100);
+</script>
+
+<!--script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script-->
+<script src="./bootstrap/js/bootstrap.js"></script>
+
+<!--script src='https://raw.github.com/documentcloud/underscore/87cac5bd057ceafd6f779b1df33de61ca21b5e1d/underscore.js'></script-->
+<script src='./underscore.js'></script>
+<!--<script src='https://raw.github.com/michael/data/a38f5fd92a5490dc5ab6a2e95e88ecba2e644c71/data.js'></script>-->
+<script src='./data.js'></script>
+
+<!--script src='https://raw.github.com/michael/dance/96cb9a6384acce19202275c6dce9b7fbdac87763/dance.js'></script-->
+<script src='./dance.js'></script>
+
+<!-- Countries data -->
+<script src='datavisualisation/histogramme/quartiers.js'></script>
+<!-- Dance Performers -->
+<script src="datavisualisation/histogramme/barchart.js"></script>
+
+<script>
+	function start() {
+		$(function() {
+			var countries = new Data.Collection(countries_data);
+			window.barchart = new Barchart({});
+
+			barchart.update(countries, "gdp");
+
+			// Update
+			function update() {
+				var language = $('#language').val();
+				var query = {};
+				if (language)
+					query["languages"] = [ language ];
+				var items = countries.find(query);
+				barchart.update(items, $('#property').val());
+			}
+
+			$('#property').change(update);
+			$('#language').change(update);
+		});
+
+	}
+	function init_section2() {
+// 		document.getElementById('content_section2').innerHTML = "<img src='http://www.inainvoices.fr/img/theme/wait.gif.pagespeed.ce.eojg2ogGyT.gif'>";
+		document.getElementById('content_section2').innerHTML = "<img src='images/section2/chargement.gif'>";
+
+		$("#content_section2")
+				.delay(4000)
+				.fadeIn(
+						"slow",
+						function() {
+							document.getElementById('content_section2').style.display = "none";
+							document.getElementById('content_section2').innerHTML = "<div id='innerSection' ><div class='span1'></div><div class='span5'><img src='images/section2/graphiquenombreconstructions.png'></div><div class='span5 ' style=\" height: 300px; \"><div id='canvas'></div><div id='legend'><img alt='' src='images/section2/graphiqueprixvierge1.png'></div></div><div class='span1'></div></div>";
+						});
+		$("#content_section2").delay(500).fadeIn("slow", function() {
+			start();
+		});
+
+	}
+	load_graph_section3("graph","gifs","gif");
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0044)http://localhost:8080/JeuneHyblab/jeunes.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Jeunes</title>
+<link type="text/css" href="./Jeunes_files/base.css" rel="stylesheet">
+<script type="text/javascript" src="./Jeunes_files/Carte.js"></script>
+<link rel="image_src" href="/projets/jeunes/Jeunes_files/imageentete.jpg" type="image/x-icon" />
+
+<style id="wrc-middle-css" type="text/css">.wrc_whole_window{	display: none;	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal !important;	margin: 0px !important;	padding: 0px !important;	border: 0px !important;	left: 0px;	top: 0px;	width: 100%;	height: 100%;	line-height: normal !important;	letter-spacing: normal !important;	overflow: hidden;}.wrc_bar_window{	display: none;	position: fixed; 	z-index: 2147483647;	background-color: rgba(60, 60, 60, 1.0);	word-spacing: normal !important;	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	margin: 0px !important;	padding: 0px !important;	border: 0px !important;	left: 0px;	top: 0px;	width: 100%;	height: 40px;	line-height: normal !important;	letter-spacing: normal !important;	color: white !important;	font-size: 13px !important;}.wrc_middle {	display: table-cell;	vertical-align: middle;	width: 100%;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;    background: url(chrome-extension://icmlaeflemplmjndnaapfdbbnpncnbda/skin/images/background-body.jpg) repeat-x left top;	background-color: rgb(39, 53, 62);	position: relative;	margin-left: auto;	margin-right: auto;	text-align: left;}.wrc_middle_tq_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 16px;	width: 615px;	height: 460px;    background: url(chrome-extension://icmlaeflemplmjndnaapfdbbnpncnbda/skin/images/background-sitecorrect.png) no-repeat;	background-color: white;	color: black !important;	position: relative;	margin-left: auto;	margin-right: auto;	text-align: center;}.wrc_middle_logo {    background: url(chrome-extension://icmlaeflemplmjndnaapfdbbnpncnbda/skin/images/logo.jpg) no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	margin-bottom: 15px;	text-align: center;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	padding: 0px 20px 0px 20px;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_grey_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 15px;	font-weight: bold;}.wrc_middle_actions_grey_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(100, 100, 100) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #aaaaaa;	text-decoration: none;	padding: 0px 20px 0px 20px;}.wrc_middle_actions_grey_button:hover {	background-color: rgb(120, 120, 120) !important;}.wrc_middle_actions_grey_button:active {	background-color: rgb(130, 130, 130) !important;	border: 2px solid #00aaaa;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script id="wrc-script-middle_window" type="text/javascript" language="JavaScript">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'table';		}	}}</script></head>
+<body>
+
+<div id="centre" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-grand.png" onmousemove="cacherdiv();"><div id="quartier"><p class="endessous">Centre Ville</p><p class="endessous"></p></div><div id="pourcentageglobcentre" class="pourcentage"><p>31%</p></div><div id="jeunes"><p class="endessous">8323</p><p id="motjeune" class="endessous">18-24 ans</p></div></div><div id="bellevue" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-petit.png" onmousemove="cacherdiv(); "><div id="quartier"><p class="endessous">Bellevue</p><p class="endessous">Chantenay</p></div><div id="pourcentageglobbellevue" class="pourcentage"><p>10%</p></div><div id="jeunes"><p class="endessous">2524</p><p id="motjeune" class="endessous">18-24 ans</p></div></div><div id="derv" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-moyen.png" onmousemove="cacherdiv();"><div id="quartier"><p class="endessous">Dervallières</p><p class="endessous">Zola</p></div><div id="pourcentageglobderv" class="pourcentage"><p>12%</p></div><div id="jeunes"><p class="endessous">4062</p><p id="motjeune" class="endessous">18-24 ans</p></div></div><div id="hauts" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-grand.png" onmousemove="cacherdiv();"><div id="quartier"><p class="endessous">Hauts Pavés</p><p class="endessous">St Felix</p></div><div id="pourcentageglobhauts" class="pourcentage"><p>19%</p></div><div id="jeunes"><p class="endessous">6640</p><p id="motjeune" class="endessous">18-24 ans</p></div></div><div id="malakoff" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-moyen.png" onmousemove="cacherdiv();"><div id="quartier"><p class="endessous">Malakoff</p><p class="endessous">St Donatien</p></div><div id="pourcentageglobmalakoff" class="pourcentage"><p>20%</p></div><div id="jeunes"><p class="endessous">6225</p><p id="motjeune" class="endessous">18-24 ans</p></div></div><div id="ile" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-petit.png" onmousemove="cacherdiv(); "><div id="quartier"><p class="endessous">Ile de Nantes</p><p class="endessous"></p></div><div id="pourcentageglobile" class="pourcentage"><p>20%</p></div><div id="jeunes"><p class="endessous">2985</p><p id="motjeune" class="endessous">18-24 ans</p></div></div><div id="breil" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-moyen.png" onmousemove="cacherdiv();"><div id="quartier"><p class="endessous">Breil</p><p class="endessous">Barberie</p></div><div id="pourcentageglobbreil" class="pourcentage"><p>14%</p></div><div id="jeunes"><p class="endessous">3346</p><p id="motjeune" class="endessous">18-24 ans</p></div></div><div id="nord" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-grand.png" onmousemove="cacherdiv();"><div id="quartier"><p class="endessous">Nantes</p><p class="endessous">Nord</p></div><div id="pourcentageglobnord" class="pourcentage"><p>22%</p></div><div id="jeunes"><p class="endessous">5469</p><p id="motjeune" class="endessous">18-24 ans</p></div></div><div id="erdre" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-moyen.png" onmousemove="cacherdiv();"><div id="quartier"><p class="endessous">Nantes</p><p class="endessous">Edre</p></div><div id="pourcentagegloberdre" class="pourcentage"><p>14%</p></div><div id="jeunes"><p class="endessous">3628</p><p id="motjeune" class="endessous">18-24 ans</p></div></div><div id="doulon" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-moyen.png" onmousemove="cacherdiv();"><div id="quartier"><p class="endessous">Doulon</p><p class="endessous">Bottière</p></div><div id="pourcentageglobdoulon" class="pourcentage"><p>11%</p></div><div id="jeunes"><p class="endessous">3133</p><p id="motjeune" class="endessous">18-24 ans</p></div></div><div id="SUD" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-petit.png" onmousemove="cacherdiv(); "><div id="quartier"><p class="endessous">Nantes</p><p class="endessous">Sud</p></div><div id="pourcentageglobSUD" class="pourcentage"><p>11%</p></div><div id="jeunes"><p class="endessous">1097</p><p id="motjeune" class="endessous">18-24 ans</p></div></div>
+
+<div id="altercafei" class="infobulle">  <img id="image1" src="./Jeunes_files/bulle-lieu-vide.png" onmousemove="cahcheinfobullelieu();"><img id="imagette" src="./Jeunes_files/altercafe.jpg"><div id="nomlieu"><p>L’Altercafé</p></div><div id="ouverture"><p>date d'ouverture: Juin 2007</p></div><div id="description"><p>Un lieu de rencontre, d’échanges, de concerts où l’on peut déguster une large sélection de produits issus du commerce équitable et de l’agriculture biologique. L’Altercafé accueille aussi de nombreuses représentations de slam, hip hop, salsa…</p></div></div><div id="centrecommercialbeaulieui" class="infobulle">  <img id="image1" src="./Jeunes_files/bulle-lieu-vide.png" onmousemove="cahcheinfobullelieu();"><img id="imagette" src="./Jeunes_files/centrecommercialbeaulieu.jpg"><div id="nomlieu"><p>Centre commercial Beaulieu</p></div><div id="ouverture"><p>date d'ouverture: 2008</p></div><div id="description"><p>Le plus grand centre commercial de l’agglomération nantaise ou plus de 120 boutiques sont rassemblées. Créé en 1975 et rénové en 2008, il est reconnaissable par son architecture moderne et audacieuse.</p></div></div><div id="ecolearchii" class="infobulle">  <img id="image1" src="./Jeunes_files/bulle-lieu-vide.png" onmousemove="cahcheinfobullelieu();"><img id="imagette" src="./Jeunes_files/ecolearchi.jpg"><div id="nomlieu"><p>Ecole Nationale Supérieure d’architecture de Nantes </p></div><div id="ouverture"><p>date d'ouverture: Février 2009</p></div><div id="description"><p>L’ENSA regroupe près de 800 étudiants. L’école est un établissement public d’enseignement supérieur du ministère de la Culture et de la Communication. Elle occupe une surface de plus de 13000m2. Au cœur de l’Ile de Nantes, l’école participe à la dynamique urbaine de la ville.</p></div></div><div id="ferrailleuri" class="infobulle">  <img id="image1" src="./Jeunes_files/bulle-lieu-vide.png" onmousemove="cahcheinfobullelieu();"><img id="imagette" src="./Jeunes_files/ferrailleur.jpg"><div id="nomlieu"><p>Le Ferrailleur</p></div><div id="ouverture"><p>date d'ouverture: Juin 2007</p></div><div id="description"><p>Un des lieux les plus connus de Nantes pour les amateurs de musique, le Ferrailleur, la salle de concert rock et métal. Le lieu devient boite de nuit jusqu’à 4h du matin.</p></div></div><div id="lcclubi" class="infobulle">  <img id="image1" src="./Jeunes_files/bulle-lieu-vide.png" onmousemove="cahcheinfobullelieu();"><img id="imagette" src="./Jeunes_files/lcclub.jpg"><div id="nomlieu"><p>Le LC Club</p></div><div id="ouverture"><p>date d'ouverture: Juin 2007</p></div><div id="description"><p>Une des plus populaires boites de nuit de la ville de Nantes. Elle occupe une superficie de plus de 3500m2, et accueille régulièrement de nombreuses soirées étudiantes à la demande.</p></div></div><div id="machinesi" class="infobulle">  <img id="image1" src="./Jeunes_files/bulle-lieu-vide.png" onmousemove="cahcheinfobullelieu();"><img id="imagette" src="./Jeunes_files/machines.jpg"><div id="nomlieu"><p>Les Machines de l'île de Nantes</p></div><div id="ouverture"><p>date d'ouverture: Juin 2007</p></div><div id="description"><p>L’univers fantastique de Jules Verne et mécanique de Léonard de Vinci ont inspiré Pierre Orefice et François Delarozière pour la création d’impressionnantes machines. On retrouve parmi ces mécaniques le célèbre Grand Eléphant, un des symboles de la ville de Nantes.</p></div></div><div id="palaissporti" class="infobulle">  <img id="image1" src="./Jeunes_files/bulle-lieu-vide.png" onmousemove="cahcheinfobullelieu();"><img id="imagette" src="./Jeunes_files/palaissport.jpg"><div id="nomlieu"><p>Palais des sports de Beaulieu</p></div><div id="ouverture"><p>date d'ouverture: 1973</p></div><div id="description"><p>Le Palais des sports accueille de nombreux évènements sportifs. Ses nombreuses salles hébergent les clubs masculins et féminins de handball de la ville de Nantes. La structure a été rénovée en 2010.</p></div></div><div id="polegraphiquei" class="infobulle">  <img id="image1" src="./Jeunes_files/bulle-lieu-vide.png" onmousemove="cahcheinfobullelieu();"><img id="imagette" src="./Jeunes_files/polegraphique.jpg"><div id="nomlieu"><p>Pôle des Arts Graphiques</p></div><div id="ouverture"><p>date d'ouverture: Septembre 2011</p></div><div id="description"><p>Le pôle regroupe 2 écoles sur 6000 mètres carré et deux écoles. L’Ecole des métiers de l'imprimerie et le lycée de la Joliverie qui abritent plus de 600 jeunes étudiants et apprentis. Les formations proposées sont dédiées aux arts graphiques, aux arts appliqués et à l’imprimerie.</p></div></div><div id="rondpointi" class="infobulle">  <img id="image1" src="./Jeunes_files/bulle-lieu-vide.png" onmousemove="cahcheinfobullelieu();"><img id="imagette" src="./Jeunes_files/rondpoint.jpg"><div id="nomlieu"><p>Le Rond Point </p></div><div id="ouverture"><p>date d'ouverture: Juin 2007</p></div><div id="description"><p>A ne pas manquer lorsqu’on se rend au Hangar à Bananes, le bar du Rond Point. Il se distingue par sa décoration originale à base de panneaux signalétiques. C’est aussi un lieu de concerts de salsa, éléctro et reggae. </p></div></div><div id="stereoluxi" class="infobulle">  <img id="image1" src="./Jeunes_files/bulle-lieu-vide.png" onmousemove="cahcheinfobullelieu();"><img id="imagette" src="./Jeunes_files/stereolux.jpg"><div id="nomlieu"><p>Stereolux / La Fabrique</p></div><div id="ouverture"><p>date d'ouverture: Automne 2011</p></div><div id="description"><p>La salle de spectacles et concerts la plus populaire de la ville de Nantes. Un lieu dédié à la création et aux cultures numériques. Stereolux entre dans la dynamique de l’Ile de Nantes et du Quartier de la création situé à la pointe de l’ile.</p></div></div><div id="trempolinoi" class="infobulle">  <img id="image1" src="./Jeunes_files/bulle-lieu-vide.png" onmousemove="cahcheinfobullelieu();"><img id="imagette" src="./Jeunes_files/trempolino.jpg"><div id="nomlieu"><p>Trempolino</p></div><div id="ouverture"><p>date d'ouverture: 1990</p></div><div id="description"><p>Situé à la Fabrique, Trempolino est un projet social qui accompagne les jeunes artistes et labels. Un espace de rencontre ouvert à diverses pratiques musicales, de création, de répétitions et de formation à l’initiative de nombreux projets.</p></div></div>
+
+<div id="centreVolume" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-grand.png" onmousemove="cacherdivVolume();"><div id="quartier"><p class="endessous">Centre Ville</p><p class="endessous"></p></div><div id="pourcentagequartiercentre" class="pourcentageVolume"><p>18%</p></div><div id="jeunesVolume"><p class="endessous">8323</p><p id="motjeuneVolume" class="endessous">18-24 ans</p></div></div><div id="bellevueVolume" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-petit.png" onmousemove="cacherdivVolume(); "><div id="quartier"><p class="endessous">Bellevue</p><p class="endessous">Chantenay</p></div><div id="pourcentagequartierbellevue" class="pourcentageVolume"><p>5%</p></div><div id="jeunesVolume"><p class="endessous">2524</p><p id="motjeuneVolume" class="endessous">18-24 ans</p></div></div><div id="dervVolume" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-moyen.png" onmousemove="cacherdivVolume();"><div id="quartier"><p class="endessous">Dervallières</p><p class="endessous">Zola</p></div><div id="pourcentagequartierderv" class="pourcentageVolume"><p>9%</p></div><div id="jeunesVolume"><p class="endessous">4062</p><p id="motjeuneVolume" class="endessous">18-24 ans</p></div></div><div id="hautsVolume" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-grand.png" onmousemove="cacherdivVolume();"><div id="quartier"><p class="endessous">Hauts Pavés</p><p class="endessous">St Felix</p></div><div id="pourcentagequartierhauts" class="pourcentageVolume"><p>14%</p></div><div id="jeunesVolume"><p class="endessous">6640</p><p id="motjeuneVolume" class="endessous">18-24 ans</p></div></div><div id="malakoffVolume" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-moyen.png" onmousemove="cacherdivVolume();"><div id="quartier"><p class="endessous">Malakoff</p><p class="endessous">St Donatien</p></div><div id="pourcentagequartiermalakoff" class="pourcentageVolume"><p>13%</p></div><div id="jeunesVolume"><p class="endessous">6225</p><p id="motjeuneVolume" class="endessous">18-24 ans</p></div></div><div id="ileVolume" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-petit.png" onmousemove="cacherdivVolume(); "><div id="quartier"><p class="endessous">Ile de Nantes</p><p class="endessous"></p></div><div id="pourcentagequartierile" class="pourcentageVolume"><p>6%</p></div><div id="jeunesVolume"><p class="endessous">2985</p><p id="motjeuneVolume" class="endessous">18-24 ans</p></div></div><div id="breilVolume" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-moyen.png" onmousemove="cacherdivVolume();"><div id="quartier"><p class="endessous">Breil</p><p class="endessous">Barberie</p></div><div id="pourcentagequartierbreil" class="pourcentageVolume"><p>7%</p></div><div id="jeunesVolume"><p class="endessous">3346</p><p id="motjeuneVolume" class="endessous">18-24 ans</p></div></div><div id="nordVolume" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-grand.png" onmousemove="cacherdivVolume();"><div id="quartier"><p class="endessous">Nantes</p><p class="endessous">Nord</p></div><div id="pourcentagequartiernord" class="pourcentageVolume"><p>12%</p></div><div id="jeunesVolume"><p class="endessous">5469</p><p id="motjeuneVolume" class="endessous">18-24 ans</p></div></div><div id="erdreVolume" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-moyen.png" onmousemove="cacherdivVolume();"><div id="quartier"><p class="endessous">Nantes</p><p class="endessous">Edre</p></div><div id="pourcentagequartiererdre" class="pourcentageVolume"><p>8%</p></div><div id="jeunesVolume"><p class="endessous">3628</p><p id="motjeuneVolume" class="endessous">18-24 ans</p></div></div><div id="doulonVolume" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-moyen.png" onmousemove="cacherdivVolume();"><div id="quartier"><p class="endessous">Doulon</p><p class="endessous">Bottière</p></div><div id="pourcentagequartierdoulon" class="pourcentageVolume"><p>7%</p></div><div id="jeunesVolume"><p class="endessous">3133</p><p id="motjeuneVolume" class="endessous">18-24 ans</p></div></div><div id="SUDVolume" class="infobulle"><img id="image" alt="" src="./Jeunes_files/bulle-petit.png" onmousemove="cacherdivVolume(); "><div id="quartier"><p class="endessous">Nantes</p><p class="endessous">Sud</p></div><div id="pourcentagequartierSUD" class="pourcentageVolume"><p>2%</p></div><div id="jeunesVolume"><p class="endessous">1097</p><p id="motjeuneVolume" class="endessous">18-24 ans</p></div></div>
+
+<div id="fenetre">
+	<div id="right"></div>
+	<div id="center">
+		<div id="titre">
+			<img src="./Jeunes_files/imageentete.jpg" width="100%" height="350px">
+		</div>
+		<div id="intro">
+		<h1> L'ILE DE NANTES, L'ILE DES JEUNES ?</h1>
+		<p id="introduction" class="textintro">
+			Nantes est une des villes les plus réputées de France pour sa qualité de vie et son attractivité. De nombreux efforts sont fournis par la municipalité dans le but d'en faire un endroit convivial et dynamique, notamment pour les jeunes compris entre 18 et 24 ans qui représentent 17% de la population.
+		</p>
+		<p id="introduction" class="textintro">
+Même s’il est vrai que les quartiers les plus populaires demeurent ceux du centre-ville (Bouffay, Commerce, Graslin... ), le quartier de l’Ile de Nantes est en perpétuelle évolution et mérite l'attention de la jeunesse.
+		</p>
+		<p id="introduction" class="textintro">
+	Qu’évoque l’Ile de Nantes pour les 47 432 nantais qui ont entre 18 et 24 ans ? Comment considèrent-ils ce quartier ?Y vivent-ils ? S’y rejoignent-ils ? Pour y faire quoi ?
+		</p>
+		<p></p>
+
+		</div>
+			<div id="ousontlesjeuneVolume">
+						<h2>Mais où sont les jeunes ? </h2>
+						<p class="textintro"> Il est intéressant de mettre l'île de Nantes en parallèle avec les 10 autres quartiers de la ville.</p>
+						<i class="textintro" style:italic=""> Recensement Insee 2009 </i>
+					<div id="carte">
+						<h3>Répartition par quartier de 18-24 ans résidant à Nantes</h3>
+						<p id="blabla" class="textintro">La carte suivante localise les 47 432 nantais compris entre 18 et 24 ans, par quartier. Nous avons tenu à rapporter ces données en pourcentage afin d'exprimer la part des Nantais de 18-24 ans qui résident dans les différents quartiers, par rapport à la totalité des nantais de cette même tranche d'âge. (Par exemple, 6% des Nantais de 18-24 ans habitent sur l'île de Nantes).</p>
+						<img id="imagecarte2" class="imagecarte" src="./Jeunes_files/vide.png" onmousemove="getCoordoneesVol(event);">
+
+					</div>
+
+
+			</div>
+			<div class="explication">
+				<img id="lile" src="./Jeunes_files/zoom.png" width="300px" height="100px" margin-top="15px;">
+				<p class="texteexplication"> <span style="color:#bfe56c">2985</span> habitants de l’Ile de Nantes ont entre 18 et 24 ans.</p>
+				<p class="texteexplication"> Zoom sur l’Ile par IRIS* :</p>
+				<p class="texteexplication"> Nombre d’habitants ayant entre 18 et 24 ans par ordre décroissant. </p>
+				<p class="texte"> *Les différents ilots issus du découpage du territoire effectué par l’INSEE se nomment IRIS</p>
+				<div id="donneschiffrer">
+					<p class="chiffre">République les Ponts : <span style="color:#bfe56c">1256 </span></p>
+					<p class="chiffre">Beaulieu Mangin :<span style="color:#bfe56c"> 753</span></p>
+					<p class="chiffre">Ile Beaulieu : <span style="color:#bfe56c">726</span> </p>
+					<p class="chiffre">Zone-Sainte-Anne-Zone-Portuaire :<span style="color:#bfe56c"> 251 </span></p>
+				</div>
+			</div>
+
+			<div id="ousontlesjeunePourcent">
+						<p class="textintro">Ces données démontrent que les jeunes nantais sont concentrés dans les quartiers étendus, ou populaires. Ainsi, l'Ile de Nantes compte 2985 jeunes entre 18 et 24 ans, ce qui reste un chiffre assez bas en comparaison avec les autres quartiers. Pourtant, le rapport entre la population totale des quartiers et leur part de 18-24 ans, est une information pertinente à prendre en compte puisqu'elle inverse les tendances.</p>
+
+						<h3>Part de 18-24 ans résidant dans le quartier</h3>
+						<img id="imagecarte1" class="imagecarte" src="./Jeunes_files/vide(1).png" onmousemove="getCoordoneesPourcent(event);">
+
+
+
+
+			</div>
+			<div class="explication">
+				<img id="lile" src="./Jeunes_files/zoom.png" width="300px" height="100px" margin-top="15px;">
+				<p class="texteexplication"> <span style="color:#bfe56c">20 % </span>des habitants de l’île de Nantes ont entre 18 et 24 ans. </p>
+				<p class="texteexplication"> Part des habitants des différents IRIS* ayant entre 18 et 24 ans par ordre décroissant. </p>
+				<div id="donneschiffrer">
+					<p class="chiffre">République les Ponts :<span style="color:#bfe56c"> 44% </span></p>
+					<p class="chiffre">Beaulieu Mangin :<span style="color:#bfe56c"> 27%</span></p>
+					<p class="chiffre">Ile Beaulieu : <span style="color:#bfe56c">16% </span></p>
+					<p class="chiffre">Zone-Sainte-Anne-Zone-Portuaire :<span style="color:#bfe56c"> 13% </span> </p>
+				</div>
+			</div>
+			<div id="Pourquoi">
+					<p class="textintro">L’île de Nantes est donc un quartier où, en 2009, 20% de ses habitants avaient entre 18 et 24 ans. Un rapport plus que correct si l’on compare avec d’autres quartiers de la ville, puisqu’avec ce taux, l’île de Nantes se place troisième position sur le classement des quartiers où il y a le plus de jeunes.</p>
+					<h2>Un zoom sur l'île </h2>
+					<p class="textintro">Mais quelles sont les raisons qui peuvent encourager ou décourager les jeunes de 18-24 ans à fréquenter l’île ? Afin d’y voir plus clair, nous avons directement été à la rencontre des intéressés.</p>
+					<div class="temoin">
+						<img class="portrait" id="marie" src="./Jeunes_files/marie.jpg">
+						<p class="temoignage"> « L’Ile de Nantes, je l’associe aux sorties. Il y a toujours un truc à faire là-bas ! Moi qui adore la musique, c’est vraiment l’endroit parfait pour découvrir des groupes et s’amuser. » </p>
+						<p class="signature"> Marie,20 ans</p>
+					</div>
+
+						<h3> Focus sur les lieux les plus incontournables</h3>
+					<div id="irisnante">
+						<div id="placepoint">
+							<img id="imageiris" src="./Jeunes_files/zoom.png" onmousemove="cahcheinfobullelieu();">
+							<img id="machines" src="./Jeunes_files/punaise.png" onmousemove="afficheinfolieu(event,&#39;machines&#39;);">
+							<img id="trempolino" src="./Jeunes_files/punaise.png" onmousemove="afficheinfolieu(event,&#39;trempolino&#39;);">
+							<img id="stereolux" src="./Jeunes_files/punaise.png" onmousemove="afficheinfolieu(event,&#39;stereolux&#39;);">
+							<img id="ecolearchi" src="./Jeunes_files/punaise.png" onmousemove="afficheinfolieu(event,&#39;ecolearchi&#39;);">
+							<img id="polegraphique" src="./Jeunes_files/punaise.png" onmousemove="afficheinfolieu(event,&#39;polegraphique&#39;);">
+							<img id="palaissport" src="./Jeunes_files/punaise.png" onmousemove="afficheinfolieu(event,&#39;palaissport&#39;);">
+							<img id="centrecommercialbeaulieu" src="./Jeunes_files/punaise.png" onmousemove="afficheinfolieu(event,&#39;centrecommercialbeaulieu&#39;);">
+							<img id="lcclub" src="./Jeunes_files/punaise.png" onmousemove="afficheinfolieu(event,&#39;lcclub&#39;);">
+							<img id="altercafe" src="./Jeunes_files/punaise.png" onmousemove="afficheinfolieu(event,&#39;altercafe&#39;);">
+							<img id="rondpoint" src="./Jeunes_files/punaise.png" onmousemove="afficheinfolieu(event,&#39;rondpoint&#39;);">
+							<img id="ferrailleur" src="./Jeunes_files/punaise.png" onmousemove="afficheinfolieu(event,&#39;ferrailleur&#39;);">
+						</div>
+				</div>
+		</div>
+		<div id="hangar">
+			<h4>Le Hangar à Bananes pour accroitre la fréquentation.</h4>
+			<p class="textintro"> De nombreux projets à l’initiative de la ville de Nantes ont été mis en place pour attirer les plus jeunes. Le symbole de ce renouveau : Le Hangar à bananes. L’ancien hangar a été réhabilité avec la création de cafés, bars, restaurants et boites de nuits. Ouvert en juin 2007, il connaît une forte fréquentation. Ce renouveau a permis d’accueillir des personnes issues de toute la ville de Nantes. L’Altercafé, le LC Club, le Rond Point, le Ferrailleur sont autant de lieux qui sont rentrés dans le langage courant pour les nantais, aujourd’hui devenus incontournables pour les sorties et les activités nocturnes. C’est aussi un lieu de vie, où il est possible de déjeuner ou boire un café en terrasse si le soleil est au rendez-vous.</p>
+		</div>
+		<div id="culture">
+			<h4>Un quartier culturel au coeur de l'innovation</h4>
+			<p class="textintro">Au cœur de cette dynamique, La Fabrique, composée du Stereolux et de Trempolino. Stereolux est reconnu pour sa salle de concerts et le Festival Scopitone, un festival d’arts numériques à succès qui a réunit en 2012 près de 40 000 spectateurs.
+				Trempolino est une entité culturelle qui accompagne les jeunes artistes en leur fournissant du matériel, des studios d’enregistrement, de répétition. Trempolino propose aussi de nombreuses formations artistiques.
+
+				Mais l’île accueille également plusieurs centres de formation dont l’école supérieure d’architecture et le Pôle des Arts Graphiques.
+				Issue du projet du Quartier de la Création, l’installation de ces grandes écoles vise à intégrer l’île dans une dimension formatrice, technologique et innovante. Une localisation qui peut encourager les étudiants à investir le quartier.
+			</p>
+		</div>
+		<div class="temoin">
+				<img class="portrait" src="./Jeunes_files/alexandre.jpg">
+				<p class="temoignage"> « J’habite sur l’île de Nantes depuis septembre. On m’avait dit que c’était un quartier « branché » mais ce qui m’a surtout décidé à emménager, c’est le prix plutôt bas de mon loyer. Surtout quand je vois les loyers de certains de mes potes qui vivent dans le centre … » </p>
+				<p class="signature"> Alexandre,22 ans</p>
+		</div>
+		<div id="loyer">
+			<h3>Estimation du Prix au m2 à la location des différents quartiers nantais au 1er janvier 2013</h3>
+			<img id="histo" src="./Jeunes_files/histogramme.png" width="100%" ,="" height="600px">
+		</div>
+		<div id="eexp">
+            <p class="textintro">Source : <a href="lacoteimo.com">lacoteimmo.com</a></p>
+			<p class="textintro">L’Ile de Nantes est donc un quartier accessible en terme de loyer, avec une différence en moyenne de presque 3 euros (prix au m2 à la location) avec le quartier le plus cher : le centre ville.</p>
+			<p class="textintro">Au delà du coût du loyer, plusieurs résidences et foyers ont été aménagés pour favoriser le logement de la jeunesse. Ainsi, République Les Ponts accueille la nouvelle résidence universitaire Montécristo avec plus de 158 chambres à destination d’étudiants. Deux résidences pour jeunes actifs ont également été ouvertes récemment dans le but d’accompagner les résidents dans leur entrée dans la vie active. </p>
+			<p class="textintro">Mais malgré ces atouts qui constituent le côté attractif du quartier, on ne trouve pas que des « pro » île de Nantes.</p>
+		</div>
+		<div class="temoin">
+				<img class="portrait" src="./Jeunes_files/antoine.jpg">
+				<p class="temoignage"> « Je ne vais jamais sur l’Ile de Nantes, je trouve que c’est trop loin, ça prend du temps. Je préfère aller en ville, c’est plutôt pour le côté pratique.»</p>
+				<p class="signature"> Antoine,22 ans</p>
+		</div>
+		<p id="motdelafin" class="textintro">
+			Pourtant, face au développement de l’Ile de Nantes, les moyens de transports permettant d’y accéder plus facilement se sont multipliés. 16 stations de Bicloos, trois arrêts de tram (Vincent Gâche, Wattignies et Mangin) desservis par les lignes 2 et 3, quatre lignes de bus (24, 42, 52, 58) pour une vingtaine d'arrêts et pour finir, la ligne 4 du Busway qui permet d’accéder à trois arrêts de l’île : Tripode, Île de Nantes et Beaulieu.
+		</p>
+		<div id="conclusion">
+			<h2>Et pour l’avenir, que réserve l’Ile de Nantes à la jeunesse ?</h2>
+			<p class="textintro">
+			Rassemblant aujourd’hui près de 18 000 Nantais, l’île de Nantes devrait atteindre les 40 000 habitants à l'horizon 2030 selon les prévisions.
+			</p>
+			<p class="textintro">
+			Les différentes raisons qui peuvent encourager les jeunes à vivre ou à fréquenter l’île ne seront peut-être plus d’actualité d’ici là mais une chose est sûre : les projets d’aménagement du quartier continuent, et pourront eux aussi être une source de motivation supplémentaire.
+			</p>
+			<p class="textintro">
+			Plusieurs projets sont en cours de développement pour les années à venir. Ainsi, l’île de Nantes sera desservie par neuf arrêts par la future ligne 5 du Chronobus, ce qui facilitera encore l’accès au quartier.
+			</p>
+			<p class="textintro">
+			La directrice de l’école de la communication et des médias nantaise SciencesCom, Valérie Claude Gaudillat, a officialisé à la rentrée son souhait d’investir l’île de Nantes pour la construction des nouveaux locaux de l’école. Pour rester dans le domaine de la formation, l’école d’art cinématographique Ciné-Créatis a également pour projet d’intégrer un système de logements étudiants à ses locaux. Une ambition qui encouragera les étudiants de l’école à vivre à proximité de leur lieu d’étude.
+			</p>
+			<p class="textintro">
+			Nous avons rencontré Elisa Caurant, chargée de communication à la SAMOA (Société d’Aménagement de la Métropole Ouest Atlantique), qui nous a parlé d’un projet à destination de la jeunesse nantaise :
+			</p>
+			<p class="textintro">
+			« Pour les jeunes, il y a le projet de l’incubateur artistique. Il est à la fois porté pédagogiquement et académiquement par l’école des Beaux-Arts et par Audencia, et dans la direction artistique par Fabrice Hybert. 10 % des projets seront internationaux et seront accompagnés pendant 1 an. La particularité du projet est la volonté de réaliser des œuvres en collaboration étroite avec les entreprises. »
+			</p>
+			<p class="textintro">
+			Rendez-vous sur l’île dans quelques années, pour apprécier ses changements !
+			</p>
+		</div>
+		<div id="basdepage">
+			<p class="source"> Equipe du projet: Lucie LEPRINCE, Pauline SORTINO, Camille CHEVALIER, Lucile HUCHET-CHOISNET, Manon KERSAUDY, Pierre GOURET</p>
+			<p class="source">Source: <a href="http://www.recensement.insee.fr/home.action" target="_blank"> recensement INSEE 2009</a>, <a href="http://www.lacoteimmo.com/prix-de-l-immo/location/pays-de-la-loire/loire-atlantique/nantes/440109.htm" target="_blank">lacoteimmo.com</a>, <a href="http://www.20minutes.fr/" target="_blank"> 20 minutes</a></p>
+			<div id="partenaire">
+<div id="partenaires"></div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="../partenaires/partenaire.js" charset="utf-8"></script>
+				<!-- img id="cc" src="./Jeunes_files/Creativecommons.jpg">
+				<img id="vlipp" src="./Jeunes_files/vlipp.jpg">
+				<img id="pays" src="./Jeunes_files/Paysdelaloire.jpg">
+				<img id="hyblab" src="./Jeunes_files/Hyblab.jpg">
+				<a href="http://www.hyblab.fr/">hyblab</a>
+				<img id="sciencecom" src="./Jeunes_files/Sciencescom.jpg">
+				<img id="agr" src="./Jeunes_files/AGR.jpg">
+				<img id="polytech" src="./Jeunes_files/polytech.jpg"-->
+			</div>
+
+		</div>
+	</div>
+	<div id="left">
+
+	</div>
+</div>
+
+</body>
+</html>

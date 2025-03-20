@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 5.01 Transitional//FR" "http://www.w3.org/TR/html5/loose.dtd">
+<!-- saved from url=(0046)http://localhost:8080/ElephantHyblab/Index.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Le poids de l'éléphant de l'île de Nantes</title>
+
+<link type="text/css" href="./Elephant_files/Elephant.css" rel="stylesheet">
+<link type="text/css" href="./Elephant_files/BarChart.css" rel="stylesheet">
+<script language="javascript" src="./Elephant_files/js-class.js" type="text/javascript" charset="utf-8"></script>
+<script language="javascript" src="./Elephant_files/excanvas.js" type="text/javascript" charset="utf-8"></script>
+<script language="javascript" src="./Elephant_files/bluff-src.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="./Elephant_files/camenbert.js" charset="utf-8"></script>
+<script type="text/javascript" src="./Elephant_files/gestionBouton.js" charset="utf-8"></script>
+<script type="text/javascript" src="./Elephant_files/Histogramme.js" charset="utf-8"></script>
+<script type="text/javascript" src="./Elephant_files/jit.js" charset="utf-8"></script>
+<script type="text/javascript" src="./Elephant_files/courbes.js" charset="utf-8"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style id="wrc-middle-css" type="text/css">.wrc_whole_window{	display: none;	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal !important;	margin: 0px !important;	padding: 0px !important;	border: 0px !important;	left: 0px;	top: 0px;	width: 100%;	height: 100%;	line-height: normal !important;	letter-spacing: normal !important;	overflow: hidden;}.wrc_bar_window{	display: none;	position: fixed; 	z-index: 2147483647;	background-color: rgba(60, 60, 60, 1.0);	word-spacing: normal !important;	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	margin: 0px !important;	padding: 0px !important;	border: 0px !important;	left: 0px;	top: 0px;	width: 100%;	height: 40px;	line-height: normal !important;	letter-spacing: normal !important;	color: white !important;	font-size: 13px !important;}.wrc_middle {	display: table-cell;	vertical-align: middle;	width: 100%;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;    background: url(chrome-extension://icmlaeflemplmjndnaapfdbbnpncnbda/skin/images/background-body.jpg) repeat-x left top;	background-color: rgb(39, 53, 62);	position: relative;	margin-left: auto;	margin-right: auto;	text-align: left;}.wrc_middle_tq_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 16px;	width: 615px;	height: 460px;    background: url(chrome-extension://icmlaeflemplmjndnaapfdbbnpncnbda/skin/images/background-sitecorrect.png) no-repeat;	background-color: white;	color: black !important;	position: relative;	margin-left: auto;	margin-right: auto;	text-align: center;}.wrc_middle_logo {    background: url(chrome-extension://icmlaeflemplmjndnaapfdbbnpncnbda/skin/images/logo.jpg) no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	margin-bottom: 15px;	text-align: center;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	padding: 0px 20px 0px 20px;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_grey_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 15px;	font-weight: bold;}.wrc_middle_actions_grey_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(100, 100, 100) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #aaaaaa;	text-decoration: none;	padding: 0px 20px 0px 20px;}.wrc_middle_actions_grey_button:hover {	background-color: rgb(120, 120, 120) !important;}.wrc_middle_actions_grey_button:active {	background-color: rgb(130, 130, 130) !important;	border: 2px solid #00aaaa;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script id="wrc-script-middle_window" type="text/javascript" language="JavaScript">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'table';		}	}}</script></head>
+<body onload="camenbert([&#39;Nantes Métropole&#39;, &#39;Union Européenne&#39;, &#39;Pays de la Loire&#39;],[45, 35, 20]);histogramme(8744,5364,3467); courbes([98328, 104155, 215079],[214133, 183159, 244212],[0, 486000, 605000]);">
+<div id="fenetre">
+	<div id="titre" onmouseover="resetBouton();">
+			<img id="titreelephant" src="./Elephant_files/ElephantTitre.png" height="130px">
+	</div>
+	<div id="entete" onmouseover="resetBouton();">
+
+		<div id="polytech">
+            <a href="http://www.polytech.univ-nantes.fr/" target="_blank">
+                <img src="./Elephant_files/IconePolytech.png">
+            </a>
+        </div>
+        <div id="sciencecom">
+            <a href="http://www.sciencescom.org/" target="_blank">
+                <img src="./Elephant_files/IconeSciencesCom.png">
+            </a>
+        </div>
+        <div id="agr">
+            <a href="http://www.agrnantes.fr/" target="_blank">
+                <img src="./Elephant_files/IconeAgr.png">
+            </a>
+        </div>
+		<div id="resume"><p class="text">Depuis 2007, l’éléphant des Machines de l’île est présenté comme la vitrine de la ville de Nantes. La visualisation ci-dessous présente le poids de l’animal dans l’économie touristique nantaise mais aussi les informations techniques autour du pachyderme mécanique.</p></div>
+	</div>
+	<div id="centre">
+		<div id="bouton">
+			<div id="1" class="bouton" style="margin-left: 344px;"><img id="bouton1" alt="" src="./Elephant_files/1.png" onmouseover="deplieruban(1);" onclick="changedataviz(1);"></div>
+			<div id="2" class="bouton" style="margin-left: 344px;"><img id="bouton2" alt="" src="./Elephant_files/2.png" onmouseover="deplieruban(2);" onclick="changedataviz(2);"></div>
+			<div id="3" class="bouton" style="margin-left: 344px;"><img id="bouton3" alt="" src="./Elephant_files/3.png" onmouseover="deplieruban(3);" onclick="changedataviz(3);"></div>
+			<div id="4" class="bouton" style="margin-left: 344px;"><img id="bouton4" alt="" src="./Elephant_files/4.png" onmouseover="deplieruban(4);" onclick="changedataviz(4);"></div>
+			<div id="5" class="bouton" style="margin-left: 344px;"><img id="bouton5" alt="" src="./Elephant_files/5.png" onmouseover="deplieruban(5);" onclick="changedataviz(5);"></div>
+			<div id="6" class="bouton" style="margin-left: 344px;"><img id="bouton6" alt="" src="./Elephant_files/6.png" onmouseover="deplieruban(6);" onclick="changedataviz(6);"></div>
+			<div id="7" class="bouton" style="margin-left: 344px;"><img id="bouton7" alt="" src="./Elephant_files/7.png" onmouseover="deplieruban(7);" onclick="changedataviz(7);"></div>
+			<div id="8" class="bouton" style="margin-left: 344px;"><img id="bouton8" alt="" src="./Elephant_files/8.png" onmouseover="deplieruban(8);" onclick="changedataviz(8);"></div>
+			<div id="9" class="bouton" style="margin-left: 344px;"><img id="bouton9" alt="" src="./Elephant_files/9.png" onmouseover="deplieruban(9);" onclick="changedataviz(9);"></div>
+			<div id="10" class="bouton" style="margin-left: 344px;"><img id="bouton10" alt="" src="./Elephant_files/10.png" onmouseover="deplieruban(10);" onclick="changedataviz(10);"></div>
+			<div id="11" class="bouton" style="margin-left: 344px;"><img id="bouton11" alt="" src="./Elephant_files/11.png" onmouseover="deplieruban(11);" onclick="changedataviz(11);"></div>
+			<div id="12" class="bouton" style="margin-left: 344px;"><img id="bouton12" alt="" src="./Elephant_files/12.png" onmouseover="deplieruban(12);" onclick="changedataviz(12);"></div>
+		</div>
+		<div id="dataviz" onmouseover="resetBouton();">
+			<img id="imagechange" alt="" src="./Elephant_files/Elephant-Depart.png">
+			<div id="financement">
+				   <div class="bluff-wrapper" style="position: relative; border: none; padding: 0px; width: 500px; height: 375px;"><canvas id="camenbert" width="500" height="375"></canvas><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 12.5px; color: black; cursor: default; font-weight: normal; text-align: center; left: 75px; top: 43.625px;">Nantes Métropole</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 12.5px; color: black; cursor: default; font-weight: normal; text-align: center; left: 206.875px; top: 43.625px;">Union Européenne</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 12.5px; color: black; cursor: default; font-weight: normal; text-align: center; left: 344.375px; top: 43.625px;">Pays de la Loire</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 22.5px; color: black; cursor: default; font-weight: bold; text-align: center; left: 146.5px; top: 12.5px;">Financement (en %)</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.125px; color: black; cursor: default; font-weight: bold; text-align: center; left: 368.9255177169465px; top: 286.1192338977862px;">20</div><div class="bluff-tooltip-target" style="cursor: default; position: absolute; left: 360.4255177169465px; top: 278.1192338977862px; width: 30px; height: 30px; font-size: 0px; overflow: hidden;"></div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.125px; color: black; cursor: default; font-weight: bold; text-align: center; left: 132.9370617413609px; top: 302.2694028335992px;">35</div><div class="bluff-tooltip-target" style="cursor: default; position: absolute; left: 124.43706174136092px; top: 294.2694028335992px; width: 30px; height: 30px; font-size: 0px; overflow: hidden;"></div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.125px; color: black; cursor: default; font-weight: bold; text-align: center; left: 267.34941556967453px; top: 72.87888310044809px;">45</div><div class="bluff-tooltip-target" style="cursor: default; position: absolute; left: 258.84941556967453px; top: 64.87888310044809px; width: 30px; height: 30px; font-size: 0px; overflow: hidden;"></div></div>
+				   <h3> Pour un prix total de 2,5 millions d'euros </h3>
+			</div>
+			<div id="viesurleNet">
+			<h2 id="titrefreq"> La vie de l'éléphant sur le web </h2>
+				<div class="bluff-wrapper" style="position: relative; border: none; padding: 0px; width: 500px; height: 375px;"><canvas id="histogramme" width="500" height="375"></canvas><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 12.5px; color: black; cursor: default; font-weight: normal; text-align: center; left: 75.3125px; top: 43.625px;">Facebook (en nombre de like)</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 12.5px; color: black; cursor: default; font-weight: normal; text-align: center; left: 274.0625px; top: 43.625px;">Twitter (en nombre de tweet)</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 12.5px; color: black; cursor: default; font-weight: normal; text-align: center; left: 175px; top: 71.125px;">Flickr (en nombre de photos)</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.125px; color: black; cursor: default; font-weight: normal; text-align: center; left: 45.5px; top: 333.125px;">0</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.125px; color: black; cursor: default; font-weight: normal; text-align: center; left: 18.5px; top: 276.6862991765782px;">2,100</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.125px; color: black; cursor: default; font-weight: normal; text-align: center; left: 18.5px; top: 220.24759835315643px;">4,200</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.125px; color: black; cursor: default; font-weight: normal; text-align: center; left: 18.5px; top: 163.80889752973468px;">6,300</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.125px; color: black; cursor: default; font-weight: normal; text-align: center; left: 18.5px; top: 107.37019670631287px;">8,400</div><div class="bluff-tooltip-target" style="cursor: default; position: absolute; left: 62.89583333333334px; top: 103.25px; width: 133.625px; height: 238.75px; font-size: 0px; overflow: hidden;"></div><div class="bluff-tooltip-target" style="cursor: default; position: absolute; left: 205.81249999999997px; top: 194.0894327538884px; width: 133.625px; height: 147.9105672461116px; font-size: 0px; overflow: hidden;"></div><div class="bluff-tooltip-target" style="cursor: default; position: absolute; left: 348.7291666666666px; top: 245.0723924977127px; width: 133.62499999999997px; height: 96.92760750228729px; font-size: 0px; overflow: hidden;"></div></div>
+			 </div>
+			<div id="paran">
+				<h2 id="titrefreq"> Fréquentation des touristes à Nantes (en nombre de visites) </h2>
+				<div class="bluff-wrapper" style="position: relative; border: none; padding: 0px; width: 500px; height: 375px;"><canvas id="courbe" width="500" height="375"></canvas><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 12.5px; color: black; cursor: default; font-weight: normal; text-align: center; left: 80px; top: 43.625px;">Nb de touriste Nantes</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 12.5px; color: black; cursor: default; font-weight: normal; text-align: center; left: 234.375px; top: 43.625px;">Chateau</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 12.5px; color: black; cursor: default; font-weight: normal; text-align: center; left: 315px; top: 43.625px;">Machines de Nantes</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.125px; color: black; cursor: default; font-weight: normal; text-align: center; left: 60.5px; top: 333.125px;">0</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.125px; color: black; cursor: default; font-weight: normal; text-align: center; left: 17.5px; top: 268.04235537190084px;">150,000</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.125px; color: black; cursor: default; font-weight: normal; text-align: center; left: 17.5px; top: 202.95971074380165px;">300,000</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.125px; color: black; cursor: default; font-weight: normal; text-align: center; left: 17.5px; top: 137.87706611570252px;">450,000</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.125px; color: black; cursor: default; font-weight: normal; text-align: center; left: 17.5px; top: 72.79442148760332px;">600,000</div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.125px; color: black; cursor: default; font-weight: normal; text-align: center; left: 58.75px; top: 346.875px;">2010</div><div class="bluff-tooltip-target" style="cursor: default; position: absolute; left: 66.375px; top: 333.25px; width: 13.75px; height: 13.75px; font-size: 0px; overflow: hidden;"></div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.125px; color: black; cursor: default; font-weight: normal; text-align: center; left: 258.125px; top: 346.875px;">2011</div><div class="bluff-tooltip-target" style="cursor: default; position: absolute; left: 265.75px; top: 122.3822314049587px; width: 13.75px; height: 13.75px; font-size: 0px; overflow: hidden;"></div><div class="bluff-text" style="position: absolute; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.125px; color: black; cursor: default; font-weight: normal; text-align: center; left: 457.5px; top: 346.875px;">2012</div><div class="bluff-tooltip-target" style="cursor: default; position: absolute; left: 465.125px; top: 70.75px; width: 13.75px; height: 13.75px; font-size: 0px; overflow: hidden;"></div><div class="bluff-tooltip-target" style="cursor: default; position: absolute; left: 66.375px; top: 240.34105371900824px; width: 13.75px; height: 13.75px; font-size: 0px; overflow: hidden;"></div><div class="bluff-tooltip-target" style="cursor: default; position: absolute; left: 265.75px; top: 253.78018595041323px; width: 13.75px; height: 13.75px; font-size: 0px; overflow: hidden;"></div><div class="bluff-tooltip-target" style="cursor: default; position: absolute; left: 465.125px; top: 227.2902479338843px; width: 13.75px; height: 13.75px; font-size: 0px; overflow: hidden;"></div><div class="bluff-tooltip-target" style="cursor: default; position: absolute; left: 66.375px; top: 290.5870247933884px; width: 13.75px; height: 13.75px; font-size: 0px; overflow: hidden;"></div><div class="bluff-tooltip-target" style="cursor: default; position: absolute; left: 265.75px; top: 288.0587809917355px; width: 13.75px; height: 13.75px; font-size: 0px; overflow: hidden;"></div><div class="bluff-tooltip-target" style="cursor: default; position: absolute; left: 465.125px; top: 239.93059917355373px; width: 13.75px; height: 13.75px; font-size: 0px; overflow: hidden;"></div></div>
+			</div>
+			<a href="http://www.lesmachines-nantes.fr/" id="legende"> les machines de l'île</a>
+		</div>
+	</div>
+	<div id="timeline" onmouseover="resetBouton();">
+		<b class="text"> La ligne de vie de l'éléphant en quelques dates </b>
+		<p class="text">Le Grand Éléphant est devenu la nouvelle attraction touristique nantaise.</p>
+		<p class="text"> Il est présent dans toute la presse ! Découvrez son histoire à travers plusieurs articles et contenus journalistiques :</p>
+		<iframe src="http://embed.verite.co/timeline/?source=0AkaOx1rU4gj6dDdFWko4eXdKbGhGUHBRLTdJdjJOZkE&font=Arvo-PTSans&maptype=sterrain&lang=fr&debug=true&height=650 " width="100%" height="680" frameborder="0"></iframe>
+
+	</div>
+	<div id="microtrotoir">
+	<p></p><p></p>
+		<b class="text"> Micro-trottoir sur le Grand éléphant </b>
+		<p class="text">"Connaissez-vous toutes les subtilités du Grand Éléphant de Nantes ?</p>
+	<p class="text">Trois questions posées aux touristes :</p>
+	<p class="question text">Combien pèse l'éléphant ?</p>
+	<p class="question text">Combien a-t-il coûté ?</p>
+	<p class="question  text">Combien de passagers peut-il accueillir ?</p>
+		<p class="text">Découvrez les réactions en images :</p>
+		<video width="100%" height="450px" controls="">
+		 <source src="Micro-Troittoir.mp4" type="video/mp4">
+		</video>
+
+	</div>
+	<!--div id="basdepage">
+		<p></p><p></p>
+		<img id="telenantes" src="./Elephant_files/Telenantes_logo.png" width="180px" height="64px">
+		<img src="./Elephant_files/logo-bas-de-page.png" width="700px" height="100px">
+	</div-->
+
+</div>
+
+
+
+<div class="bluff-tooltip" style="position: absolute; display: none; left: 787px; top: 668px;"></div>
+<div id="partenaires"></div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="../partenaires/partenaire.js" charset="utf-8"></script>
+</body>
+</html>

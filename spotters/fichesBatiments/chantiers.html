@@ -1,0 +1,158 @@
+﻿<html>
+	<head>
+		<title>S.P.O.T.T.E.R.S #Le Parc des Chantiers </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script type="text/javascript" src="../js/highslide/highslide-with-gallery.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/highslide/highslide.css" />	
+		
+		<script src="../js/jquery-1.8.3.js"></script>	
+		<script src="../js/jquery-ui.js"></script>	
+
+		<script type="text/javascript">
+			$('html, body').hide();
+
+			hs.graphicsDir = '../js/highslide/graphics/';
+			hs.align = 'center';
+			hs.transitions = ['expand', 'crossfade'];
+			hs.fadeInOut = true;
+			hs.dimmingOpacity = 0.8;
+			hs.wrapperClassName = 'borderless floating-caption';
+			hs.captionEval = 'this.thumb.alt';
+			hs.marginLeft = 100; // make room for the thumbstrip
+			hs.marginRight = 100; // make room for the thumbstrip
+
+			hs.marginBottom = 80 // make room for the controls and the floating caption
+			hs.numberPosition = 'caption';
+			hs.lang.number = '%1/%2';
+
+		// Add the slideshow providing the controlbar and the thumbstrip
+			hs.addSlideshow({
+				//slideshowGroup: 'group1',
+				interval: 5000,
+				repeat: false,
+				useControls: true,
+				overlayOptions: {
+					className: 'text-controls',
+					position: 'bottom center',
+					relativeTo: 'viewport',
+					offsetX: 50,
+					offsetY: -5
+
+				},
+				thumbstrip: {
+					position: 'middle left',
+					mode: 'vertical',
+					relativeTo: 'viewport'
+				}
+			});
+
+		// Make all images animate to the one visible thumbnail
+		var miniGalleryOptions1 = {
+			thumbnailId: 'thumb1'
+		}
+
+
+		</script>
+
+		<style type="text/css">
+	/* Center the text in the caption */
+	.highslide-caption {
+		width: 90%;
+		text-align: center;
+	}
+	/* Remove the close button from the controls since we already have one in the corner of the image */
+	.highslide-close {
+		display: none !important;
+	}
+	/* Put the image number in front of the caption */
+	.highslide-number {
+		display: inline;
+		padding-right: 1em;
+		color: white;
+	}
+</style>
+	</head>
+	
+	<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="createURL();">
+		<img src="images/chantiers/background.png" width="100%" height="100%" alt="">
+
+		<div id="div_back">	<!-- Bouton BACK -->
+			<a id="back_a" name="../index.html" onclick="clickBack();">
+				<img id="back" src="images/back_OFF.png" width="2.8%" height="11%" 
+					 style="position:absolute; top:5.3%; left:17.7%; cursor: pointer;" 
+					 onmouseover="swapOn(this);" onmouseout="swapOff(this);" />
+			</a>
+		</div>
+		
+		<div class="highslide-gallery"> <!-- Visibles pictures -->
+			<div> <!-- 4 Visible pictures -->
+				<div style="position:absolute; top:21.4%; left:15.87%; max-height:12.9%;max-width:6.9%" >
+					<a class='highslide' id="thumb1" href='images/image_par_defaut.png'
+							onclick="return hs.expand(this, miniGalleryOptions1)">
+						<img id="img1" src="images/image_par_defaut.png" width="100%" height="12.9%"/>
+					</a>
+				</div>
+				<div style="position:absolute; top:21.4%; left:23.65%; max-height:12.9%;max-width:6.9%" >
+					<a class='highslide' id="thumb1" href='images/image_par_defaut.png'
+							onclick="return hs.expand(this, miniGalleryOptions1)">
+						<img id="img1" src="images/image_par_defaut.png" width="100%" height="12.9%"/>
+					</a>
+				</div>
+				<div style="position:absolute; top:36.5%; left:15.87%; max-height:12.9%;max-width:6.9%" >
+					<a class='highslide' id="thumb1" href='images/image_par_defaut.png'
+							onclick="return hs.expand(this, miniGalleryOptions1)">
+						<img id="img1" src="images/image_par_defaut.png" width="100%" height="12.9%"/>
+					</a>
+				</div>
+				<div  style="position:absolute; top:36.5%; left:23.65%; max-height:12.9%;max-width:6.9%" >
+					<a class='highslide' id="thumb1" href='images/image_par_defaut.png'
+							onclick="return hs.expand(this, miniGalleryOptions1)">
+						<img id="img1" src="images/image_par_defaut.png" width="100%" height="12.9%"/>
+					</a>
+				</div>
+			</div>
+		</div>
+	
+		<div class="hidden-container"> <!-- Hidden pictures : visible in gallery mode -->
+
+		</div>
+
+		<div> <!-- embeded Youtube video  -->
+			<iframe frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen width="19.95%" height="23.5%" src="http://www.youtube.com/embed/Yb2yWefXfd8" style="position:absolute; top:64.5%; left:15.75%" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+	</body>
+</html>
+
+<script>
+
+	function createURL(){
+
+		$('html, body').fadeIn(1000);
+
+		document.getElementById( "back_a" ).name = document.getElementById( "back_a" ).name + "?annee=" + getUrlVars()['annee'];
+	}
+	function swapOn(img) {
+		img.src = img.src.replace("OFF","ON");
+		return false;
+	}
+	function swapOff(img) {
+		img.src = img.src.replace("ON","OFF");
+		return false;
+	}	
+	function getUrlVars() {
+		var vars = {};
+		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+			vars[key] = value;
+		});
+		return vars;
+	}
+	function clickBack(){
+		
+				$('html, body').fadeOut(1000, function() {
+					window.location = document.getElementById( "back_a" ).name;
+				});
+		return false;
+	}
+</script>

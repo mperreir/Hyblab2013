@@ -1,0 +1,226 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta charset="UTF-8">
+		<title>Ile de Nantes : Zoom sur le logement</title>
+			<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+			<script type="text/javascript" src="jquery/jquery.metadata.min.js"></script>
+			<script type="text/javascript" src="jquery/jquery.maphilight.min.js"></script>
+			<script type="text/javascript" src="mapDisplay.js"></script>
+</head>
+
+
+<body bgcolor="#FFFFFF" leftmargin="10" topmargin="0" marginwidth="auto" marginheight="0" style=" width:75% ; margin:auto" >
+<!-- Save for Web Slices (nantes centre ville.psd) -->
+<table id="Tableau_01" width="960" height="905" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="2">
+			<img src="images/home_01.png" width="534" height="163" alt=""></td>
+		<td rowspan="2">
+			<div id="namedistrict" style="position: absolute; margin-left:300px; margin-top:140px; font-weight: bold"></div>
+		<div id="mapContainer">
+
+		<div id="Map2">
+		<!--  <img src="images/home_022.png" alt=""  class="zones_carte" "width="426" height="311" border="0" usemap="#Map2"> -->
+
+					<img id="district1" class="hiddenMap" src="image/mapContainer/district1.png" alt="quartier1" usemap="#Map2"/>
+					<img id="district2" class="hiddenMap" src="image/mapContainer/district2.png" alt="quartier2" usemap="#Map2"/>
+					<img id="district3" class="hiddenMap" src="image/mapContainer/district3.png" alt="quartier3" usemap="#Map2"/>
+					<img id="district4" class="hiddenMap" src="image/mapContainer/district4.png" alt="quartier4" usemap="#Map2"/>
+					<img id="district5" class="hiddenMap" src="image/mapContainer/district5.png" alt="quartier5" usemap="#Map2"/>
+					<img id="district6" class="hiddenMAp" src="image/mapContainer/district6.png" alt="quartier6" usemap="#Map2"/>
+					<img id="district7" class="hiddenMap" src="image/mapContainer/district7.png" alt="quartier7" usemap="#Map2"/>
+					<img id="district8" class="hiddenMap" src="image/mapContainer/district8.png" alt="quartier8" usemap="#Map2"/>
+					<img id="district9" class="hiddenMap" src="image/mapContainer/district9.png" alt="quartier9" usemap="#Map2"/>
+					<img id="district10" class="hiddenMap" src="image/mapContainer/district10.png" alt="quartier10" usemap="#Map2"/>
+					<img id="district11" class="hiddenMap" src="image/mapContainer/district11.png" alt="quartier11" usemap="#Map2"/>
+					<map name="Map2">
+						<area shape="poly" name="district0" class="nantesArea" coords="0,0" href="#">
+						<area shape="poly" name="district11" class="nantesArea" coords="144,90,136,117,117,123,78,115,78,105,45,46,104,54" href="#nantesnord">
+						<area shape="poly" name="district9" class="nantesArea" coords="145,133,163,140,211,77,209,66,217,52,205,38,207,5,193,8,173,8,180,24,175,43,160,58,167,77,154,91,145,122" href="#nanteserdre">
+						<area shape="poly" name="district6" class="nantesArea" coords="106,237,120,222,156,217,199,204,174,230,138,239" href="#idn">
+						<area shape="poly" name="district10" class="nantesArea" coords="176,145,210,92,235,78,240,88,251,109,256,131,268,148,208,180,197,160" href="#doulonbottiere">
+						<area shape="poly" name="district1" class="nantesArea" coords="75,120,114,134,105,146,96,158,68,173,42,162,57,156,64,146,57,139" href="#breilbarberie">
+						<area shape="poly" name="district3" class="nantesArea" coords="81,175,98,196,121,184,130,184,129,170,138,152,138,131,125,134,119,153" href="#hautspavesstfelix">
+						<area shape="poly" name="district5" class="nantesArea" coords="148,146,146,158,143,174,164,200,203,186,183,157" href="#malakoffstdonatien">
+						<area shape="poly" name="district2" class="nantesArea" coords="106,202,111,214,157,210,157,206,148,189,126,189" href="#centreville">
+						<area shape="poly" name="district8" class="nantesArea" coords="42,196,50,177,87,192,101,222,90,234,64,221,30,220" href="#drvalierezola">
+						<area shape="poly" name="district7" class="nantesArea" coords="8,251,25,226,37,231,59,228,85,242,74,260,50,272,20,269" href="#bellevuechantenay">
+						<area shape="poly" name="district4" class="nantesArea" coords="159,242,191,228,191,240,198,246,199,252,210,262,220,268,213,272,211,284,190,282" href="#nantessud">
+                    </map>
+
+				</div>
+			</div>
+
+		<div>
+				<script src="mapDisplay1.js"></script>
+			</div></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+                <img src="images/home_03.png" alt="" width="534" height="148" border="0" usemap="#Map3">
+            </td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/home_04.png" width="442" height="328" alt=""></td>
+		<td colspan="2">
+
+			<!--<img src="images/home_05.png" alt="" width="518" height="328" border="0" usemap="#Map"></td>-->
+
+			<!--<img class="hiddenMap district0" src="images/home_05.png" width="518" height="328" border="0" alt="quartier1" usemap="#Map"/>-->
+
+			<img class="hiddenMap district11" src="images/nantes-nord_05.png" width="518" height="328" border="0" alt="quartier1" usemap="#Map"/>
+			<img class="hiddenMap district9" src="images/nantes-erdres_05.png" width="518" height="328" border="0" alt="quartier2" usemap="#Map"/>
+			<img class="hiddenMap district6" src="images/home_05.png" width="518" height="328" border="0" alt="quartier3" usemap="#Map"/>
+			<img class="hiddenMap district10" src="images/nantes-doulon_05.png" width="518" height="328" border="0" alt="quartier4" usemap="#Map"/>
+			<img class="hiddenMap district1" src="images/donnees-breil-barberie.png" width="518" height="328" border="0" alt="quartier5" usemap="#Map"/>
+			<img class="hiddenMap district3" src="images/nantes-st-felix_05.png" width="518" height="328" border="0" alt="quartier6" usemap="#Map"/>
+			<img class="hiddenMap district5" src="images/nantes-malakoff_05.png" width="518" height="328" border="0" alt="quartier7" usemap="#Map"/>
+			<img class="hiddenMap district2" src="images/nantes-centre-ville_05.png" width="518" height="328" border="0" alt="quartier8" usemap="#Map"/>
+			<img class="hiddenMap district8" src="images/nantes-dervalliere_05.png" width="518" height="328" border="0" alt="quartier9" usemap="#Map"/>
+			<img class="hiddenMap district7" src="images/nantes-bellevue_05.png" width="518" height="328" border="0" alt="quartier10" usemap="#Map"/>
+			<img class="hiddenMap district4" src="images/donn+®es-nantes-sud.png" width="518" height="328" border="0" alt="quartier11" usemap="#Map"/>
+
+
+	</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<img src="images/home_06.png" width="960" height="125" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<!--img src="images/home_07.png" alt="" width="960" height="140" border="0"></td-->
+	</tr>
+	<tr>
+		<td>
+			<img src="images/spacer.gif" width="442" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="92" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="426" height="1" alt=""></td>
+	</tr>
+</table>
+<!-- End Save for Web Slices -->
+
+<!--map name="Map">
+
+
+  <area name ="dist1" onClick="window.location='p2.html';" shape="rect" coords="368,204,446,235" href="#4">
+  <area name ="dist2" onClick="window.location='p.html';" shape="rect" coords="367,242,448,276" href="#5" onclick="but2();">
+</map-->
+
+
+<map name="Map3">
+  <area shape="rect" coords="64,59,128,75" href="http://www.facebook.com/sharer.php?u=http://www.hyblab.fr/projets/logement/">
+  <area shape="rect" coords="62,79,128,93" href="http://twitter.com/share?text=Hyblab%20Zoom%20sur%20le%20logement&url=http://www.hyblab.fr/projets/logement/">
+  <area shape="rect" coords="79,96,112,121" href="https://plus.google.com/share?url=http://www.hyblab.fr/projets/logement/">
+</map>
+
+
+
+<map name="Map4">
+  <area shape="rect" coords="97,3,185,45" href="# F3">
+  <area shape="rect" coords="190,6,301,43" href="# region paysdelaloire">
+  <area shape="rect" coords="304,8,441,42" href="# http://www.agrnantes.fr">
+  <area shape="rect" coords="445,9,581,43" href="#http://www.polytech-nantes.fr">
+  <area shape="rect" coords="589,12,672,41" href="#http://www.sciencescom.org">
+  <area shape="rect" coords="681,9,855,49" href="#http://www.hyblab.fr">
+</map>
+
+
+<style type="text/css">
+    #partenaires {
+        clear:both;
+        margin-top: 3em;
+    }
+
+    #partenaires_hyb:after {
+        clear: both;
+    }
+    #partenaires_hyb:before, #partenaires_hyb:after {
+        content: "";
+        display: table;
+    }
+    #partenaires_hyb:before, #partenaires_hyb:after {
+        content: "";
+        display: table;
+    }
+    #partenaires_hyb {
+        width: 790px;
+        margin: auto;
+        text-align: center;
+    }
+
+    #partenaires_hyb div {
+        width: 90px;
+        float: left;
+        margin-left: 20px;
+    }
+
+    #partenaires_hyb a {
+        border: 1px solid #DDDDDD;
+        border-radius: 4px 4px 4px 4px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+        display: block;
+        line-height: 1;
+        padding: 4px;
+    }
+
+    #partenaires_hyb img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        border: 0 none;
+        vertical-align: middle;
+    }
+</style>
+
+<div id="partenaires">
+<div id="partenaires_hyb">
+    <div>
+        <a href="http://www.ouestmedialab.fr" title="MediaLab">
+            <img src="../partenaires/medialab.jpeg" alt="MediaLab" />
+        </a>
+    </div>
+    <div>
+        <a href="http://pays-de-la-loire.france3.fr/" title="France 3">
+            <img src="../partenaires/f3.png" alt="France 3" />
+        </a>
+    </div>
+    <div>
+        <a href="http://www.paysdelaloire.fr" title="Pays de la Loire">
+            <img src="../partenaires/pdl.png" alt="Pays de la Loire" />
+        </a>
+    </div>
+    <div>
+        <a href="http://orange.com" title="Orange">
+            <img src="../partenaires/orange.jpg" alt="Orange" />
+        </a>
+    </div>
+    <div>
+        <a href="http://sciencecom.org" title="Science Com">
+            <img src="../partenaires/sciencecom.jpg" alt="Science Com" />
+        </a>
+    </div>
+    <div>
+        <a href="http://www.agrnantes.fr" title="A.G.R.">
+            <img src="../partenaires/agr.jpg" alt="A.G.R." />
+        </a>
+    </div>
+    <div>
+        <a href="http://www.polytech.univ-nantes.fr" title="Polytech">
+            <img src="../partenaires/poly.gif" alt="Polytech" />
+        </a>
+    </div>
+    <div>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/" title="Creative Commons">
+            <img src="../partenaires/cc.png" alt="Creative Commons" />
+        </a>
+    </div>
+</div>
+</div>
+</body>
+</html>

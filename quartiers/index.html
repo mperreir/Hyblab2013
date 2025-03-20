@@ -1,0 +1,846 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Île de Nantes : une île, des îlots ?</title>
+<link rel="stylesheet" href="css/style.css"
+	media="screen" />
+</head>
+
+<body>
+
+	<div id="introduction">
+		<div class="centre" id="en_tete">
+			<img
+				class="centre" id="Titre_site" src="Images/Introduction/Titre.png"
+				alt="une_île_des_îles">
+			<div id="chapo" class="texte">
+				<p>
+					L’Île de Nantes, dans l’imaginaire local, c’est un peu le petit Manhattan. Soirées branchées, shopping dans un
+					<i>mall</i> à l’américaine, urbanisme contemporain et Central Park à la pointe de l’Île : c’est LE nouveau lieu
+					tendance.<br>
+					Pourtant, même si l’enclave est en plein essor et qu’elle a une identité très forte, des différences se
+					font sentir à l’échelle des quartiers qui la composent.<br>
+					Mangin, République, Sainte-Anne et l’Île Beaulieu, îlots de vie,
+					ont des caractéristiques proches mais bien distinctes. Fruit de la collaboration d’étudiants de trois écoles,
+					la datavisualisation suivante propose une typologie originale des quartiers.
+				</p>
+				<p class="centre">
+					Changez de regard sur l’Île de Nantes !
+				</p>
+			</div>
+		</div>
+		<div id="icones_entete">
+			<img class="arbre espace_reduit"
+				src="Images/Introduction/petit-arbre.png" alt="petit_arbre">
+			<img class="espace_reduit"
+				src="Images/Introduction/grand-arbre.png" alt="grand_arbre">
+		</div>
+
+		<div id="carte_accueil" class="centre">
+			<img id="noms_quartiers_carte"
+				src="Images/Introduction/nom-des-quartiers.png"
+				alt="nom_quartiers"/>
+
+			<img id="carte_3D"
+				src="Images/Introduction/Cartes/carte-inactive.png"
+				alt="Carte_ile_de_Nantes" width="594" height="325" border="0"
+				usemap="#Map" />
+			<map name="Map" id="Map">
+
+				<!-- Quartier bleu -->
+				<area class="carte_quartier" id="quartier1" shape="poly"
+					coords="130,150,129,146,134,142,138,135,152,129,157,129,175,120,193,120,230,123,273,125,279,123,303,149,295,152,295,158,289,165,288,158,279,160,241,145,238,140"
+					href="#titre_quartier1" />
+				<!-- Quartier vert -->
+				<area class="carte_quartier" id="quartier2" shape="poly"
+					coords="127,150,112,174,111,186,114,189,277,184,285,178,285,167,288,164,287,158,279,160,241,145,237,139"
+					href="#titre_quartier2" />
+				<!-- Quartier rouge -->
+				<area class="carte_quartier" id="quartier3" shape="poly"
+					coords="330,109,371,146,370,157,348,166,332,171,307,176,286,178,286,166,296,159,295,152,303,149,284,128,284,122"
+					href="#titre_quartier3" />
+				<!-- Quartier orange -->
+				<area class="carte_quartier" id="quartier4" shape="poly"
+					coords="333,112,370,146,371,153,374,156,413,142,433,133,460,115,461,104,446,88,367,99,343,105,333,107"
+					href="#titre_quartier4" />
+				<!-- Quartier gris -->
+				<area class="carte_quartier" id="quartier5" shape="poly"
+					coords="448,87,459,84,476,80,491,76,499,71,508,68,509,81,497,95,486,98,463,114,460,104,448,90"
+					href="#" />
+
+				<area class="carte_quartier" id="quartier6" shape="poly"
+					coords="129,146" href="#" />
+				<area class="carte_quartier" id="quartier7" shape="poly"
+					coords="334,107" href="#" />
+				<area class="carte_quartier" id="quartier8" shape="poly"
+					coords="349,165" href="#" />
+			</map>
+
+			<div id="menu_carte">
+				<div id="informations_boutons">
+					<img id="texte_boutons" src="" alt="information_bouton_selectionne">
+				</div>
+
+				<div id="boutons" class="boutons_carte">
+					<img class="bouton_carte" id="bouton-population"
+						src="Images/Boutons/Bouton_normal/bouton-population-normal.png" />
+					<img class="bouton_carte" id="bouton-transport"
+						src="Images/Boutons/Bouton_normal/bouton-transport-normal.png" /> <img
+						class="bouton_carte" id="bouton-entreprise"
+						src="Images/Boutons/Bouton_normal/bouton-entreprise-normal.png" />
+					<img class="bouton_carte" id="bouton-travail"
+						src="Images/Boutons/Bouton_normal/bouton-travail-normal.png" />
+				</div>
+
+				<div class="consigne">
+					<img id="consigne_carte" src="Images/Introduction/consigne-carte.png" alt="consigne_carte3D">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="quartier1" class="centre">
+		<div class="nom_quartier" id="titre_quartier1">
+			<img class="titre_quartier"
+				src="Images/Quartier1/Quartier-01-Nom.png" alt="nom_quartier01">
+		</div>
+
+		<!-- Carte du premier quartier -->
+		<div class="Encadre_quartier">
+			<div id="Q1Cercle1">
+				<p class="policePourcentage">18</p>
+
+			</div>
+			<div id="Q1Cercle2">
+				<p class="policePourcentage">104</p>
+
+			</div>
+
+			<div id="Q1Cercle3">
+				<p class="policePourcentage">27</p>
+
+			</div>
+
+			<div id="Q1Cercle4">
+				<p class="policePourcentage">20</p>
+
+			</div>
+
+			<div id="Q1Cercle5">
+				<p class="policePourcentage">8</p>
+
+			</div>
+
+			<img
+				class="Fond_quartier" id="Fond_quartier1"
+				src="Images/Quartier1/Temoignage/Quartier-01-Fond.png"
+				alt="fond_graph_quartier01"
+			/>
+
+			<div>
+
+				<img class="Temoignage_image" id="image_temoignage_quartier1" src="Images/Quartier1/Temoignage/Temoignage_quartier1_image.png" alt="image_temoignage_quartier4" />
+
+				<div class="Temoignage_texte" id="texte_temoignage_quartier1">
+					<h2 id="titre_temoignage_quartier1" class="titre">La République au comptoir</h2>
+					<p>
+						Boulevard de la Prairie au Duc, deux établissements racontent l’histoire du quartier.
+						Le Bretagne, ouvert il y a 30 ans, est le doyen d’une époque révolue. Dernier installé,
+						Le Melting Potes s’est adapté à une nouvelle population. Plus jeune, plus « bobo » et plus
+						familiale.
+					</p>
+					<p>
+						Au Bretagne, on le murmure : <i>« tout a changé »</i>. "<i>Depuis dix ans, c’est chacun chez soi</i>",
+						assène « Lélette », la patronne. <i>« Il n’y a plus vraiment de folie dans le quartier»</i>.
+						L’arrivée des nouveaux immeubles en face, en 2010, n’a rien arrangé. <i>« On ne voit pas leurs
+						habitants »</i>. Ils partent le matin et rentrent le soir devant leurs écrans. C’est plus guindé
+						qu’avant. Maintenant, on construit des tours à bobos et des agences bancaires. <i>« C’est gris
+						et sans âme, juste du béton ! »</i>
+					</p>
+					<p>
+						Au <i>Melting Potes</i>, où burgers et soirées à thèmes rythment les soirées du lieu, on dresse le même
+						constat. On voit cependant ce basculement sociologique autrement. <i>« Ce quartier, c’est la diversité »</i>,
+						explique la femme du patron, Marc Barathon. <i>« Riches ou pauvres, il faut garder cette mixité sinon ça
+						 va exploser »</i>. Le quartier République est marqué par l’identité ouvrière, mais s’est embourgeoisé.
+						  <i>« On reçoit des ouvriers et des avocats, ça change »</i>. Concernant les commerces, il n’y a pas de
+						  guerre entre les petits, mais on voit d’un mauvais œil les grandes enseignes ! <i>« Il faut qu’on
+						  redonne vie au quartier et qu’on vivent ensemble... le melting-pot, en somme ! »</i>
+					</p>
+					<p class="auteur_texte"><i>Anthony Gonzalez</i></p>
+				</div>
+			</div>
+
+			<map name="EtablissementsQ1" id="EtablissementsQ1">
+				<area class="graphique_etablissement" id="c11" shape="circle"
+					coords="144,108,17" />
+				<area class="graphique_etablissement" id="r11" shape="rect"
+					coords="173,169,253,183" />
+				<area class="graphique_etablissement" id="c12" shape="circle"
+					coords="215,110,32" />
+				<area class="graphique_etablissement" id="r12" shape="rect"
+					coords="255,169,332,184" />
+				<area class="graphique_etablissement" id="c13" shape="circle"
+					coords="293,111,23" />
+				<area class="graphique_etablissement" id="r13" shape="rect"
+					coords="335,169,400,184" />
+				<area class="graphique_etablissement" id="c14" shape="circle"
+					coords="365,110,27" />
+				<area class="graphique_etablissement" id="r14" shape="rect"
+					coords="121,185,329,197" />
+				<area class="graphique_etablissement" id="c15" shape="circle"
+					coords="424,111,10" />
+				<area class="graphique_etablissement" id="r15" shape="rect"
+					coords="331,185,451,197" />
+			</map>
+
+			<map name="TravailQ1" id="TravailQ1">
+			  <area class="graphique_etablissement" id="tc11" shape="poly" coords="381,65,382,43,411,50,430,68,412,81,399,69" />
+			  <area class="graphique_etablissement" id="tr11" shape="rect" coords="281,173,351,186"/>
+			  <area class="graphique_etablissement" id="tc12" shape="poly" coords="413,80,431,68,442,92,440,126,431,141,415,155,403,135,415,127,422,112,421,95"/>
+			  <area class="graphique_etablissement" id="tr12" shape="rect" coords="353,173,418,186" />
+			  <area class="graphique_etablissement" id="tc13" shape="poly" coords="402,134,415,156,403,162,385,165,368,163,350,155,335,143,327,129,322,116,346,113,351,127,362,136,376,141,393,141" />
+			  <area class="graphique_etablissement" id="tr13" shape="rect" coords="421,173,484,186" />
+			  <area class="graphique_etablissement" id="tc14" shape="poly" coords="322,116,321,95,328,75,335,65,344,56,349,54,362,72,352,79,346,92,344,105,345,113" />
+			  <area class="graphique_etablissement" id="tr14" shape="rect" coords="282,186,484,198" />
+			  <area class="graphique_etablissement" id="tc15" shape="poly" coords="362,72,348,54,358,48,367,45,378,43,382,43,381,65,370,68"/>
+			  <area class="graphique_etablissement" id="tr15" shape="rect" coords="277,199,491,212"  />
+			</map>
+		</div>
+
+		<!-- Curseur et icônes du premier quartier -->
+		<div class="icone_quartier">
+		<img
+			id="Curseur_quartier1" class="icone_curseur"
+			src='Images/Quartier1/Curseur-Temoignage.png'
+			alt="curseur_quartier_01" />
+		<img
+			id="Temoignage_quartier1"
+			class="icone"
+			src='Images/Quartier1/Bouton_Temoignage_quartier1.png' />
+		<img
+			id="Population_quartier1" class="icone"
+			src="Images/Quartier1/Bouton_Population_quartier1.png" />
+		<img
+			id="Transport_quartier1" class="icone"
+			src="Images/Quartier1/Bouton_Transport_quartier1.png" />
+		<img
+			id="Etablissement_quartier1" class="icone"
+			src="Images/Quartier1/Bouton_Etablissement_quartier1.png" />
+		<img
+			id="Travail_quartier1" class="icone"
+			src="Images/Quartier1/Bouton_Travail_quartier1.png" />
+
+		<div class="consigne_icone">
+			<img id="consigne_carte" src="Images/Quartier1/consigne-icone.png" alt="consigne_icone_quartier1">
+		</div>
+		</div>
+
+	</div>
+
+
+	<div id="quartier2" class="centre">
+		<div class="nom_quartier" id="titre_quartier2">
+			<img
+				class="titre_quartier"
+				src="Images/Quartier2/Quartier-02-Nom.png"
+				alt="nom_quartier02">
+		</div>
+
+		<!-- Carte du second quartier -->
+		<div class="Encadre_quartier">
+			<div id="Q2Cercle1">
+				<p class="policePourcentage">55</p>
+
+			</div>
+			<div id="Q2Cercle2">
+				<p class="policePourcentage">221</p>
+
+			</div>
+
+			<div id="Q2Cercle3">
+				<p class="policePourcentage">106</p>
+
+			</div>
+
+			<div id="Q2Cercle4">
+				<p class="policePourcentage">151</p>
+
+			</div>
+
+			<div id="Q2Cercle5">
+				<p class="policePourcentage">26</p>
+
+			</div>
+			<img
+				class="Fond_quartier" id="Fond_quartier2"
+				src="Images/Quartier2/Temoignage/Quartier-02-Fond.png"
+				alt="fond_graph_quartier02"
+			/>
+
+						<div>
+
+				<img class="Temoignage_image illustration_verticale" id="image_temoignage_quartier2" src="Images/Quartier2/Temoignage/Temoignage_quartier2_image.png" alt="image_temoignage_quartier2" />
+
+				<div class="Temoignage_texte" id="texte_temoignage_quartier2">
+					<h2 id="titre_temoignage_quartier2" class="titre">Avant c'était les Chantiers Dubigeon, mais ça c'était avant</h2>
+
+					<p>
+						Je regarde la Loire et je me dis que cette eau qui file a fait plus de
+						1000 bornes avant d'arriver là. Je me demande où se promenaient tous ces
+						gens avant qu'on aménage les bords de Loire. Ils allaient marcher au bord
+						de quoi ?
+					</p>
+
+					<p>
+						« Bonjour Monsieur, je cherche l'île de Nantes. » « C'est là, de l'autre
+						côté de moi, mais je ne peux pas vous répondre. » « Parce que vous êtes
+						un pont ? » « Par exemple. Vous voyez la dame en jaune là-bas ? C'est
+						Titan. » « Comme mon chien ! » « Elle est là depuis 1954 et donc connait
+						un peu le coin, elle vous guidera et comme moi, elle ne pourra pas vous
+						parler. » « Ce n'est pas un pont ? » « Non, mais c'est une grue. »
+					</p>
+
+					<p>
+						Il y a des grands cerceaux, des gens et de la place, beaucoup de place.
+						On peut aller vers là ou vers là. Avant, c'était un site industriel lié
+						à la construction navale. Ils ont tout arrêté, laissant des centaines
+						d'hectares en friche. De quoi faire pousser pas mal d'idées.
+					</p>
+
+					<p>
+						« Bonjour madame. Je cherche le Hangar à bananes. » « Vous en venez,
+						mais... » « Je sais, vous êtes une grue et vous ne parlez pas. En tous
+						cas, vous êtes très belle, et c'est sans doute parce que vous avez la
+						même robe que la fusée de Tintin. »
+					</p>
+
+					<p>
+						Le Hangar à bananes, c'est des clubs, des bars, des restaurants sur les
+						quais, une vue sur la butte Sainte Anne et une autre grue qui s'appelle
+						aussi Titan. La nuit, les cerceaux s'allument. Je rentre dans une salle
+						noire de monde, et plutôt que d'importuner une seule personne, je me
+						donne un maximum de chance en m'adressant à tous  : <i>« Bonsoir les amis,
+						je sais que vous avez entre 20 et 64 ans, que vous êtes 60  % de
+						célibataires et pour la plupart CSP+, moi-même je suis "autre personne"
+						et cela fait de nous des individus indispensables aux statistiques de
+						l'Insee. Comme moi, vous avez sûrement pris la navette de 18  h  12 car
+						comme moi vous sortez les jours roses. Nous sommes tous frères, et j'en
+						veux pour preuve qu'aucun d'entre nous ne peut lire le nombre inscrit
+						sur sa carte de sécu sans réfléchir avant. Je cherche un tulipier. »</i>
+						Ils m'ont indiqué un grand hangar avec un éléphant après la fabrique -
+						un incubateur de projets-. Ils ont garé un bus dans le mur, ça doit
+						être par là.
+					</p>
+
+					<p>
+						« Bonjour. »  « Bonjour. » « Vous parlez ? » « Non. » « Je cherche un
+						tulipier de Virginie, je l'ai dans la peau cet arbre. » « Moi aussi. »
+						« Petits, les minots veulent être pompier, vétérinaire ou astronaute,
+						moi je voulais être un arbre. Un tulipier de Virginie. »
+					</p>
+
+					<p>
+						L'éléphant penche sa tête pour que je puisse le caresser.
+					</p>
+
+					<p>
+						« T'as jamais vu un tulipier de Virginie d'aussi près. J'ai pas une
+						branche mais on grimpe à 50 là-haut. Monte, je vais te montrer ce qu'on
+						a fait des Chantiers Dubigeon. » « Je croyais que les éléphants étaient
+						gris et que les arbres n'avaient pas de trompe ? » « Cà, c'était avant
+						que les artistes campent ici. Et encore, t'as rien vu ! »
+					</p>
+
+					<p class="auteur_texte">
+						<i>Zit, Chroniqueur de Terri(s)toires</i>
+					</p>
+
+				</div>
+			</div>
+
+			<map name="EtablissementsQ2" id="EtablissementsQ2">
+			 <area class="graphique_etablissement" id="c21"shape="circle" coords="144,124,19" href="#" />
+			 <area class="graphique_etablissement" id="r21" shape="rect" coords="177,183,252,194" href="#" />
+			 <area class="graphique_etablissement" id="c22" shape="circle" coords="226,123,42" href="#" />
+			 <area class="graphique_etablissement" id="r22" shape="rect" coords="257,183,329,195" href="#" />
+			 <area class="graphique_etablissement" id="c23" shape="circle" coords="313,124,21" href="#" />
+			 <area class="graphique_etablissement" id="r23" shape="rect" coords="335,183,397,195" href="#" />
+			 <area class="graphique_etablissement" id="c24" shape="circle" coords="375,124,19" href="#" />
+			 <area class="graphique_etablissement" id="r24" shape="rect" coords="123,197,328,209" href="#" />
+			 <area class="graphique_etablissement" id="c25" shape="circle" coords="429,123,12" href="#" />
+			 <area class="graphique_etablissement" id="r25" shape="rect" coords="332,196,453,209" href="#" />
+			</map>
+
+
+
+			<map name="TravailQ2" id="TravailQ2">
+			  <area class="graphique_etablissement" id="tc21" shape="poly" coords="382,67,382,44,395,46,405,50,414,53,420,58,406,76,398,70,389,68"/>
+			  <area class="graphique_etablissement" id="tr21" shape="rect" coords="282,181,350,194" />
+			  <area class="graphique_etablissement" id="tc22" shape="poly" coords="407,75,420,58,428,65,437,78,441,92,442,105,442,117,440,124,438,129,417,120,420,113,420,103,419,94,414,83" href="#" />
+			  <area class="graphique_etablissement" id="tr22" shape="rect" coords="350,181,418,194"/>
+			  <area class="graphique_etablissement" id="tc23" shape="poly" coords="417,120,438,130,433,138,426,147,415,156,402,163,381,166,366,163,352,158,344,152,358,133,366,139,378,142,390,142,402,138,411,129" href="#" />
+			  <area class="graphique_etablissement" id="tr23" shape="rect" coords="421,181,484,194" />
+			  <area class="graphique_etablissement" id="tc24" shape="poly" coords="343,151,357,133,349,122,345,110,346,97,349,88,352,83,333,70,325,83,321,100,321,115,327,132,335,143" href="#" />
+			  <area class="graphique_etablissement" id="tr24" shape="rect" coords="283,193,481,205" />
+			  <area class="graphique_etablissement" id="tc25" shape="poly" coords="352,82,359,75,368,70,377,67,381,67,381,44,366,46,354,51,345,57,336,65,333,70" href="#" />
+			  <area class="graphique_etablissement" id="tr25" shape="rect" coords="276,205,493,218"/>
+  			</map>
+		</div>
+
+		<!-- Curseur et icônes du second quartier -->
+		<div class="icone_quartier">
+			<img
+				id="Curseur_quartier2"
+				src='Images/Quartier2/Curseur-Temoignage.png'
+				alt="curseur_quartier_02" />
+			<img
+				id="Temoignage_quartier2"
+				class="icone"
+				src='Images/Quartier2/Bouton_Temoignage_quartier2.png' />
+			<img
+				id="Population_quartier2" class="icone"
+				src="Images/Quartier2/Bouton_Population_quartier2.png" />
+			<img
+				id="Transport_quartier2" class="icone"
+				src="Images/Quartier2/Bouton_Transport_quartier2.png" />
+			<img
+				id="Etablissement_quartier2" class="icone"
+				src="Images/Quartier2/Bouton_Etablissement_quartier2.png" />
+			<img
+				id="Travail_quartier2" class="icone"
+				src="Images/Quartier2/Bouton_Travail_quartier2.png" />
+
+			<div class="consigne_icone">
+				<img id="consigne_carte" src="Images/Quartier2/consigne-icone.png" alt="consigne_icone_quartier2">
+			</div>
+		</div>
+
+	</div>
+
+
+	<div id="quartier3" class="centre">
+		<div class="nom_quartier" id="titre_quartier3">
+			<img class="titre_quartier"
+				src="Images/Quartier3/Quartier-03-Nom.png" alt="nom_quartier03">
+		</div>
+
+		<!-- Carte du troisième quartier -->
+		<div class="Encadre_quartier">
+			<div id="Q3Cercle1">
+				<p class="policePourcentage">30</p>
+
+			</div>
+			<div id="Q3Cercle2">
+				<p class="policePourcentage">92</p>
+
+			</div>
+
+			<div id="Q3Cercle3">
+				<p class="policePourcentage">71</p>
+
+			</div>
+
+			<div id="Q3Cercle4">
+				<p class="policePourcentage">73</p>
+
+			</div>
+
+			<div id="Q3Cercle5">
+				<p class="policePourcentage">46</p>
+
+			</div>
+
+			<img
+				class="Fond_quartier" id="Fond_quartier3"
+				src="Images/Quartier3/Temoignage/Quartier-03-Fond.png"
+				alt="fond_graph_quartier03"
+			/>
+
+			<div>
+
+				<img class="Temoignage_image illustration_verticale" id="image_temoignage_quartier3" src="Images/Quartier3/Temoignage/Temoignage_quartier3_image.png" alt="image_temoignage_quartier3" />
+
+				<div class="Temoignage_texte" id="texte_temoignage_quartier3">
+					<h2 id="titre_temoignage_quartier3" class="titre">Mangin : quartier courant d’air</h2>
+
+					<p>
+						« Au départ, quand je me suis installé dans le quartier, je dois bien
+						avouer que j’étais un peu circonspect. Pour moi, l’île est un peu
+						refoulée par rapport à Nantes, plus en bordure de la ville. Pourtant,
+						le quartier s’est avéré très agréable pour travailler. Tout d’abord
+						parce qu'il reste ici une certaine liberté : on se gare où l’on veut,
+						il n’y a pas encore de parcmètres partout, pas de sens uniques... Les
+						habitants sont plutôt gais et très sympathiques avec les commerçants,
+						beaucoup me saluent quand je me balade dans la rue. Je croise majoritairement
+						 des couples. Certains vivent même dans des petites maisons individuelles.
+						 Il n’y a pas beaucoup de cadres, principalement des employés, des
+						 ouvriers et des professions intermédiaires.
+					</p>
+
+					<p>
+						Malheureusement, ce quartier est dans le courant d’air "entrées-sorties"
+						 de l’Île de Nantes, et davantage un axe de passage qu’un lieu vivant.
+						 Il n'y a pas assez d'initiatives pour inciter les gens à s’arrêter ou
+						 à venir d’eux-mêmes. L’association de quartier a décidé d’organiser un
+						 vide-grenier, mais il s'est déroulé de l’autre côté du pont, à Pirmil...
+						 Cela n’a aucun sens ! Il faudrait animer le quartier avec des fêtes,
+						 des vide-greniers, de la musique au printemps, etc.
+					</p>
+
+					<p>
+						Je suis néanmoins optimiste pour le futur de Mangin : le quartier se
+						métamorphose avec des commerces de proximité qui viennent s’installer
+						et des immeubles qui sont rénovés. Il manque un peu de chaleur humaine,
+						mais cela va venir. D'autant que Mangin est situé au sud de l’île, donc
+						lorsqu'il il fait beau, on profite du soleil toute la journée ! »
+					</p>
+
+					<p class="auteur_texte">
+						<i>Propos recueillis par Quentin Chaya.</i>
+					</p>
+
+				</div>
+			</div>
+
+			<map name="EtablissementsQ3" id="EtablissementsQ3">
+				  <area class="graphique_etablissement" id="c31" shape="circle" coords="133,117,15" href="#" />
+				  <area class="graphique_etablissement" id="r31" shape="rect" coords="171,178,253,192" href="#" />
+				  <area class="graphique_etablissement" id="c32" shape="circle" coords="202,118,32" href="#" />
+				  <area class="graphique_etablissement" id="r32" shape="rect" coords="256,178,331,192" href="#" />
+				  <area class="graphique_etablissement" id="c33" shape="circle" coords="277,117,19" href="#" />
+				  <area class="graphique_etablissement" id="r33" shape="rect" coords="333,178,399,192" href="#" />
+				  <area class="graphique_etablissement" id="c34" shape="circle" coords="343,116,24" href="#" />
+				  <area class="graphique_etablissement" id="r34" shape="rect" coords="121,192,330,205" href="#" />
+				  <area class="graphique_etablissement" id="c35" shape="circle" coords="410,117,20" href="#" />
+				  <area class="graphique_etablissement" id="r35" shape="rect" coords="330,192,453,205" href="#" />
+			</map>
+
+			<map name="TravailQ3" id="TravailQ3">
+			  <area class="graphique_travail" id="tc31" shape="poly" coords="381,65,381,43,399,46,413,52,423,60,431,68,412,80,405,72,395,67" href="#" />
+			  <area class="graphique_travail" id="tr31" shape="rect" coords="281,179,349,193" href="#" />
+			  <area class="graphique_travail" id="tc32" shape="poly" coords="413,79,431,68,438,80,442,96,442,110,440,125,434,135,429,143,410,130,415,124,420,114,421,103,418,90" href="#" />
+			  <area class="graphique_travail" id="tr32" shape="rect" coords="349,179,419,193" href="#" />
+			  <area class="graphique_travail" id="tc33" shape="poly" coords="409,130,428,144,418,153,404,161,386,164,370,165,355,159,342,150,333,139,331,137,351,125,358,133,370,139,383,142,399,138" href="#" />
+			  <area class="graphique_travail" id="tr33" shape="rect" coords="420,179,485,193" href="#" />
+			  <area class="graphique_travail" id="tc34" shape="poly" coords="331,136,323,121,321,100,326,82,333,68,343,58,345,55,359,74,350,85,345,99,346,112,350,123,351,125" href="#" />
+			  <area class="graphique_travail" id="tr34" shape="rect" coords="283,193,482,205" href="#" />
+			  <area class="graphique_travail" id="tc35" shape="poly" coords="346,56,359,74,366,70,373,67,381,65,380,43,368,45,354,50" href="#" />
+			  <area class="graphique_travail" id="tr35" shape="rect" coords="275,205,492,217" href="#" />
+  			</map>
+		</div>
+
+		<!-- Curseur et icônes du troisième quartier -->
+		<div class="icone_quartier">
+			<img
+				id="Curseur_quartier3"
+				src='Images/Quartier3/Curseur-Temoignage.png'
+				alt="curseur_quartier_03" />
+			<img
+				id="Temoignage_quartier3" class="icone"
+				src='Images/Quartier3/Bouton_Temoignage_quartier3.png' />
+			<img
+				id="Population_quartier3" class="icone"
+				src="Images/Quartier3/Bouton_Population_quartier3.png" />
+			<img
+				id="Transport_quartier3" class="icone"
+				src="Images/Quartier3/Bouton_Transport_quartier3.png" />
+			<img
+				id="Etablissement_quartier3" class="icone"
+				src="Images/Quartier3/Bouton_Etablissement_quartier3.png" />
+			<img
+				id="Travail_quartier3" class="icone"
+				src="Images/Quartier3/Bouton_Travail_quartier3.png" />
+
+			<div class="consigne_icone">
+				<img id="consigne_carte" src="Images/Quartier3/consigne-icone.png" alt="consigne_icone_quartier3">
+			</div>
+		</div>
+	</div>
+
+
+	<div id="quartier4" class="centre">
+		<div class="nom_quartier" id="titre_quartier4">
+			<img class="titre_quartier"
+				src="Images/Quartier4/Quartier-04-Nom.png" alt="nom_quartier04">
+		</div>
+
+		<!-- Carte du quatrième quartier -->
+		<div class="Encadre_quartier">
+			<div id="Q4Cercle1">
+				<p class="policePourcentage">27</p>
+
+			</div>
+			<div id="Q4Cercle2">
+				<p class="policePourcentage">125</p>
+
+			</div>
+
+			<div id="Q4Cercle3">
+				<p class="policePourcentage">45</p>
+
+			</div>
+
+			<div id="Q4Cercle4">
+				<p class="policePourcentage">74</p>
+
+			</div>
+
+			<div id="Q4Cercle5">
+				<p class="policePourcentage">50</p>
+
+			</div>
+
+			<img
+				class="Fond_quartier" id="Fond_quartier4"
+				src="Images/Quartier4/Temoignage/Quartier-04-Fond.png"
+				alt="fond_graph_quartier04"
+			/>
+
+			<div class="Temoignage">
+				<img class="Temoignage_image illustration_verticale" id="image_temoignage_quartier4" src="Images/Quartier4/Temoignage/Temoignage_quartier4_image.png" alt="image_temoignage_quartier4" />
+				<div class="Temoignage_texte" id="texte_temoignage_quartier4">
+					<h2 class="couleur_temoignage_quartier4 titre">La métamorphose Beaulieu</h2>
+
+					<p>
+						« Avant, on prenait la voiture et on était en cinq minutes en centre
+						ville. Aujourd’hui, l’Île Beaulieu est très encombrée. Il y a trois ans,
+						l’association des riverains de Loire-Beaulieu-Île de Nantes* que je
+						préside s'est opposé au projet du pont Senghor. On savait que sa
+						construction  allait générer d’autres flux de circulation. Bruits,
+						pollution, trafic, cela a complètement dégradé notre environnement.
+						C’est devenu la capitale des bouchons !
+					</p>
+
+					<p>
+						L’Île Beaulieu est quand même un quartier calme, libre et sans danger,
+						avec beaucoup d’espaces verts toujours ouverts, comme le parc du Crapa.
+						On ne peut pas dire qu’il y a une ambiance de quartier parce qu’il y a
+						beaucoup de <i>turnover</i>. Puis, l’Île Beaulieu, c’est aussi le centre
+						commercial et les administrations : en majorité, les gens qui y
+						travaillent n’habitent pas à Nantes.
+					</p>
+
+					<p>
+						Avant, on avait vraiment l’impression d’habiter sur une île. C’était
+						très "aéré". Pourtant, ce n’a pas été assez mis en valeur, et avec
+						toutes les constructions on ne voit même plus la Loire. Tout le quartier
+						s’est fait dans un laps de temps très court. On a vu des bâtiments
+						pousser de tous les côtés !  Il ne s’était rien passé depuis 50 ans à
+						Beaulieu. C’est une métamorphose historique, un vrai bouleversement
+						qu'on n’a pas voulu mais dont on subit les conséquences. »
+					</p>
+
+					<p class="auteur_texte">
+						<i>Propos recueillis par Chloé Balleix</i>
+					</p>
+
+					<p class="couleur_temoignage_quartier4">
+						*L’association des riverains de Loire-Beaulieu-Île de Nantes regroupe des
+						syndicats de propriété du quartier Beaulieu représentant environ 1000
+						propriétaires. En savoir plus : lbi_nantes@yahoo.fr
+					</p>
+
+				</div>
+			</div>
+
+			<map name="EtablissementsQ4" id="EtablissementsQ4">
+			  <area class="graphique_etablissement" id="c41"shape="circle" coords="133,97,15" href="#" />
+			  <area class="graphique_etablissement" id="r41"shape="rect" coords="174,162,253,176" href="#" />
+			  <area class="graphique_etablissement" id="c42"shape="circle" coords="197,97,28" href="#" />
+			  <area class="graphique_etablissement" id="r42"shape="rect" coords="255,162,331,176" href="#" />
+			  <area class="graphique_etablissement" id="c43" shape="circle" coords="271,98,24" href="#" />
+			  <area class="graphique_etablissement" id="r43" shape="rect" coords="334,162,398,176" href="#" />
+			  <area class="graphique_etablissement" id="c44" shape="circle" coords="344,97,25" href="#" />
+			  <area class="graphique_etablissement" id="r44"shape="rect" coords="120,176,328,189" href="#" />
+			  <area class="graphique_etablissement" id="c45" shape="circle" coords="410,98,19" href="#" />
+			  <area class="graphique_etablissement" id="r45" shape="rect" coords="330,175,452,189" href="#" />
+			</map>
+
+			<map name="TravailQ4" id="TravailQ4">
+			  <area class="graphique_travail" id="tc41" shape="poly" coords="381,69,381,46,395,48,411,54,419,59,425,64,410,81,403,75,393,70" href="#" />
+			  <area class="graphique_travail" id="tr41" shape="rect" coords="281,179,349,192" href="#" />
+			  <area class="graphique_travail" id="tc42" shape="poly" coords="410,81,425,64,431,72,436,81,440,93,441,105,441,119,437,130,434,136,414,126,417,119,420,111,420,101,416,90" href="#" />
+			  <area class="graphique_travail" id="tr42" shape="rect" coords="349,179,417,192" href="#" />
+			  <area class="graphique_travail" id="tc43" shape="poly" coords="414,126,401,140,387,144,370,143,359,138,352,131,350,128,330,140,337,149,347,159,360,164,376,168,396,166,408,161,418,155,426,148,431,142,434,137" href="#" />
+			  <area class="graphique_travail" id="tr43" shape="rect" coords="417,179,483,192" href="#" />
+			  <area class="graphique_travail" id="tc44" shape="poly" coords="330,139,321,118,321,104,323,89,330,74,337,65,344,59,359,76,352,83,346,94,344,107,345,118,350,128" href="#" />
+			  <area class="graphique_travail" id="tr44" shape="rect" coords="283,192,480,204" href="#" />
+			  <area class="graphique_travail" id="tc45" shape="poly" coords="345,59,357,51,368,48,380,46,380,68,371,71,360,76" href="#" />
+			  <area class="graphique_travail" id="tr45" shape="rect" coords="274,204,489,216" href="#" />
+			</map>
+		</div>
+
+		<!-- Curseur et icônes du quatrième quartier -->
+		<div class="icone_quartier">
+			<img
+				id="Curseur_quartier4"
+				src='Images/Quartier4/Curseur-Temoignage.png'
+				alt="curseur_quartier_04" />
+			<img id="Temoignage_quartier4" class="icone"
+				src="Images/Quartier4/Bouton_Temoignage_quartier4.png" />
+			<img
+				id="Population_quartier4" class="icone"
+				src="Images/Quartier4/Bouton_Population_quartier4.png" />
+			<img
+				id="Transport_quartier4" class="icone"
+				src="Images/Quartier4/Bouton_Transport_quartier4.png" />
+			<img
+				id="Etablissement_quartier4" class="icone"
+				src="Images/Quartier4/Bouton_Etablissement_quartier4.png" />
+			<img
+				id="Travail_quartier4" class="icone"
+				src="Images/Quartier4/Bouton_Travail_quartier4.png" />
+
+			<div class="consigne_icone">
+				<img id="consigne_carte" src="Images/Quartier4/consigne-icone.png" alt="consigne_icone_quartier4">
+			</div>
+		</div>
+
+	</div>
+
+	<div id="pied_de_page">
+
+		<div id="groupe_projet" class="centre texte">
+			<img id="illustration_groupe_projet" src="Images/Pied_de_page/Pdp-3Dteam.png" alt="photo_groupe_projet">
+			<p id="noms_groupe_projet">
+				Quentin Chaya, Anthony Gonzalez,
+				<a href="https://twitter.com/ChloeBalleix">Chloé Balleix</a>,
+				<a href="http://fr.linkedin.com/pub/robin-naceur/59/465/ba">Robin Naceur</a>,
+				Brice Guillermic,
+				<a href="http://fr.linkedin.com/pub/camille-papin/5a/8ba/b8">Camille Papin</a>,
+				 <a href="http://kdavre-inoxydable.blogspot.com">Mathilde Gasulla</a>,
+				 Neel Gaulpier-Daillet,
+				 <a href="http://tanguyhamonic.blogspot.com">Tanguy Hamonic</a>
+			</p>
+		</div>
+
+		<div class="illustration_pdp">
+			<div id="icone_texte">
+				<!--a href="http://www.hyblab.fr"><img
+					id="Logos" class="icone_pdp centre"
+					src="Images/Pied_de_page/Pdp-logos.png" />
+				</a>
+				<img
+					id="Logo_PDLL" class="icone_pdp"
+					src="Images/Pied_de_page/Pdp-PDLL.jpg" alt="Logo_pays_de_la_Loire" />
+				<img
+					id="Licence" class="icone_pdp"
+					src="Images/Pied_de_page/Pdp-Creative-Common.png" /-->
+			</div>
+
+
+				<div class="texte texte_pdp">
+					Toutes les données utilisées pour ce travail proviennent du site de
+					l’<a href="http://www.insee.fr/fr/bases-de-donnees/default.asp?page=infracommunal.htm">Insee</a>
+					et du site internet data.nantes.fr ainsi que de l'<a href="http://www.auran.org/">Auran</a>. Les
+					données datent de 2008 et 2009 et ont souvent été retravaillées et transformées
+					en pourcentages ou indices en comparaison avec l’île entière afin de
+					faciliter la compréhension et d’uniformiser le rendu. Nous avons
+					utilisé les données suivantes: âge, CSP, transports et parkings, chômage, revenu
+					médian, secteurs des entreprises, nombre de travailleurs, espaces culturels,
+					grandes voies de circulation.
+				</div>
+
+		</div>
+	</div>
+    <!--div id="partenaires" style="float:left;"></div-->
+
+	<script src="jquery-1.9.1.js"> </script>
+	<script src="fonctions.js"> </script>
+    <!--script type="text/javascript" src="../partenaires/partenaire.js" charset="utf-8"></script-->
+
+<style type="text/css">
+    #partenaires {
+        clear:both;
+        margin-top: 3em;
+    }
+
+    #partenaires_hyb:after {
+        clear: both;
+    }
+    #partenaires_hyb:before, #partenaires_hyb:after {
+        content: "";
+        display: table;
+    }
+    #partenaires_hyb:before, #partenaires_hyb:after {
+        content: "";
+        display: table;
+    }
+    #partenaires_hyb {
+        width: 790px;
+        margin: auto;
+        text-align: center;
+    }
+
+    #partenaires_hyb div {
+        width: 90px;
+        float: left;
+        margin-left: 20px;
+    }
+
+    #partenaires_hyb a {
+        border: 1px solid #DDDDDD;
+        border-radius: 4px 4px 4px 4px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+        display: block;
+        line-height: 1;
+        padding: 4px;
+    }
+
+    #partenaires_hyb img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        border: 0 none;
+        vertical-align: middle;
+    }
+</style>
+
+<div id="partenaires_hyb">
+    <div>
+        <a href="http://www.terristoires.info/" title="Terri(s)toires">
+            <img src="../partenaires/territoires.jpg" alt="Terri(s)toires" />
+        </a>
+    </div>
+    <div>
+        <a href="http://www.ouestmedialab.fr" title="MediaLab">
+            <img src="../partenaires/medialab.jpeg" alt="MediaLab" />
+        </a>
+    </div>
+    <div>
+        <a href="http://www.paysdelaloire.fr" title="Pays de la Loire">
+            <img src="../partenaires/pdl.png" alt="Pays de la Loire" />
+        </a>
+    </div>
+    <div>
+        <a href="http://orange.com" title="Orange">
+            <img src="../partenaires/orange.jpg" alt="Orange" />
+        </a>
+    </div>
+    <div>
+        <a href="http://sciencecom.org" title="Science Com">
+            <img src="../partenaires/sciencecom.jpg" alt="Science Com" />
+        </a>
+    </div>
+    <div>
+        <a href="http://www.agrnantes.fr" title="A.G.R.">
+            <img src="../partenaires/agr.jpg" alt="A.G.R." />
+        </a>
+    </div>
+    <div>
+        <a href="http://www.polytech.univ-nantes.fr" title="Polytech">
+            <img src="../partenaires/poly.gif" alt="Polytech" />
+        </a>
+    </div>
+    <div>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/" title="Creative Commons">
+            <img src="../partenaires/cc.png" alt="Creative Commons" />
+        </a>
+    </div>
+</div>
+</body>
+</html>

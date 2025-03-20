@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<title>L'île de Nantes : Lieu de création ?</title>
+<link rel="stylesheet" rev="stylesheet"
+	href="http://meyerweb.com/eric/tools/css/reset/reset.css"
+	type="text/css" media="all">
+<link rel="stylesheet" href="ferroSlider/jquery.ferro.ferroSlider.css" />
+<link rel="stylesheet" href="css/style.css" />
+
+<script src="javascript/jquery.js" type="text/javascript"></script>
+<script src="ferroSlider/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="ferroSlider/jquery.ferro.ferroSlider-1.2.js"
+	type="text/javascript" language="javascript"></script>
+
+<script type="text/javascript" src="javascript/animation.js"></script>
+<script type="text/javascript" src="javascript/animation_carte.js"></script>
+<script type="text/javascript" src="javascript/animation_ile.js"></script>
+<script type="text/javascript" src="javascript/animation_video.js"></script>
+<script type="text/javascript" src="javascript/animation_conclusion.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".slidingSpaces").ferroSlider({
+			linkClass : "slidingLink",
+			autoSlide : true,
+			backGroundImageClass : 'bg',
+			createMap : true,
+			createPlayer : false,
+			createSensibleAreas : false,
+			createTimeBar : false,
+			easing : 'easeOutExpo',
+			feedbackArrows : true,
+			fullScreenBackground : false,
+			playerPosition : "bottom_center",
+			time : 600,
+			tips : true
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="div1" class="slidingSpaces">
+		<div id="page" class="bg">
+			<table id="Tableau_accueil" width="1024" height="777" border="0"
+				cellpadding="0" cellspacing="0">
+				<tr>
+					<td colspan="2"><img src="images/accueil/titre.png"
+						width="1024" height="167" alt="Titre"></td>
+				</tr>
+				<tr>
+					<td><img src="images/accueil/carte.png" width="651"
+						height="610" alt="Carte"></td>
+					<td><img src="images/accueil/definition.png" width="373"
+						height="610" alt="Définition"></td>
+				</tr>
+				<tr>
+                    <td colspan="2">
+                        <!--a href="www.hyblab.fr"><img src="images/bandeau.png" width="1024" alt="bandeau" /></a-->
+                        <div id="partenaires"></div>
+                        <script type="text/javascript" src="../partenaires/partenaire.js" charset="utf-8"></script>
+                    </td>
+				</tr>
+			</table>
+			<a href="#div2" class="slidingLink"> <img
+				src="images/accueil/bouton.png" id="loupe" width="198" height="153"
+				alt="loupe" />
+			</a>
+		</div>
+	</div>
+
+	<div id="div2" class="slidingSpaces">
+		<div id="page" class="bg">
+			<table id="Tableau_01" width="1024" height="777" border="0"
+				cellpadding="0" cellspacing="0">
+				<tr>
+					<td colspan="2"><img src="images/carte/titre.png" width="1024"
+						height="167" alt="Titre"></td>
+				</tr>
+				<tr>
+					<td><!-- <img src="images/vide.png" id="afficheCodePostal"
+						alt="pourcentage" />--> <map name="Map" id="Map">
+							<area shape="poly" id="q44100_1"
+								coords="61,451,92,460,111,467,132,475,140,478,152,478,166,470,177,460,184,452,187,442,226,423,251,391,227,398,197,384,167,388,148,379,126,410,120,438,63,443,60,453" />
+							<area shape="poly" id="q44100_2"
+								coords="186,301,166,317,164,345,150,370,165,379,198,379,227,391,252,387,248,377,248,362,241,347,230,341,215,333,205,315,193,315" />
+							<area shape="poly" id="q44100_3"
+								coords="191,293,211,286,216,282,222,268,210,261,241,232,262,241,266,247,282,246,299,258,285,265,282,273,278,279,271,285,257,291,240,303,228,307,216,324,210,313,199,309,190,293" />
+							<area shape="poly" id="q44300_1"
+								coords="224,123,237,118,252,130,267,129,278,129,290,135,300,141,315,141,315,150,313,153,315,160,323,167,330,192,343,195,358,201,355,218,340,236,329,246,313,247,299,247,283,243,273,238,262,233,265,199" />
+							<area shape="poly" id="q44300_2"
+								coords="398,54,404,46,414,45,417,42,428,45,439,49,446,42,451,43,452,46,452,58,452,73,451,80,448,91,448,102,448,113,448,126,475,130,461,146,457,162,448,168,453,178,453,190,442,199,440,201,424,209,411,224,405,233,393,247,376,265,367,280,340,271,377,245,364,228,366,216,367,203,373,189,377,183,373,154,387,136,402,125,410,98" />
+							<area shape="poly" id="q44300_3"
+								coords="377,285,414,234,485,180,488,196,484,213,489,224,493,230,493,235,500,245,503,250,502,262,502,274,504,286,507,295,513,299,514,305,423,343,422,333" />
+							<area shape="poly" id="q44000_1"
+								coords="228,324,238,310,264,303,287,285,289,274,300,262,304,262,305,257,329,257,325,268,325,285,325,297,309,310,309,327,305,339,295,345,288,351,271,351,265,359,260,358,259,350,250,341,227,325" />
+							<area shape="poly" id="q44000_2"
+								coords="328,282,363,291,408,336,407,346,374,367,349,371,316,333,316,314,330,300" />
+							<area shape="poly" id="q44000_3"
+								coords="261,368,282,357,289,357,297,348,308,347,313,339,340,375,340,384,323,388,312,389,293,389,266,388" />
+							<area shape="poly" id="q44200_1"
+								coords="315,441,366,424,373,433,363,441,363,445,374,445,374,459,396,474,405,474,407,483,398,487,392,499,392,505,361,495,352,480,347,471" />
+							<area shape="poly" id="q44200_2"
+								coords="250,425,250,417,273,396,298,397,309,400,325,400,354,386,368,386,396,375,408,366,408,375,383,401,336,426" />
+						</map> <img src="images/carte/carte.png" width="651" height="610"
+						usemap="#Map" alt="Carte"></td>
+					<td>
+						<img src="images/vide.png" width="373" height="610" alt="Taux">
+						<img src="images/carte/texte_pourcentage.png" id="basePourcentage" alt="Taux">
+						<img src="images/vide.png" id="pourcentage" alt="pourcentage" />
+					</td>
+				</tr>
+				<tr>
+                    <td colspan="2"><a href="www.hyblab.fr">
+                            <!--img src="images/bandeau.png" width="1024" alt="bandeau" /--></a>
+                    </td>
+				</tr>
+			</table>
+			<a href="#div3" class="slidingLink"><img
+				src="images/carte/bouton/bouton.png" id="cliquez" width="64"
+				height="60" alt="cliquez" /></a> <a href="#div1" class="slidingLink">
+				<img src="images/carte/bouton/bouton-retour.png" id="retour_carte"
+				width="51" height="24" alt="retour" />
+			</a>
+		</div>
+	</div>
+
+	<div id="div3" class="slidingSpaces">
+		<div id="page" class="bg">
+			<table id="Tableau_ile" width="1024" height="777" border="0"
+				cellpadding="0" cellspacing="0">
+				<tr>
+					<td colspan="2"><img src="images/ile/titre.png" width="1024"
+						height="167" alt=""></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="images/ile/138....png" width="1024"
+						height="68" alt=""></td>
+				</tr>
+				<tr>
+					<!-- <td><img src="images/ile/espace-menu.png" width="339"
+					height="541" alt="" ></td>
+				<td><img src="images/ile/espace-cercles.png" width="685"
+					height="541" alt="" ></td>-->
+					<td><img src="images/ile/fond.png" width="1024" height="541" />
+					</td>
+				</tr>
+				<tr>
+                    <td colspan="2"><a href="www.hyblab.fr">
+                            <!--img src="images/bandeau.png" width="1024" alt="bandeau" /-->
+                    </a></td>
+				</tr>
+			</table>
+			<a href="#div2" class="slidingLink"> <img
+				src="images/carte/bouton/bouton-retour.png" id="retour_Ile"
+				width="51" height="24" alt="retour" />
+			</a> <img src="images/ile/boutons/bouton-activitesupport.png"
+				id="cat-activitesupport" alt="activitesupport" class="menuItem" />
+			<img src="images/ile/boutons/bouton-archi.png" id="cat-archi"
+				alt="archi" class="menuItem" /> <img
+				src="images/ile/boutons/bouton-artspec.png" id="cat-artspec"
+				alt="artspec" class="menuItem" /> <img
+				src="images/ile/boutons/bouton-artsvisuels.png" id="cat-artsvisuels"
+				alt="artsvisuels" class="menuItem" /> <img
+				src="images/ile/boutons/bouton-audiovisuel.png" id="cat-audiovisuel"
+				alt="audiovisuel" class="menuItem" /> <img
+				src="images/ile/boutons/bouton-communication.png"
+				id="cat-communication" alt="communication" class="menuItem" /> <img
+				src="images/ile/boutons/bouton-design.png" id="cat-design"
+				alt="design" class="menuItem" /> <img
+				src="images/ile/boutons/bouton-edition.png" id="cat-edition"
+				alt="edition" class="menuItem" /> <img
+				src="images/ile/boutons/bouton-media.png" id="cat-media" alt="media"
+				class="menuItem" /> <img
+				src="images/ile/boutons/bouton-metierdart.png" id="cat-metierdart"
+				alt="metierdart" class="menuItem" /> <img
+				src="images/ile/boutons/bouton-mode.png" id="cat-mode" alt="mode"
+				class="menuItem" /> <img
+				src="images/ile/boutons/bouton-numerique.png" id="cat-numerique"
+				alt="numerique" class="menuItem" /> <a href="#div4"
+				class="slidingLink"> <img
+				src="images/ile/boutons/bouton-creatifs.png" id="quelques_creatifs"
+				alt="quelques_creatifs" width="145" height="30" />
+			</a> <img src="images/ile/cercle/cercle-base.png"
+				id="cercle-activitesupport" alt="activitesupport" class="cercle" />
+			<img src="images/ile/cercle/cercle-base.png" id="cercle-artspec"
+				alt="artspec" class="cercle" /> <img
+				src="images/ile/cercle/cercle-base.png" id="cercle-artsvisuels"
+				alt="artsvisuels" class="cercle" /> <img
+				src="images/ile/cercle/cercle-base.png" id="cercle-audiovisuel"
+				alt="audiovisuel" class="cercle" /> <img
+				src="images/ile/cercle/cercle-base.png" id="cercle-communication"
+				alt="communication" class="cercle" /> <img
+				src="images/ile/cercle/cercle-base.png" id="cercle-design"
+				alt="design" class="cercle" /> <img
+				src="images/ile/cercle/cercle-base.png" id="cercle-edition"
+				alt="edition" class="cercle" /> <img
+				src="images/ile/cercle/cercle-base.png" id="cercle-media"
+				alt="media" class="cercle" /> <img
+				src="images/ile/cercle/cercle-base.png" id="cercle-metierdart"
+				alt="metierdart" class="cercle" /> <img
+				src="images/ile/cercle/cercle-base.png" id="cercle-mode" alt="mode"
+				class="cercle" /> <img src="images/ile/cercle/cercle-base.png"
+				id="cercle-numerique" alt="numerique" class="cercle" /> <img
+				src="images/ile/cercle/cercle-base.png" id="cercle-archi"
+				alt="archi" class="cercle" />
+		</div>
+	</div>
+
+	<div id="div4" class="slidingSpaces">
+		<div id="page" width="1024" height="777" border="0" cellpadding="0"
+			cellspacing="0">
+			<div>
+				<img src="images/video/titre.png" width="1024" height="167" alt="">
+				<div>
+					<div id="corps_interviews" width="1024" height="610">
+						<div>
+							<table>
+								<tr>
+									<td><img src="images/video/espasce-perso-1.png"
+										width="253" height="610" alt="gauche"></td>
+									<td width="509"></td>
+									<td><img src="images/video/espace-perso-2.png" width="262"
+										height="610" alt="droit">
+									</td>
+								</tr>
+							</table>
+						</div>
+						<img src="images/video/espace-bouton-video.png" width="509"
+							height="610" alt="centre" id="vues_interviews">
+						<div id="div_video">
+							<table>
+								<tr>
+									<td class="lecteurVideo" id="lecteurVideo_Jose_Cerclet"><video
+											controls="controls" preload="none" id="lecteur_Jose_Cerclet"
+											class="lecteur">
+											<source src="video/Jose_Cerclet.mp4" type="video/mp4" />
+											<source src="video/Jose_Cerclet.webm" type="video/webm" />
+											<source src="video/Jose_Cerclet.ogv" type="video/ogg" />
+											<object type="application/x-shockwave-flash" width="400"
+												height="222"
+												data="http://www.youtube.com/watch?v=F8y-0SSdUSo">
+												<param name="movie"
+													value="http://www.youtube.com/watch?v=F8y-0SSdUSo" />
+												<param name="wmode" value="transparent" />
+												Vous n'avez pas de navigateur moderne, ni Flash installé...
+											</object>
+										</video>
+									</td>
+								</tr>
+								<tr>
+									<td class="lecteurVideo" id="lecteurVideo_Pierrick_Sorin"><video
+											controls="controls" preload="none"
+											id="lecteur_Pierrick_Sorin" class="lecteur">
+											<source src="video/Pierrick_Sorin.mp4" type="video/mp4" />
+											<source src="video/Pierrick_Sorin.webm" type="video/webm" />
+											<source src="video/Pierrick_Sorin.ogv" type="video/ogg" />
+											<object type="application/x-shockwave-flash" width="400"
+												height="222"
+												data="http://www.youtube.com/watch?v=B20U_2sFyvA">
+												<param name="movie"
+													value="http://www.youtube.com/watch?v=B20U_2sFyvA" />
+												<param name="wmode" value="transparent" />
+												Vous n'avez pas de navigateur moderne, ni Flash installé...
+											</object>
+										</video>
+									</td>
+								</tr>
+								<tr>
+									<td class="lecteurVideo" id="lecteurVideo_Charlie_Mars"><video
+											controls="controls" preload="none" id="lecteur_Charlie_Mars"
+											class="lecteur">
+											<source src="video/Charlie_Mars.mp4" type="video/mp4" />
+											<source src="video/Charlie_Mars.webm" type="video/webm" />
+											<source src="video/Charlie_Mars.ogv" type="video/ogg" />
+											<object type="application/x-shockwave-flash" width="400"
+												height="222"
+												data="http://www.youtube.com/watch?v=Dk4RTvLpqsk">
+												<param name="movie"
+													value="http://www.youtube.com/watch?v=Dk4RTvLpqsk" />
+												<param name="wmode" value="transparent" />
+												Vous n'avez pas de navigateur moderne, ni Flash installé...
+											</object>
+										</video>
+										<!--<iframe src="http://www.youtube.com/embed/Dk4RTvLpqsk" frameborder="0" allowfullscreen id="lecteur_Charlie_Mars" class="lecteur"></iframe>
+									--></td>
+								</tr>
+								<tr>
+									<td class="lecteurVideo" id="lecteurVideo_Laurent"><video
+											controls="controls" preload="none" id="lecteur_Laurent"
+											class="lecteur">
+											<source src="video/Laurent.mp4" type="video/mp4" />
+											<source src="video/Laurent.webm" type="video/webm" />
+											<source src="video/Laurent.ogv" type="video/ogg" />
+											<object type="application/x-shockwave-flash" width="400"
+												height="222"
+												data="http://www.youtube.com/watch?v=QRbunaKYaec">
+												<param name="movie"
+													value="http://www.youtube.com/watch?v=QRbunaKYaec" />
+												<param name="wmode" value="transparent" />
+												Vous n'avez pas de navigateur moderne, ni Flash installé...
+											</object>
+										</video>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div>
+						<a href="www.hyblab.fr"><!--img src="images/bandeau.png" width="1024" alt="bandeau" /--></a>
+					</div>
+				</div>
+
+				<img src="images/video/jose-cerclet.png" id="Jose_Cerclet" class="artiste" width="168" height="90" />
+				<img src="images/video/pierrik-sorin.png" id="Pierrick_Sorin" class="artiste" width="162" height="66" />
+				<img src="images/video/charlie-mars.png" id="Charlie_Mars" class="artiste" width="136" height="96" />
+				<img src="images/video/laurent-la-torpille.png" id="Laurent" class="artiste" width="136" height="88" />
+
+				<img src="images/video/bouton-play.png" id="bouton_play1" width="32" height="31" alt="play" class="bouton_play" />
+				<img src="images/video/bouton-play.png" id="bouton_play2" width="32" height="31" alt="play" class="bouton_play" />
+				<img src="images/video/bouton-play.png" id="bouton_play3" width="32" height="31" alt="play" class="bouton_play" />
+				<img src="images/video/bouton-play.png" id="bouton_play4" width="32" height="31" alt="play" class="bouton_play" />
+
+				<img src="images/video/survoljosecerclet.png" id="survol1" class="survol" width="244" height="140" alt="play" />
+				<img src="images/video/survolpierricksorin.png" id="survol2" class="survol" width="154" height="195" alt="play" />
+				<img src="images/video/survolcharliemars.png" id="survol3" class="survol" width="153" height="223" alt="play" />
+				<img src="images/video/survollaurentlatorpille.png" id="survol4" class="survol" width="297" height="121" alt="play" />
+
+				<img src="images/vide.png" id="croixFermer1" alt="fermer" class="croixFermer" />
+				<img src="images/vide.png" id="croixFermer2" alt="fermer" class="croixFermer" />
+				<img src="images/vide.png" id="croixFermer3" alt="fermer" class="croixFermer" />
+				<img src="images/vide.png" id="croixFermer4" alt="fermer" class="croixFermer" />
+
+				<a href="#div3" class="slidingLink">
+					<img src="images/carte/bouton/bouton-retour.png" id="retour_video" width="51" height="24" alt="retour" />
+				</a>
+				<!-- <a href="#div5" class="slidingLink">
+					<img src="images/carte/bouton/bouton.png" id="go_conclusion" width="64" height="60" alt="cliquez" />
+				</a>-->
+			</div>
+		</div>
+
+		<!-- <div id="div5" class="slidingSpaces">
+			<div id="page">
+				<table id="Tableau_conclusion" width="1024" height="777" border="0"
+					cellpadding="0" cellspacing="0">
+					<tr>
+						<td><img src="images/conclusion/titre.png" width="1024"
+							height="167" alt=""></td>
+					</tr>
+					<tr>
+						<td><img src="images/conclusion/infographt.png" width="1024"
+							height="610" alt=""></td>
+					</tr>
+					<tr>
+						<td><a href="www.hyblab.fr"><img src="images/bandeau.png" width="1024" alt="bandeau" /></a></td>
+					</tr>
+				</table>
+				<a href="#div4" class="slidingLink"><img
+					src="images/carte/bouton/bouton-retour.png" id="retourConclusion"
+					width="51" height="24" alt="retour" /></a>
+			</div>
+		</div>-->
+</body>
+</html>

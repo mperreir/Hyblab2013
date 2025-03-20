@@ -1,0 +1,539 @@
+html, body {
+    margin:0;
+    padding:0;
+    font-family: "Lucida Grande", Verdana;
+    font-size: 0.9em;
+    text-align: left;
+    background-color:#F2F2F2;
+
+
+}
+
+
+
+h1 {
+    font-size:20pt;
+    text-decoration:none;
+    font-weight:normal;
+    font-family: "Lucida Sans";
+    color:#232323;
+    background-color:#bfe56c;
+    width: 540px;
+    height: 40px;
+    text-align:right;
+}
+
+h2{
+	font-size:18pt;
+    position:relative;
+    font-weight:bold;
+    font-family: "Verdana";
+    color:#bfe56c;
+    width: 100%;
+    height: 30px;
+    left:25px;
+    top:15px;
+}
+h4{
+	font-size:16pt;
+    position:relative;
+    font-weight:normal;
+    font-family: "Verdana";
+    color:#bfe56c;
+    width: 100%;
+    height: 30px;
+    left:25px;
+    top:15px;
+}
+
+h3{
+	font-size:16pt;
+    position:absolute;
+    font-weight:normal;
+    color:#232323;
+    font-family: "Verdana";
+    width: auto;
+    height: 30px;
+    right:0;
+    text-align:left;
+    background-color:#bfe56c;
+}
+
+
+
+a {
+    color:#23A4FF;
+}
+
+#fenetre{
+	width: 1100px;
+    height: 6100px;
+    margin:0;
+    position:relative;
+}
+
+#right, #left {
+	position:absolute;
+	top:0;
+	background-color:#3E3E3E;
+	width:2%;
+    height:100%;
+    border
+}
+#right{
+	right:0 ;
+}
+#left{
+	left:0 ;
+}
+
+
+
+ #center {
+ 	top:0 ;
+ 	background-color:#333333;
+ 	position:relative;
+ 	margin-left:20px;
+ 	margin-right:20px;
+
+ 	height:100%;
+
+ }
+ #titre{
+ 	position: relative;
+ 	top:0;
+ 	width:100%;
+ 	heigth:350px;
+ 	margin-left:0px;
+ 	margin-right:0px;
+ }
+
+ .textintro{
+ 	position: relative;
+ 	top: 10px;
+ 	left:50px;
+ 	font-family: Verdana;
+ 	color:#939393 ;
+    font-size: 12pt;
+    width:90%
+ }
+
+ #blabla{
+ 	 position: relative;
+ 	 top:60px;
+ }
+
+ #ousontlesjeuneVolume,#Pourquoi{
+	 position: relative;
+
+	 width:100%;
+ }
+#carte {
+ 	postion: relative;
+ 	width:100%;
+}
+.imagecarte{
+	position:relative;
+	top:50px;
+}
+
+.explication {
+	position:relative;
+	width:100%;
+	background-color:#6E6E6E;
+	height:160px;
+}
+#donneschiffrer{
+	position:relative;
+	top:-110px;
+}
+.chiffre{
+	position:relative;
+	left:450px;
+	font-family: Verdana;
+ 	color:#939393  ;
+    font-size: 12pt;
+    top:0;
+    width:50%;
+    height:2px;
+}
+#lile{
+	position:relative;
+	top:10px;
+	left:50px
+}
+.texte {
+	font-style:italic;
+ 	position: relative;
+	left:5px;
+	font-family: Verdana;
+ 	color:#939393  ;
+    font-size: 10pt;
+    top:-40px;
+    width:35%;
+   height:2px;
+ }
+.texteexplication {
+
+	position: relative;
+	left:400px;
+	font-family: Verdana;
+ 	color:#939393  ;
+    font-size: 12pt;
+    top:-110px;
+    width:60%;
+   height:2px;
+}
+
+.temoin {
+	background-color:#bfe56c ;
+	position: relative;
+	width:100%;
+	height:200px;
+	top:30px;
+	margin-bottom:30px;
+}
+
+.portrait{
+	position:relative;
+	left:50px;
+	top:30px;
+	width:20%;
+}
+.temoignage{
+	font-style:italic;
+	position: absolute;
+	left:30%;
+	font-family:  Verdana;
+ 	color:#5C5C5C ;
+    font-size: 16pt;
+    top:30px;
+    width:70%
+}
+
+.signature{
+
+	position: absolute;
+	left:80%;
+	font-family: "Lucida Grande", Verdana;
+ 	color:black ;
+    font-size: 10pt;
+    bottom:20px;
+    color:#5C5C5C ;
+
+}
+ #ousontlesjeunePourcent{
+	 position: relative;
+	 margin-left:0px;
+	 margin-top :0px;
+	 width:100%;
+ }
+
+ #irisnante{
+ 	position: relative;
+	 margin-left:200px;
+	 margin-top :250px;
+	 width:100%;
+
+ }
+
+#loyer{
+	position: relative;
+	top:30px;
+	left:2%;
+	Width:96%;
+	margin-bottom:60px;
+}
+
+#histo{
+	position:relative;
+	top:60px
+}
+
+#eexp{
+	position:relative;
+	top:60px;
+	height:230px
+}
+
+.infobulle{
+	position: absolute;
+	margin-top:-6000px;
+	width: 271px;
+	height: 216px;
+	z-index:40;
+}
+
+#motdelafin {
+	position:relative;
+	top:30px;
+	bottom:30px;
+}
+#conclusion{
+	position: relative;
+	top:30px;
+}
+#image {
+	z-index:20;
+	position: absolute;
+	width: 271px;
+	height: 216px;
+
+
+}
+
+#quartier{
+	position:absolute;
+	z-index:20;
+	padding:0;
+	text-align:left;
+	font-family: "Lucida Sans";
+    font-size: 30px;
+    color:#5B5B5B;
+    margin-top:-20px;
+    margin-left:30px;
+
+}
+
+#jeunes{
+	text-align:center;
+	font-family: "Lucida Sans";
+    font-size: 26px;
+    color:#232323;
+    position: absolute;
+    margin-top: 100px;
+    margin-left:150px;
+    z-index:20;
+}
+
+#jeunesVolume{
+	z-index:20;
+	text-align:left;
+	font-family: "Georgia";
+	font-style: bold;
+    font-size: 28px;
+    color:#bfe56c;
+    position: absolute;
+    margin-top: 60px;
+    margin-left:30px
+}
+
+.pourcentage{
+	z-index:20;
+	text-align:center;
+	font-family: "Georgia";
+	font-style: bold;
+    font-size: 48px;
+    color:#bfe56c;
+    position: absolute;
+    margin-top: 45px;
+    margin-left:30px
+}
+
+.pourcentageVolume{
+	text-align:center;
+	font-family: "Lucida Sans";
+    font-size: 40px;
+    color:#232323;
+    position: absolute;
+    margin-top: 95px;
+    margin-left:165px;
+    z-index:20;
+}
+
+#motjeune{
+	font-family: "Lucida Sans";
+    font-size: 18px;
+    margin-left:15px;
+}
+
+#motjeuneVolume{
+	font-family: "Lucida Sans";
+    font-size: 18px;
+}
+
+.endessous {
+	height:5px
+}
+
+
+.text {
+    margin: 8px;
+}
+
+#inner-details {
+    font-size:0.8em;
+    list-style:none;
+    margin:7px;
+}
+
+#log {
+    position:absolute;
+    top:10px;
+    font-size:1.0em;
+    font-weight:bold;
+    color:#23A4FF;
+}
+
+#imagette {
+	position: absolute;
+	top:77px;
+	left:22px;
+}
+#nom {
+	position: absolute;
+	top:10px;
+	left:70px;
+	color:#939393;
+	font-family: Georgia;
+    font-size: 14pt;
+    font-weight : bold;
+    width:300px;
+
+
+}
+
+
+#placepoint{
+	position: relative;
+
+}
+
+#machines {
+	position: absolute;
+	top:103px;
+	left:115px;
+}
+
+#trempolino {
+	position: absolute;
+	top:123px;
+	left:125px;
+}
+
+#stereolux {
+	position: absolute;
+	top:107px;
+	left:116px;
+}
+
+#ecolearchi {
+	position: absolute;
+	top:85px;
+	left:175px;
+}
+
+#polegraphique {
+	position: absolute;
+	top:113px;
+	left:140px;
+}
+
+#palaissport {
+	position: absolute;
+	top:75px;
+	left:330px;
+}
+
+#centrecommercialbeaulieu {
+	position: absolute;
+	top:130px;
+	left:370px;
+}
+
+#lcclub {
+	position: absolute;
+	top:170px;
+	left:15px;
+}
+
+#altercafe {
+	position: absolute;
+	top:190px;
+	left:5px;
+}
+
+#rondpoint {
+	position: absolute;
+	top:145px;
+	left:25px;
+}
+
+#ferrailleur {
+	position: absolute;
+	top:180px;
+	left:10px;
+}
+
+#imagette {
+	position: absolute;
+	top:77px;
+	left:22px;
+}
+#nomlieu {
+	position: absolute;
+	top:0px;
+	left:70px;
+	color:#939393;
+	font-family: Georgia;
+    font-size: 14pt;
+    font-weight : bold;
+    width:300px;
+    text-align:center;
+
+}
+#ouverture{
+	Position: absolute;
+	top:49px;
+	left:155px;
+	width:220px;
+	color:#939393;
+	font-family: "Lucida Sans";
+    font-size: 11pt;
+
+}
+#description {
+	position: absolute;
+	top:80px;
+	left:155px;
+	width:235px;
+	height:160px;
+	color:#939393;
+	font-family: "Lucida Sans";
+    font-size: 10pt;
+    text-align:left;
+}
+
+.source {
+	top:70px;
+	position: relative;
+	left:2%;
+	font-family:, Verdana;
+ 	font-style:italic;
+    font-size: 12pt;
+    color:#5C5C5C ;
+    width:98%
+}
+
+#partenaire{
+	background-color: white;
+	width:100%;
+	position: relative;
+	top:80px;
+}
+/*TOOLTIPS*/
+.tip {
+    color: #111;
+    width: 139px;
+    background-color: white;
+    border:1px solid #ccc;
+    -moz-box-shadow:#555 2px 2px 8px;
+    -webkit-box-shadow:#555 2px 2px 8px;
+    -o-box-shadow:#555 2px 2px 8px;
+    box-shadow:#555 2px 2px 8px;
+    opacity:0.9;
+    filter:alpha(opacity=90);
+    font-size:10px;
+    font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding:7px;
+}

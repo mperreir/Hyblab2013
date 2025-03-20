@@ -1,0 +1,402 @@
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 630px;
+}
+
+.centre {
+	text-align: center;
+}
+
+#Titre_site{
+	margin-top: 15px;
+}
+
+#chapo{
+	color: white;
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	text-align: justify;
+	margin-top: 20px;
+	margin-right: 50px;
+	margin-left: 50px;
+	text-indent: 30px;
+}
+
+#icones_entete{
+	position: relative;
+}
+
+.arbre{
+	margin-left: 35px;
+	margin-right: 420px;
+}
+
+.espace_reduit{
+	margin-bottom: -6px;
+}
+
+#introduction {
+	background-image: url('../Images/Introduction/Fond-accueil.png');
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#carte_accueil{
+	position: relative;
+}
+
+#noms_quartiers_carte{
+	position: absolute;
+	top: 10px;
+}
+
+#informations_boutons{
+	visibility: hidden;
+	position: absolute;
+	top: 240px;
+	left: 15px;
+}
+
+.boutons_carte {
+	position: absolute;
+	top: 280px;
+	left: 40px;
+}
+
+.nom_quartier {
+	margin-left: 10%;
+	text-align: left;
+}
+
+.titre_quartier {
+	margin-top: 7%;
+	margin-bottom: 3%;
+}
+
+.icone_curseur{
+	margin-bottom: 5px;
+}
+.icone {
+	margin-left: 3%;
+	margin-bottom: 7%;
+	margin-top: 1%;
+}
+
+.icone_quartier{
+	position: relative;
+}
+
+.consigne_icone{
+	position: absolute;
+	top: 100px;
+}
+
+#quartier1 {
+	background-color: #ebe8e8;
+	background-image: url('../Images/Quartier1/Bords-quartier-01.png');
+	background-repeat: no-repeat;
+}
+
+#quartier2 {
+	background-color: #ebe8e8;
+	background-image: url('../Images/Quartier2/Bords-quartier-02.png');
+	background-repeat: no-repeat;
+}
+
+#quartier3 {
+	background-color: #ebe8e8;
+	background-image: url('../Images/Quartier3/Bords-quartier-03.png');
+	background-repeat: no-repeat;
+}
+
+#quartier4 {
+	background-color: #ebe8e8;
+	background-image: url('../Images/Quartier4/Bords-quartier-04.png');
+	background-repeat: no-repeat;
+}
+
+#pied_de_page {
+	background-color: #a4a4a4;
+}
+
+.marge {
+	margin-left: 3%;
+}
+
+.texte {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	text-align: justify;
+	text-indent: 20px;
+}
+
+.texte_pied {
+	display: block;
+	width: 30%;
+}
+
+#groupe_projet {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	height: 260px;
+	font-size: 10px;
+}
+
+#illustration_groupe_projet{
+	display: block;
+	margin: auto;
+}
+
+#noms_groupe_projet{
+	text-align: justify;
+	margin-top: -52px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	color: white;
+	font-size: 10px;
+}
+
+.icone_pdp{
+	display: block;
+	margin-top : 3px;
+}
+
+#Logos{
+	padding-bottom: 5px;
+	margin-left: 80px;
+}
+
+#Licence{
+	display: inline;
+	margin-left: 0px;
+}
+
+#Logo_PDLL{
+	display: inline;
+	margin-left: 65px;
+	width:17%;
+}
+
+.illustration_pdp{
+	position: relative;
+
+}
+
+.texte_pdp{
+	width: 275px;
+	top: 50px;
+	right: 60px;
+    margin: 10px auto;
+    padding-bottom: 15px;
+}
+
+.Encadre_quartier {
+	overflow: hidden;
+	max-width: 600px;
+	max-height: 400px;
+	margin-left: 5%;
+	position: relative;
+	background-image: url('../Images/Quartier1/Temoignage/Quartier-01-Fond.png');
+	background-repeat: no-repeat;
+}
+
+.Temoignage_image
+{
+	display: inline-block;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+}
+
+.Temoignage_texte
+{
+	overflow: auto;
+	max-width: 600px;
+	max-height: 250px;
+	padding-right: 30px;
+	display: inline-block;
+	position: absolute;
+	width: 300px;
+	top: 4px;
+	left:250px;
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	text-align: justify;
+
+}
+
+.titre{
+	font-size: 15px;
+}
+
+#titre_temoignage_quartier1 {
+ 	color: #2979a2;
+}
+
+#titre_temoignage_quartier2 {
+ 	color: #66a46d;
+}
+
+.illustration_verticale {
+	left: 60px;
+}
+
+#titre_temoignage_quartier3 {
+ 	color: #d04f3f;
+}
+
+.couleur_temoignage_quartier4 {
+ 	color: #df8c3a;
+}
+
+.auteur_texte{
+	text-align: right;
+}
+
+#Q1Cercle1 {
+	position: absolute;
+	display: none;
+	margin-left: 145px;
+	margin-top:80px;
+}
+
+#Q1Cercle2 {
+	position: absolute;
+	display: none;
+	margin-left: 215px;
+	margin-top: 80px;
+}
+
+#Q1Cercle3 {
+	position: absolute;
+	display: none;
+	margin-left: 295px;
+	margin-top: 80px;
+}
+
+#Q1Cercle4 {
+	position: absolute;
+	display: none;
+	margin-left: 370px;
+	margin-top: 80px;
+}
+
+#Q1Cercle5 {
+	position: absolute;
+	display: none;
+	margin-left: 430px;
+	margin-top: 80px;
+}
+
+#Q2Cercle1 {
+	position: absolute;
+	display: none;
+	margin-left: 146px;
+	margin-top: 98px;
+}
+
+#Q2Cercle2 {
+	position: absolute;
+	display: none;
+	margin-left: 226px;
+	margin-top: 98px;
+}
+
+#Q2Cercle3 {
+	position: absolute;
+	display: none;
+	margin-left: 310px;
+	margin-top: 98px;
+}
+
+#Q2Cercle4 {
+	position: absolute;
+	display: none;
+	margin-left: 373px;
+	margin-top: 98px;
+}
+
+#Q2Cercle5 {
+	position: absolute;
+	display: none;
+	margin-left: 431px;
+	margin-top: 98px;
+}
+
+#Q3Cercle1 {
+	position: absolute;
+	display: none;
+	margin-left: 135px;
+	margin-top: 87px;
+}
+
+#Q3Cercle2 {
+	position: absolute;
+	display: none;
+	margin-left: 205px;
+	margin-top: 87px;
+}
+
+#Q3Cercle3 {
+	position: absolute;
+	display: none;
+	margin-left: 280px;
+	margin-top: 87px;
+}
+
+#Q3Cercle4 {
+	position: absolute;
+	display: none;
+	margin-left: 345px;
+	margin-top: 87px;
+}
+
+#Q3Cercle5 {
+	position: absolute;
+	display: none;
+	margin-left: 412px;
+	margin-top: 88px;
+}
+
+#Q4Cercle1 {
+	position: absolute;
+	display: none;
+	margin-left: 136px;
+	margin-top: 73px;
+}
+
+#Q4Cercle2 {
+	position: absolute;
+	display: none;
+	margin-left: 197px;
+	margin-top: 73px;
+}
+
+#Q4Cercle3 {
+	position: absolute;
+	display: none;
+	margin-left: 275px;
+	margin-top: 73px;
+}
+
+#Q4Cercle4 {
+	position: absolute;
+	display: none;
+	margin-left: 350px;
+	margin-top: 73px;
+}
+
+#Q4Cercle5 {
+	position: absolute;
+	display: none;
+	margin-left: 413px;
+	margin-top: 73px;
+}
+
+.policePourcentage {
+	font-size: 12;
+	color: white;
+}

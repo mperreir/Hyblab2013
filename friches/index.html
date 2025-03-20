@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Mutations Industrielles</title>
+
+		<link rel="stylesheet" href="css/Design.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<link href='css/css?family=Electrolize' rel='stylesheet' type='text/css' />
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+
+		<!-- Highslide -->
+		<script type="text/javascript" src="js/highslide/highslide-full.js"></script>
+		<script type="text/javascript" src="js/highslide/highslide-with-html.js"></script>
+		<link rel="stylesheet" type="text/css" href="js/highslide/highslide.css" />
+		<script type="text/javascript">
+			hs.graphicsDir = 'js/highslide/graphics/';
+			hs.outlineType = 'rounded-white';
+			//<![CDATA[
+			hs.registerOverlay({
+				html: '<div class="closebutton" onclick="return hs.close(this)" title="Fermer"></div>',
+				position: 'top right',
+				fade: 2 // fading the semi-transparent overlay looks bad in IE
+			});
+			hs.wrapperClassName = 'borderless';
+			hs.dimmingOpacity =0.1;
+			//]]>
+
+		</script>
+
+		<!-- Effet toolpit -->
+		<!--Stylesheets-->
+		<link rel="stylesheet" type="text/css" href="js/jquery.qtip.css" />
+
+		<!--JavaScript - Might want to move these to the footer of the page to prevent blocking-->
+		<script type="text/javascript" src="js/jquery-migrate-1.0.0.js"></script>
+		<script type="text/javascript" src="js/jquery.qtip.js"></script>
+
+		<!-- image map highlight -->
+		<script type="text/javascript" src="js/jquery.metadata.min.js"></script>
+		<script type="text/javascript" src="js/jquery.maphilight.min.js"></script>
+		<script>
+			$(function() {
+				$('.map1').maphilight.defaults = {
+					fill: true,
+					fillColor: '000000',
+					fillOpacity: 0.2,
+					stroke: false,
+					strokeColor: '#C0C0C0',
+					strokeOpacity: 0,
+					strokeWidth: 0,
+					fade: true,
+					alwaysOn: false,
+					neverOn: false,
+					groupBy: false,
+					wrapClass: true,
+					shadow: true,
+					shadowX: 0,
+					shadowY: 0,
+					shadowRadius: 6,
+					shadowColor: '000000',
+					shadowOpacity: 0.8,
+					shadowPosition: 'outside',
+					shadowFrom: false
+				}
+				$('.map1').maphilight();
+			})
+	</script>
+
+	</head>
+
+	<body>
+		<!-- Background with credits -->
+		<img width="100%" height="100%" style="position:absolute; top:0px; left:0px" src="images/background-credits.jpg" alt=""/>
+
+		<a href="images/bulle-sources.png" onclick="return hs.expand(this, {align:'center'})"  class="highslide"
+		   style="position:absolute; bottom:20px; right:20px; z-index:2000">
+			<img  src="images/bouton_sources.png" alt=""/>
+		</a>
+
+		<!-- Home -->
+		<div id="home" class="content">
+					<h2>Au coeur de Nantes il y a son île.</h2>
+			<p>
+				Depuis plusieurs siècles l'île de Nantes a été le coeur de l'activité économique de la ville. A la fois port et vaste terre industrielle,
+				elle a depuis 25 ans connu une mutation comme jamais elle n'avait traversée avant.
+			</p>
+			<p>
+				Mutations des lieux, des activités mais aussi de son identité.  Cette île, auparavant réservée aux ouvriers s'ouvre maintenant à toute la
+				population nantaise. Elle accueille aujourd'hui de nombreux espaces culturels et touristiques.
+			</p>
+			<p>
+				Cependant la mémoire de son passé persiste dans les vestiges réaménagés. Un dualisme ambiant qui mêle passé et présent mais qui aussi se retrouve dans les
+				nouvelles activités des sites qui s'entremêlent: espaces publics, logements, bureaux...
+			</p>
+					<h2>Une nouvelle île hybride</h2>
+
+		</div>
+
+		<!-- Carte 1987 -->
+		<div id="map1987" class="panel">
+			<img width="100%" height="100%" style="position:absolute; top:0px; left:0px" src="images/background.jpg" alt=""/>
+
+			<div class="content" >
+				<h2>Localisation du patrimoine industriel en 1987 sur l'île de Nantes</h2>
+
+				<a href="#" onclick="return hs.htmlExpand(this, { contentId: 'highslide-html-1987',align: 'center'  } )"
+				   class="highslide">
+					<img width=" 10%" height="24%" style="position:absolute; top:48%; left:-15%; z-index:2000" src="images/info.gif" />
+				</a>
+
+				<img width="100%" height="100%" style="position:absolute; top:-25px; left:0px" src="images/Carte-1987.png" alt=""/>
+			</div>
+		</div>
+
+		<!-- Carte 2013 -->
+		<div id="map2013" class="panel">
+			<img width="100%" height="100%" style="position:absolute; top:0px; left:0px" src="images/background.jpg" alt=""/>
+
+			<div class="content">
+				<h2 style="position:absolute; top:8%; left:0%; z-index:2000">Evolution du patrimoine en 2013   <a id="link-article1" href="#article1" >La ville prend le large</a> </h2>
+
+				<a href="#" onclick="return hs.htmlExpand(this, { contentId: 'highslide-html-2013', align: 'center'  } )"
+				   class="highslide">
+					<img width=" 10%" height="24%" style="position:absolute; top:48%; left:-15%; z-index:2000" src="images/info.gif" />
+				</a>
+
+				<div style="position:absolute; top:24%; left:0%;">
+
+				</div>
+				<div style="position:absolute; top:-150px; left:0px; z-index:1;">
+					<img usemap="#Carte-2013"  style="border-style:none" class="map1" width="1024px" height="683px"  src="images/Carte-2013.png" alt=""/>
+				</div>
+			</div>
+		</div>
+		<!-- mapping carte -->
+		<div>
+			<map id="Carte-2013" name="Carte-2013">
+				<area shape="poly" alt="Quartier - Chemins de fer" coords="176,481,171,593,92,593,90,593,90,583,110,543,105,537,111,532,115,535,131,495,155,486"
+					  href="#map2013" title="" />
+				<area shape="poly" alt="Quartier - Beghin-Say" coords="266,474,263,497,265,515,268,559,267,567,269,569,268,567,285,562,298,561,309,565,324,567,336,567,337,563,341,563,410,487,412,484,377,460,373,464,368,464,362,460,361,458"
+					  href="#map2013" title="" />
+				<area shape="poly" alt="Quartier - Alstom" coords="256,467,236,437,235,438,232,438,229,437,229,432,228,431,224,429,222,425,224,420,205,393,205,392,204,388,205,385,208,384,210,383,212,385,225,378,237,375,245,373,251,373,255,375,268,376,358,398,359,400,366,443,362,450,361,452,312,459,312,459,311,461,307,462,304,460,259,468"
+					  href="#map2013" title="" />
+				<area shape="poly" alt="Quartier - Hangar à bananes" coords="130,489,122,501,115,516,110,529,106,539,100,552,91,570,75,590,74,592,74,587,71,582,70,577,64,575,63,573,66,563,66,559,74,543,69,542,67,539,69,535,71,533,75,535,77,535,86,514,82,514,80,511,80,508,83,505,88,507,89,508,98,496,104,485,106,478,109,477,114,478,117,479,124,485"
+					  href="#map2013" title="" />
+				<area shape="poly" alt="Quartier - Chantiers Navals" coords="131,489,110,469,116,467,120,463,116,461,115,460,121,457,124,455,123,449,125,445,146,421,147,421,150,418,152,418,156,416,160,415,166,415,170,415,174,412,178,409,181,405,184,400,200,396,206,404,216,417,223,429,227,436,235,446,241,455,246,461,246,460,248,462,250,465,249,467,248,469,245,470,246,470,243,471,240,469,187,474,167,477,159,479,148,482,135,487"
+					  href="#quartier-4" title=""/>
+				<area shape="poly" alt="Quartier - Fonderie" coords="509,516,478,449,475,443,475,441,479,440,591,420,595,428,602,442,611,456,611,459,608,461,611,460,605,462,579,482,559,494,542,504,521,514,515,517"
+					  href="#map2013" title="" />
+				<area shape="default" nohref="nohref" alt="" />
+			</map>
+		</div>
+
+		<!-- Quartier-4 -->
+		<div id="quartier-4" class="panel">
+			<img width="100%" height="100%" style="position:absolute; top:0px; left:0px" src="images/background.jpg" alt=""/>
+
+			<div class="content">
+				<h2 style="position:absolute; top:8%; left:0%; z-index:2000">Quartier - Chantiers Navals   <a id="link-article1" href="#article2" >Un patrimoine industriel ...</a> </h2>
+
+				<div style="position:absolute; top:025%; left:0%;">
+					<img usemap="#quartier-chantiers-navals" class="map1" style="border-style:none;position:absolute;top:-0px;left:-0px"
+						 width="848px" height="444px"  src="images/quartier-chantiers-navals.png" alt=""/>
+				</div>
+
+					<h2 style="position:absolute; top:75%; left:75%"><a id="link-article1" href="#map2013" >Retour</a> </h2>
+
+			</div>
+
+
+		</div>
+
+		<div>
+			<map id="quartier-chantiers-navals" name="quartier-chantiers-navals">
+
+				<area shape="poly" href="images_slider/Points-cliquables_06_full.png"	 onclick="return hs.expand(this)" alt="Le parc des Chantiers" class="highslide" coords="103,195,113,179,132,158,160,131,176,117,188,110,200,104,215,100,226,98,237,97,246,97,255,97,260,97,260,97,264,98,269,98,272,99,275,100,277,103,278,104,279,106,280,107,282,112,283,116,283,131,283,133,282,135,282,142,281,142,281,148,280,148,280,152,280,154,279,154,279,157,279,159,278,161,278,159,278,159,276,162,270,168,251,179,227,188,203,195,181,200,161,204,147,206,133,208,125,208,124,209,122,209,121,208,113,208,110,208,106,206,104,204,103,202,103,199,103,196,103,194,103,194,103,194,103,194,103,194,104,196,103,194,104,195,104,195" href="" title="" />
+
+				<area href="images_slider/Points-cliquables_33_full.png" class="highslide" onclick="return hs.expand(this)"  shape="circle" alt="La Grue Titan Jaune" coords="122,243,19" href="vert_jaune" title="" >
+
+				</area>
+
+				<area href="images_slider/Points-cliquables_43_full.png" class="highslide" onclick="return hs.expand(this)" shape="circle" alt="Câle 2" coords="148,279,16" title="" >
+
+				</area>
+				<area href="images_slider/Points-cliquables_26_full.png" class="highslide" onclick="return hs.expand(this)" shape="circle" alt="Câle 3" coords="170,233,19" title="" >
+
+				</area>
+				<area href="images_slider/Points-cliquables_30_full.png" class="highslide" onclick="return hs.expand(this)" shape="circle" alt="Ecole Aimé Césaire" coords="227,240,18" title="" >
+
+				</area>
+				<area href="images_slider/Points-cliquables_40_full.png" class="highslide" onclick="return hs.expand(this)" shape="circle" alt="Maison des Hommes et de la Technique" coords="348,275,18" title="" >
+
+				</area>
+				<area href="images_slider/Points-cliquables_23_full.png" class="highslide" onclick="return hs.expand(this)" shape="circle" alt="Station Prouvé" coords="337,229,18" title="" >
+
+				</area>
+				<area href="images_slider/Points-cliquables_14_full.png" class="highslide" onclick="return hs.expand(this)" shape="circle" alt="Le Carrousel" coords="316,187,17" title="" >
+
+				</area>
+				<area href="images_slider/Points-cliquables_12_full.png" class="highslide" onclick="return hs.expand(this)" shape="circle" alt="Les Machines de l'île - espace d'exposition" coords="409,179,19" title="" >
+
+				</area>
+				<area href="images_slider/Points-cliquables_03_full.png" class="highslide" onclick="return hs.expand(this)" shape="circle" alt="Café de la Branche" coords="379,108,18" title="" >
+
+				</area>
+				<area href="images_slider/Points-cliquables_48_full.png" class="highslide" onclick="return hs.expand(this)" shape="circle" alt="Trempolino" coords="525,280,18" title="" >
+
+				</area>
+				<area href="images_slider/Points-cliquables_19_full.png" class="highslide" onclick="return hs.expand(this)"shape="circle" alt="Les Nefs" coords="456,194,18" title="" >
+
+				</area>
+				<area href="images_slider/Points-cliquables_36_full.png" class="highslide" onclick="return hs.expand(this)" shape="circle" alt="Stéréolux" coords="474,258,17" title="" >
+
+				</area>
+				<area href="images_slider/Points-cliquables_10_full.png" class="highslide" onclick="return hs.expand(this)" shape="circle" alt="L'atelier des Chantiers Navals" coords="368,151,18" title="" >
+
+				</area>
+				<area shape="default" nohref="nohref" alt="" >
+
+				</area>
+			</map>
+		</div>
+
+		<!-- Article 1-->
+		<div id="article1" class="panel">
+			<img width="100%" height="100%" style="position:absolute; top:0px; left:0px" src="images/background.jpg" alt=""/>
+
+			<div class="content">
+				<h2>La ville prend le large</h2>
+				<div id="text"  class="content" style="overflow:auto; top:30%;left:0px;">
+
+							<h3>Le port de Nantes</h3>
+					<p>L'Île de Nantes est au cœur des projets d'urbanisme nantais. Elle est aussi le cœur de Nantes, le lien entre le sud et le nord. Traversée par la Loire et son affluent l'Erdre, l'Île a toujours été le centre économique de Nantes, qui était autrefois un port de renommé mondiale.
+					On connaît Nantes et son activité à l'époque du commerce triangulaire, suivit par l'ère industrielle et son port de construction navale. L'Île est un territoire stratégique, en témoignent encore les nombreux rails de chemin de fer qui la traversent jusqu'à la Gare de l'Etat. Mais elle n'a pas été qu'un lieu de passage et de transit, elle était avant tout un lieu de vie et de travail.
+					Au début du XXème siècle, on voit arriver chaque jour, des quais de l'Île St Anne devenue aujourd'hui la Prairie aux Ducs, jusqu'au pont Anne de Bretagne, les ouvriers qui viennent construire des navires qui feront la fierté de tous. L'Île est en pleine activité, on voit la fumée monter des cheminées, les bruits, la lumière, et les odeurs de l'industrie s'élever des Chantiers. Jean Relet, président de la Maison des Hommes et des Techniques, nous parle de la forte présence de cette industrie en cœur de ville.
+					</p>
+							<h3>Changement de bord</h3>
+					<p>La crise se propage dans les années 1950 et entraîne avec elle de grandes mutations. Dans toute l'Europe, les ports sont en difficulté et luttent pour conserver leurs emplois. A Nantes les trois grandes compagnies des chantiers fusionnent dans les années 1960.
+					L'activité s'arrête définitivement en 1987 avec le lancement du Bougainville. C'est un traumatisme pour les ouvriers et pour tout nantais, car leur ville doit désormais penser son avenir indépendamment de son fleuve. Immédiatement les bulldozers arrivent et commencent à raser les Chantiers et vestiges de l'ère industrielle, dans l'esprit de faire peau neuve. Mais les nantais et anciens ouvriers se battent pour conserver leur histoire. D'après Jean Relet, la culture ouvrière est bien plus visible avec des chantiers où les bateaux s'exposent aux regards des visiteurs. Les navires sont le fruit d'un travail collectif qui symbolise bien cette culture industrielle.
+					Les réflexions se concentrent sur une nouvelle politique d'urbanisme de l'Île de Nantes. Après de nombreuses années, c'est finalement le projet de l'architecte Chemetoff qui est approuvé, et la réhabilitation des anciens sites peut commencer. Les Nefs sont finalement conservées, tout comme les Cales 2 et 3, la Grue Jaune et la Grue Grise. Ainsi de nombreux vestiges et traces sont exposés et contribuent à créer le paysage de l'Île.
+					</p>
+							<h3>Un nouveau centre</h3>
+					<p>
+					On voit aujourd'hui un alliage de bureaux, logements, commerces, lieux publics, lieux également touristiques et culturels se créer sur place.
+					Sur les anciens sites des Chantiers on trouve des lieux emblématiques de la culture et du tourisme nantais, et un peu plus loin une école. Ils sont suivit de lieux d'exposition, de bars et lieux de fête qui participent au dynamisme et rayonnement du quai des Antilles. Sur le site des Halles Alstom, un quartier de la création est aménagé, il abrite aujourd'hui des pôles de créativité, notamment des entreprises et lieux d'exposition dans des immeubles qui sont à eux seuls des œuvres artistiques. Et sur les derniers sites à réhabiliter, sur les lignes de fret notamment, seront construit un pôle universitaire et médical ainsi que des logements.
+					Mais il y a encore de grands espaces et bords de quai, appréciés par les nantais. Cette promenade nous replace en plein cœur de la nature, entre la Loire et la végétation naturelle. Nature qui a repris ses droits sur de vieux entrepôts abandonnées et délabrés, comme c'est le cas des Fonderies au centre de l'Île, qui est maintenant un parc vivant.
+					</p>
+							<h3>Que représente alors l'Île de Nantes pour vous ?</h3>
+
+							<h2><a id="link-article1" href="#map2013" >Retour</a> </h2>
+
+
+					</div>
+			</div>
+		</div>
+
+		<!-- Article 2-->
+		<div id="article2" class="panel">
+			<img width="100%" height="100%" style="position:absolute; top:0px; left:0px" src="images/background.jpg" alt=""/>
+
+			<div class="content">
+				<h2>Un patrimoine industriel au service d'un développement moderne.</h2>
+				<div id="text"  class="content" style="overflow:auto; top:36%;left:0px;">
+					<p>
+					Depuis le début des années 2000, le territoire de l'île de Nantes s'est vu transformé, passant d'une histoire marquée par l'industrie
+					lourde à une nouvelle mixité des activités et structures.
+					</p>
+					<p>
+					Autrefois très segmentée, l'île était séparé en deux pôles distincts : à l'Est on trouvait majoritairement des logements et à l'Ouest,
+					les chantiers de l'activité portuaire. Après l'arrêt des Chantiers Navals en 1987, cette rupture entre l'est et l'ouest s'est renforcée
+					lorsque la plupart des anciens sites industriels de Nantes ont été laissés à l'abandon.
+					</p>
+					<p>
+					Avec ses terres en friche, l'île de Nantes est devenue le symbole d'un nouvel avenir pour Nantes, un nouveau souffle. Cet espace aux
+					multiples possibilités a pour vocation d'être une vitrine de la culture, de l'innovation créative et scientifique que la ville sait offrir.
+					</p>
+					<p>
+					La ville de Nantes, en collaboration avec la Samoa, cherche à réconcilier l'île avec elle-même et à apporter un mélange d'activités au sein
+					de la partie ouest. La politique de réhabilitation vise à conserver une identité architecturale. Ainsi on voit naître sur les anciens sites
+					industriels, des logements, bureaux, espaces verts et lieux culturels qui s'intègrent dans les structures existantes. Les nouvelles
+					constructions cherchent alors le respect d'un aspect brut, au même temps artistique.
+					</p>
+					<p>
+					La Samoa ne cherche donc pas à considérer l'activité portuaire en tant que telle. D'après Lionel Pouget, malgré le rejet d'une position
+					nostalgique, l'organisme d'urbanisme tient à « ne pas dénaturer le patrimoine ». Bien qu'on assiste à une importante transformation du
+					paysage, on retrouve une forte envie de conserver les vestiges du passé industriel qui fut si fort pour la ville de Nantes. Ainsi la
+					conservation des témoins de l'histoire industrielle, que sont les Nefs et les Grues notamment, est d'autant plus importante que ces sites
+					vivent aujourd'hui différemment et présentent le nouveau visage de l'Île.
+					</p>
+
+							<h2><a id="link-article1" href="#quartier-4" >Retour</a> </h2>
+
+					</div>
+			</div>
+		</div>
+
+		<!-- Header with Navigation -->
+		<div id="header" style="position:absolute; top:6%; left; 10%">
+			<ul id="navigation">
+				<li><a id="link-home" href="#home">Description</a></li>
+				<li><a id="link-map1987" href="#map1987">Carte 1987</a></li>
+				<li><a id="link-map2013" href="#map2013">Carte 2013</a></li>
+			</ul>
+		</div>
+
+	</body>
+</html>
+
+<!-- popout content 2013 -->
+<div class="highslide-html-content" id="highslide-html-2013">
+	<div class="highslide-header">
+		<ul>
+			<li class="highslide-move">
+				<a href="#" onclick="return false">Déplacer</a>
+			</li>
+			<li class="highslide-close">
+				<a href="#" onclick="return hs.close(this)">Fermer</a>
+			</li>
+		</ul>
+	</div>
+	<div class="highslide-body" style="color:#000">
+		<p style="	font-size: 18px; padding: 10px;	line-height: 24px; color: #000; display: inline-block; padding: 10px; margin: 3px 0px; text-align:justify;">
+			A la fermeture des Chantiers Navals en 1987, le patrimoine industriel nantais est en friche, et le temps en suspens.
+			Que faire alors de ce lieu, symbole d’un fort traumatisme pour la ville ? Après des années de recherches et de réflexion,
+			la ville de Nantes a choisi de transformer ses anciens sites industriels. Ces nombreuses mutations en font aujourd'hui le nouveau
+			centre créatif, culturel et touristique de la ville.
+		</p>
+	</div>
+    <div class="highslide-footer">
+        <div>
+            <span class="highslide-resize" title="Resize">
+                <span></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<!-- popout content 1987 -->
+<div class="highslide-html-content" id="highslide-html-1987" style="">
+	<div class="highslide-header">
+		<ul>
+			<li class="highslide-move">
+				<a href="#" onclick="return false">Déplacer</a>
+			</li>
+			<li class="highslide-close">
+				<a href="#" onclick="return hs.close(this)">Fermer</a>
+			</li>
+		</ul>
+	</div>
+	<div class="highslide-body" style="color:#000">
+						<h2 style="	font-size: 25px; padding: 0.732064422% 0px 0px 0px; color: #fff; color: rgba(69,192,226,0.9);
+									text-shadow: 0px 1px 1px rgba(0,0,0,0.3);">
+							L'industrie au premier plan
+						</h2>
+				<p style="	font-size: 18px; padding: 10px;	line-height: 24px; color: #000; display: inline-block; padding: 10px; margin: 3px 0px; text-align:justify;">
+					Pendant des dizaines d'années, l'île de Nantes était le pôle industriel majeur de la ville.
+					Avant la fermeture des Chantiers, l'île de Nantes et principalement sa partie ouest étaient
+					un espace industriel fermé et non fréquentés des nantais, hors ouvriers.
+				</p>
+	</div>
+    <div class="highslide-footer">
+        <div>
+            <span class="highslide-resize" title="Resize">
+                <span></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<script class="example" type="text/javascript">
+// Create the tooltips only when document ready
+$(document).ready(function()
+{
+	// We'll target all AREA elements with alt tags (Don't target the map element!!!)
+	$('area[alt]').qtip(
+	{
+		content: {
+			attr: 'alt' // Use the ALT attribute of the area map for the content
+		},
+		style: {
+			classes: 'qtip-shadow qtip-blue'
+		}
+	});
+});
+</script>

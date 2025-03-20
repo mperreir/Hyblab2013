@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>Ile de Nantes - Sur la voie de la mobilite durable ?</title>
+		<link rel="stylesheet" href="css/design.css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+
+        <link rel="image_src" href="http://www.hyblab.fr/projets/mobilite/images/Titres/enTete.png" type="image/x-icon" />
+	</head>
+
+	<body>
+		<script type="text/javascript"> var detailFluxechangeNord={transportCommun : 23.0,motorise : 52.0,pieton : 22.0,velo : 3.0}; var detailFluxinterne={transportCommun : 9.0,motorise : 54.5,pieton : 36.0,velo : 0.5}; var detailFluxechangeSud={transportCommun : 17.5,motorise : 77.5,pieton : 3.0,velo : 2.0}; var detailFluxtransitUrba={transportCommun : 27.0,motorise : 69.75,pieton : 0.75,velo : 2.5};var flux={echangeNord: detailFluxechangeNord,interne: detailFluxinterne,echangeSud: detailFluxechangeSud,transitUrba: detailFluxtransitUrba}; var detailFreq2008={busway : 7574,bus : 8890,tram : 15350}; var detailFreq1997={busway : 0,bus : 11102,tram : 9986}; var detailFreq2005={busway : 0,bus : 12211,tram : 13621}; var detailFreq2011={busway : 11221,bus : 8982,tram : 17826};var freq={annee2008: detailFreq2008,annee1997: detailFreq1997,annee2005: detailFreq2005,annee2011 : detailFreq2011};</script>
+
+
+
+		<div style="height:230px; text-align:center;background:url(images/Titres/enTete.png) no-repeat center">
+				<p id="titrePrincipal">sur la voie de la mobilité durable?</p>
+		</div>
+
+		<div id="page">
+
+			<!-- Compteur -->
+			<div class="ecart"></div>
+			<div class="petitTitre" style="background-image:url(images/Titres/btitre1.png);">
+				<p class="petitTitre">Par quels moyens de transport s'opèrent les déplacements sur l'île de Nantes ?</p>
+			</div>
+			<div class="commentaire">
+				<img src="images/Titres/tirets.png" alt="tiret"/>
+				<span class="commentaire"> Déplacements par jour en 2011</span>
+			</div>
+
+			<div class="compteur">
+				<div id="compteurVide">
+					<img id="compt2" src="images/compteur/2-2.png" alt="part"/>
+					<img id="compt1" src="images/compteur/1-2.png" alt="part"/>
+					<img id="compt3" src="images/compteur/3-2.png" alt="part"/>
+					<img id="compt4" src="images/compteur/4-2.png" alt="part"/>
+				</div>
+
+				<div id="compteurPlein">
+					<img id="compt2bis" src="images/compteur/2.png" alt="part"/>
+					<img id="compt1bis" src="images/compteur/1.png" alt="part"/>
+					<img id="compt3bis" src="images/compteur/3.png" alt="part"/>
+					<img id="compt4bis" src="images/compteur/4.png" alt="part"/>
+				</div>
+			</div>
+
+
+			<!-- Dataviz carte flux -->
+			<div class="petitTitre" style="background-image:url(images/Titres/btitre2.png);">
+				<p class="petitTitre">Quels sont les flux de déplacement ?</p>
+			</div>
+
+			<div class="commentaire">
+				<img src="images/Titres/tirets.png" alt="tiret"/><span class="commentaire"> Types de déplacements en 2011</span>
+			</div>
+			<div class="ecart"></div>
+
+			<div>
+				<table style="border-collapse:collapse;width:960px;">
+					<tr>
+						<td colspan="3"></td>
+						<td>
+							<span class="aide" style="background-color:rgb(170,90,159)" id="aide1">Flux de traversées entre l'île et le centre-ville</span>
+							<img src="images/carte_flux/interr1.png" class="interr" id="interr1" alt="interr"/>
+							<img src="images/carte_flux/onglet1.png" width="128px" class="onglets" id="onglet1" alt="onglet"/>
+						</td>
+						<td>
+							<span class="aide" style="background-color:rgb(233,194,0)" id="aide2">Flux de traversées entre l'île et Nantes Sud</span>
+							<img src="images/carte_flux/interr2.png" class="interr" id="interr2" alt="interr"/>
+							<img src="images/carte_flux/onglet2.png" class="onglets" id="onglet2" alt="onglet"/>
+						</td>
+						<td>
+							<span class="aide" style="background-color:rgb(127,195,157)" id="aide3">Déplacements internes à l'île, sans traversée</span>
+							<img src="images/carte_flux/interr3.png" class="interr" id="interr3" alt="interr"/>
+							<img src="images/carte_flux/onglet3.png" class="onglets" id="onglet3" alt="onglet"/>
+						</td>
+						<td>
+							<span class="aide" style="background-color:rgb(240,129,50)" id="aide4">Flux de traversées entre le nord et le sud de l'île, sans arrêt en son sein</span>
+							<img src="images/carte_flux/interr4.png" class="interr" id="interr4" alt="interr"/>
+							<img src="images/carte_flux/onglet4.png" class="onglets" id="onglet4" alt="onglet"/>
+						</td>
+					</tr>
+					<tr class="flux">
+						<td class="flux" colspan="2" style="width:400px;">
+							<span class="pourcent" id="pourcent1">0 %</span>
+							<img src="images/carte_flux/barreVoiture.png"  class="barre" id="barre1" alt="barre"/>
+							<img src="images/carte_flux/boutVoiture.png" class="bout" id="bout1" alt="bout"/>
+
+						</td>
+						<td style="width:65px">
+							<img src="images/carte_flux/voiture.png" alt="voiture"/>
+						</td>
+						<td rowspan="4" colspan="4">
+							<img src="images/carte_flux/fleche1.png" class="fleche" style="margin-left:280px;margin-top:15px;" id="fleche1" alt="fleche"/>
+							<img src="images/carte_flux/fleche2.png" class="fleche" style="margin-left:120px;margin-top:150px;" id="fleche2" alt="fleche"/>
+							<img src="images/carte_flux/fleche3.png" class="fleche" style="margin-left:100px;margin-top:80px;" id="fleche3" alt="fleche"/>
+							<img src="images/carte_flux/fleche4.png" class="fleche" style="margin-left:140px;margin-top:20px;" id="fleche4" alt="fleche"/>
+							<img src="images/carte_flux/carte.png" alt="carte"/>
+						</td>
+					</tr>
+					<tr class="flux">
+						<td class="flux" colspan="2">
+							<span class="pourcent" id="pourcent2">0 %</span>
+							<img src="images/carte_flux/barrePieton.png"  class="barre" id="barre2" alt="barre"/>
+							<img src="images/carte_flux/boutPieton.png" class="bout" id="bout2" alt="bout"/>
+
+						</td>
+						<td>
+							<img src="images/carte_flux/pieton.png" alt="pieton"/>
+						</td>
+					</tr>
+					<tr class="flux">
+						<td class="flux" colspan="2">
+							<span class="pourcent" id="pourcent3">0 %</span>
+							<img src="images/carte_flux/barreVelo.png" class="barre" id="barre3" alt="barre"/>
+							<img src="images/carte_flux/boutVelo.png" class="bout" id="bout3" alt="bout"/>
+
+						</td>
+						<td>
+							<img src="images/carte_flux/velo.png" alt="velo"/>
+						</td>
+					</tr>
+					<tr class="flux">
+						<td class="flux" colspan="2">
+							<span class="pourcent" id="pourcent4">0 %</span>
+							<img src="images/carte_flux/barreTram.png"  class="barre" id="barre4" alt="barre"/>
+							<img src="images/carte_flux/boutTram.png" class="bout" id="bout4" alt="bout"/>
+
+						</td>
+						<td>
+							<img src="images/carte_flux/tram.png" alt="tram"/>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="ecart"></div>
+
+
+
+
+			<!-- dataviz frequentation -->
+			<div class="ecart"></div>
+			<div class="petitTitre" style="background-image:url(images/Titres/btitre3.png)">
+				<p class="petitTitre">Quelle a été l'évolution de la fréquentation des transports en commun depuis 16 ans ?</p>
+			</div>
+			<div class="ecart"></div>
+
+			<div>
+		        <div id="transpTxt">
+	                <img id="busTxt" src="images/transportCommun/busTxt.png" alt="busTxt"/><br/>
+	                <img id="buswayTxt" src="images/transportCommun/buswayTxt.png" alt="buswayTxt"/><br/>
+	                <img id="tramTxt" src="images/transportCommun/tramTxt.png" alt="tramTxt"/>
+		        </div>
+		        <div>
+			        <table style="width:850px;margin-right:auto;margin-left:auto;">
+		                <tr>
+	                       <td  rowspan="5" colspan="2">
+                               <span class="annee" id="annee">1997</span>
+                               <img src="images/transportCommun/rond.png" style="position:absolute;margin-left:52px;" alt="rond"/>
+                               <img src="images/transportCommun/blanc.png" alt="blanc"/>
+	                       </td>
+		                </tr>
+		                <tr style="height:80px;">
+	                        <td style="vertical-align:bottom;text-align:left;">
+                               	<p id="comFreq"> Nombres de montées et de descentes par jour</p>
+	                        </td>
+		                </tr>
+		                <tr style="height:68px">
+	                        <td colspan="2" style="width:490px;">
+                                <div>
+                                	<span class="valFreq" id="valFreq1">0</span>
+                                </div>
+                                <img src="images/transportCommun/barreBus.png" class="barreFreq" id="barreFreq1" alt="barreFreq"/>
+                                <img src="images/transportCommun/boutBus.png" class="boutFreq" id="boutFreq1" alt="boutFreq"/>
+	                        </td>
+		                </tr>
+		                <tr style="height:75px">
+	                        <td colspan="2">
+	                            <div>
+                                	<span class="valFreq" id="valFreq2">0</span>
+	                            </div>
+	                            <img src="images/transportCommun/barreBusway.png" class="barreFreq" id="barreFreq2" alt="barreFreq"/>
+	                            <img src="images/transportCommun/boutBusway.png" class="boutFreq" id="boutFreq2" alt="boutFreq"/>
+	                        </td>
+		                </tr>
+		                <tr>
+	                        <td colspan="2"  valign="bottom" style="padding-bottom:8px;">
+	                            <div>
+                                	<span class="valFreq" id="valFreq3">0</span>
+	                            </div>
+	                            <img src="images/transportCommun/barreTram.png" class="barreFreq" id="barreFreq3" alt="barreFreq"/>
+	                            <img src="images/transportCommun/boutTram.png" class="boutFreq" id="boutFreq3" alt="boutFreq"/>
+	                        </td>
+		                </tr>
+			        </table>
+				</div>
+		        <script type="text/javascript">
+	                function spacer(x){
+	                        if(x%1000>0){
+	                                return Math.floor(x/1000) + " " + x%1000;
+	                        }
+	                        else{
+	                                return x;
+	                        }
+	                }
+	                var tailleMaxBarreFreq = 300;
+	                var tailleMinBarreFreq = 100;
+	                var tailleBarre = tailleMinBarreFreq + freq.annee1997.bus/17826*tailleMaxBarreFreq;
+	                var tailleBarre2 = tailleMinBarreFreq + freq.annee1997.busway/17826*tailleMaxBarreFreq;
+	                var tailleBarre3 = tailleMinBarreFreq + freq.annee1997.tram/17826*tailleMaxBarreFreq;
+	                document.getElementById("barreFreq1").style.cssText='width:'+ tailleBarre+'px';
+	                document.getElementById("barreFreq2").style.cssText='width:'+ tailleBarre2+'px';
+	                document.getElementById("barreFreq3").style.cssText='width:'+ tailleBarre3+'px';
+	                document.getElementById("valFreq1").innerHTML = spacer(freq.annee1997.bus);
+	                document.getElementById("valFreq2").innerHTML = spacer(freq.annee1997.busway);
+	                document.getElementById("valFreq3").innerHTML = spacer(freq.annee1997.tram);
+	       		 </script>
+		        <div style="position:absolute;margin-left:200px;">
+		                <img src="images/transportCommun/1Clique.png" id="bouton1" class="bouton" alt="bouton"/>
+		                <img src="images/transportCommun/2.png" id="bouton2" class="bouton" alt="bouton"/>
+		                <img src="images/transportCommun/3.png" id="bouton3" class="bouton" alt="bouton"/>
+		                <img src="images/transportCommun/4.png" id="bouton4" class="bouton" alt="bouton"/>
+		        </div>
+		</div>
+
+			<!-- Sondages -->
+			<div style="height:100px"></div>
+			<div class="petitTitre" style="background-image:url(images/Titres/btitre4.png)">
+				<p class="petitTitre">Sondages</p>
+			</div>
+			<div class="commentaire">
+				<img src="images/Titres/tirets.png" alt="tiret"/>
+				<span class="commentaire"> Extrait de l'enquête « Nouveaux regards sur nos modes de vie » - AURAN</span>
+			</div>
+
+			<div class="ecart"></div>
+
+			<div style="position:relative; margin-left:100px;">
+				<table style="width:280px;margin-left:auto;margin-right:auto;">
+					<tr>
+						<td><img src="images/infoHaut/nuage.png" id="nuage" alt="nuage"/></td>
+						<td><img src="images/infoHaut/nuageTexte.png" id="nuageTexte" style="visibility:hidden" alt="nuageTexte"/></td>
+					</tr>
+				</table>
+
+				<div class="ecart"></div>
+				<table style="width:605px;margin-left:auto;margin-right:auto;">
+					<tr>
+						<td><img id="boGris" src="images/pointille/boGris.png" alt="boGris"/></td>
+						<td><img class="texteCouleur" id="texteRose" src="images/pointille/texteRose.png" alt="texteRose"/></td>
+						<td style="width:100px;"></td>
+						<td><img id="veGris" src="images/pointille/veGris.png" alt="veGris"/></td>
+						<td><img class="texteCouleur" id="texteOrange" src="images/pointille/texteOrange.png" alt="texteOrange"/></td>
+					</tr>
+					<tr style="visibility:hidden">
+						<td align="center"><img id="pourcRose" src="images/pointille/pourcRose.png" alt="pourcRose"/></td>
+						<td align="center"><img id="ouiR" src="images/pointille/ouiR.png" alt="ouiR"/></td>
+						<td></td>
+						<td align="center"><img id="pourcOrange" src="images/pointille/pourcOrange.png" alt="pourcOrange"/></td>
+						<td align="center"><img id="ouiO" src="images/pointille/ouiO.png" alt="ouiO"/></td>
+					</tr>
+				</table>
+
+				<img class="poR" id="po1R" src="images/pointille/tvr.png" style="bottom:70px;left:320px;" alt="pointille"/>
+				<img class="poR" id="po2R" src="images/pointille/tvr.png" style="bottom:60px;left:313px;" alt="pointille"/>
+				<img class="poR" id="po3R" src="images/pointille/tvr.png" style="bottom:50px;left:306px;" alt="pointille"/>
+				<img class="poR" id="po4R" src="images/pointille/thr.png" style="left:275px;" alt="pointille"/>
+				<img class="poR" id="po5R" src="images/pointille/thr.png" style="left:253px;" alt="pointille"/>
+				<img class="poR" id="po6R" src="images/pointille/thr.png" style="left:231px;" alt="pointille"/>
+				<img class="poR" id="po7R" src="images/pointille/thr.png" style="left:209px;" alt="pointille"/>
+				<img class="poR" id="po8R" src="images/pointille/thr.png" style="left:186px;" alt="pointille"/>
+				<img class="poR" id="po9R" src="images/pointille/thr.png" style="left:175px;" alt="pointille"/>
+				<img class="poO" id="po1O" src="images/pointille/tvo.png" style="bottom:80px;left:565px;" alt="pointille"/>
+				<img class="poO" id="po2O" src="images/pointille/tvo.png" style="bottom:70px;left:558px;" alt="pointille"/>
+				<img class="poO" id="po3O" src="images/pointille/tvo.png" style="bottom:60px;left:551px;" alt="pointille"/>
+				<img class="poO" id="po4O" src="images/pointille/tvo.png" style="bottom:50px;left:544px;" alt="pointille"/>
+				<img class="poO" id="po5O" src="images/pointille/tho.png" style="left:510px;" alt="pointille"/>
+				<img class="poO" id="po6O" src="images/pointille/tho.png" style="left:489px;" alt="pointille"/>
+				<img class="poO" id="po7O" src="images/pointille/tho.png" style="left:468px;" alt="pointille"/>
+				<img class="poO" id="po8O" src="images/pointille/tho.png" style="left:447px;" alt="pointille"/>
+				<img class="poO" id="po9O" src="images/pointille/tho.png" style="left:426px;" alt="pointille"/>
+			</div>
+
+			<div class="ecart"></div>
+			<div class="petitTitre" style="background-image:url(images/Titres/btitre5.png)">
+				<p id="articleTitre">L' île de Nantes tend elle vraiment vers une mobilité durable?</p>
+			</div>
+
+
+			<!-- Micro trottoir -->
+			<div class="ecart"></div>
+			<div class="petitTitre" style="background-image:url(images/Titres/bbleu.png);">
+				<p class="mtTitre">Qu'en pensent les habitants de l'île ?</p>
+			</div>
+
+			<div class="mtFond" style="background-image:url('images/reportage/Bulle.png');">
+				<div style="height:40px"></div>
+
+				<div>
+					<table style="width:650px;margin-left:auto;margin-right:auto;">
+						<tr>
+							<td><img id="photo" src="images/reportage/1.png" alt="photo"/></td>
+							<td>
+								<table id="mtTexte">
+									<tr class="mtQues" >
+										<td>
+											<p class="mtQues">
+												<span id="mtQues1">76% des habitants de l'ile de Nantes pensent qu'il est facile de se déplacer sur l'île.</span><br/>
+												<span id="mtQues2">Êtes-vous d'accord ?</span>
+											</p>
+										</td>
+									</tr>
+									<tr id="mtRep">
+										<td>
+											<p id="texteReponses">« En tant qu'ancien Nantais, je trouve cela complètement faux parce qu'ils ont refait tout le plan de circulation de la ville de Nantes. Pour se garer maintenant entre midi et deux, c'est vrai que c'est beaucoup plus simple, mais pour venir ici c'est une horreur au niveau des voitures, ça circule de partout. En revanche, pour bouger à pied, c'est devenu sympathique, mais il faut aimer marcher ! »</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div>
+					<img id="flecheG" src="images/reportage/fleche2.png" alt="flecheG"/>
+					<img id="flecheD" src="images/reportage/fleche.png" alt="flecheD"/>
+				</div>
+			</div>
+
+			<!-- Article -->
+			<div class="ecart"></div>
+			<div class="petitTitre" style="background-image:url(images/Titres/BandeauYanLeGal.png);">
+				<p class="mtTitre">"Faire de Nantes une ville équilibrée dans ses déplacements"</p>
+			</div>
+
+			<div class="ecart"></div>
+			<div class="fondArrondie" style="background:url(images/article/Fond2.png);width:801px;margin-left:auto;margin-right:auto;">
+				<div class="ecartArticle"></div>
+				<div class="texteArticle">
+					<p>
+						<span id="dictonA">Le dicton l'affirme : </span>
+						<span id="introA">les chiffres ne mentent jamais. Ceux concernant les déplacements de l'Île de Nantes indiquent que les nantais privilégient toujours les véhicules à moteur pour circuler dans et à travers l'île. Mais si les chiffres ne mentent pas, ils peuvent omettre un certain nombre de nuances... Pour mieux comprendre le phénomène, Yan Le Gal, directeur d'études et de projets à l'Agence d'urbanisme de l'agglomération nantaise (Auran), apporte son avis d'expert.</span>
+					</p>
+					<p>
+						<span class="questionA">Les véhicules à moteur (voitures, deux-roues motorisées) restent les moyens de transport privilégiés sur l'Île. Pourtant, Nantes est reconnue pour son engagement vert : peut-on considérer ce constat comme un échec ?</span>
+					</p>
+					<p>
+						<span class="reponseA">«Permettez-moi de vous répondre en prenant le problème différemment. En 2008, une enquête Insee a été réalisée sur les transports «verts» de l'île. La même a été reconduite pour 2012 et les chiffres sont très intéressants. En quatre ans, les déplacements piétons ont gagné 2,5 points, les vélos 2,5 aussi, et les transports en commun 1 point. C'est encourageant, mais le réel chiffre qui nous pousse à être optimistes, c'est celui des voitures, qui a baissé de 7 points! Pour tout vous avouer, en 2012, la ville de Nantes a atteint voire même dépassé les objectifs fixés pour 2015. Les élus se rendent compte que leur politique est efficace et nous nous projetons désormais vers 2030. Ce que nous voulons accomplir, c'est augmenter l'attractivité des autres modes de transports, ceux que l'on pourrait qualifier d'alternatifs. Nous voulons faire de Nantes une ville équilibrée dans ses déplacements.»</span>
+					</p>
+					<p>
+						<span class="questionA">Donc pensez-vous qu'il faudrait « éduquer » les citoyens à plus employer les transports en commun ?</span>
+					</p>
+					<p>
+						<span class="reponseA">«Ce qui est certain avec les transports en commun, c'est qu'il y a encore des efforts à fournir. Dans certaines villes européennes comme Zurich ou Brême, ils représentent 10 à 15 % de plus. Alors faut-il «éduquer» les gens ? Je n'aime pas ce terme, «éduquer». Je dirais simplement qu'il faut faire mieux connaître, car le réseau n'est pas assez appréhendé par les gens. Cela passe d'ailleurs aussi par le datajournalisme. D'autre part, n'oublions pas qu'il n'y a pas que les transports en commun : le cocktail gagnant, qui ne coûte presque rien, ce sont les piétons, le vélo, et le covoiturage. Ce que nous devons faire, c'est augmenter le plaisir de marcher, de faire du vélo et de se déplacer à plusieurs.»</span>
+					</p>
+					<p>
+						<span class="questionA">Vous parlez d'augmenter le plaisir. Quels sont vos projets pour rendre l'île plus verte, plus agréable à arpenter ou traverser ?</span>
+					</p>
+					<p>
+						<span class="reponseA">«Ce que nous souhaitons, c'est permettre aux Nantais de gagner du temps en les faisant aller moins vite. Pour cela, il y aura un chronobus qui sillonnera l'île d'est en ouest et inversement. Une ligne de bus sera mise en place pour chaque pont. Pour plus tard, nous souhaiterions rajouter un tramway qui liera la gare au sud-ouest de l'île. Vous savez, le tram, c'est du vert qui roule, 250 piétons qui font une pause. D'un autre côté, je sais que l'on parle beaucoup de gratuité des transports en commun, mais personnellement je suis contre. La gratuité coûte cher. En réalité ce n'est pas le problème. Notre rôle est de rendre les transports attractifs, pas gratuits !»</span>
+					</p>
+				</div>
+				<div class="ecartArticle"></div>
+			</div>
+
+			<!-- Sources -->
+			<div style="height:100px;"></div>
+			<div class="source" style="background-image:url('images/logo/source.png');">
+				<p style="height:8px;"></p>
+				<p> <span class="source">Sources :</span>
+						<a class="source lien" href="http://www.iledenantes.com/files/documents/pdf/publications/131-12-atlasiledenantesweb-pdf-copie.pdf">Atlas de l'Ile de Nantes 2012</a> -
+						<a class="source lien" href="http://www.auran.org">AURAN</a> -
+						<a class="source lien" href="https://www.tan.fr">Semitan</a>.
+				</p>
+			</div>
+			<div class="ecart"></div>
+
+			<!-- Logos -->
+			<div class="logo">
+				<img src="images/logo/logoTerristoires.png" alt="logoTerristoires"/><br/>
+				<p>
+					<span class="logoB"><a href="http://www.terristoires.info" class="logoB lien logo">www.terristoires.info</a></span><br/>
+					<span class="logoR">Journalisme : Benoit Baylé, Lucie France / Graphisme : Estelle Crochet, Charlotte Cossard / Développement : Virginie Robidou, Élise Morineau.</span><br/>
+				</p>
+                <div id="partenaires"></div>
+				<!--p>
+					<img src="images/logo/logo.png" alt="logoCreativeCommons"/><br/>
+					<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/" class="logoR lien logo">http://creativecommons.org/licenses/by-nc-sa/3.0/fr/</a>
+				</p>
+				<img src="images/logo/logos.png" alt="logos"/-->
+			</div>
+		</div>
+
+		<script type="text/javascript" src="javascript/jquery.js" ></script>
+        <script type="text/javascript" src="../partenaires/partenaire.js" charset="utf-8"></script>
+		<script type="text/javascript" src="javascript/main.js"></script>
+
+	</body>
+
+</html>

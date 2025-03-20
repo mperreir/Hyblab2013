@@ -1,0 +1,79 @@
+.hiddenMap, .hiddenIslandMap {
+	display : none;
+}
+
+#map {
+	float : left;
+	width : 500px;
+	height : 550px;
+	position : relative;
+}
+
+#employmentTitle {
+	float : right;
+	background-color : #9EB5B2;
+	width : 500px;
+	height : 40px;
+}
+
+#nantesIsland {
+	position : absolute;
+	top : 400px;
+	left : 230px;
+	z-index : 20;
+	cursor : pointer;
+}
+
+#nantesIsland img {
+	width : 30px;
+	height : 30px;
+}
+
+
+
+#nantesIslandMap {
+	position : absolute;
+	top : 50px;
+	left : 260px;
+	display:none;
+	z-index : 10;
+	background-color :rgba(255, 255, 255, 0.5);
+	box-shadow: 1px 1px 12px #555;
+	border-radius: 100px 100px 100px 0;
+	height : 350px;
+	width : 570px;
+}
+
+#nantesIslandMap img {
+	z-index : 200;
+	margin-top : 46px;
+}
+
+#employmentArticle {
+	float : left;
+	position : relative;
+	height : 500px;
+}
+
+#employmentArticle img {
+	height : 300px;
+	margin-top : 150px;
+	margin-left : 100px;
+}
+
+#employmentHiddenInfo {
+	position : absolute;
+	top : 265px;
+	left : 210px;
+	z-index : 20;
+}
+
+#employmentHiddenInfo img {
+	width : 30px;
+	height : 30px;
+}
+
+#hiddenEmploymentArt {
+	z-index : 10;
+	display : none;
+}
